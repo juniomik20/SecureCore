@@ -54,6 +54,10 @@ namespace PlantillaPrincipalStarWars
             DialogResult res = MessageBox.Show("Hazlo o no lo Hagas, pero no lo intentes", "¿Cerrar Sesion?", MessageBoxButtons.OKCancel);
             if (res == DialogResult.OK)
             {
+                foreach (Form frm in Application.OpenForms)
+                {
+                    frm.Hide();
+                }
                 Assembly ensamblat = Assembly.LoadFrom("LogonScreen.dll");
                 Object dllBD;
                 Type tipus;

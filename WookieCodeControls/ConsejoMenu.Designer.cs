@@ -33,12 +33,17 @@
             // 
             // ButtonConsejo
             // 
+            this.ButtonConsejo.BackColor = System.Drawing.Color.Maroon;
+            this.ButtonConsejo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
+            this.ButtonConsejo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
+            this.ButtonConsejo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonConsejo.ForeColor = System.Drawing.Color.White;
             this.ButtonConsejo.Location = new System.Drawing.Point(0, 0);
             this.ButtonConsejo.Name = "ButtonConsejo";
             this.ButtonConsejo.Size = new System.Drawing.Size(99, 31);
             this.ButtonConsejo.TabIndex = 0;
             this.ButtonConsejo.Text = "Text";
-            this.ButtonConsejo.UseVisualStyleBackColor = true;
+            this.ButtonConsejo.UseVisualStyleBackColor = false;
             this.ButtonConsejo.Click += new System.EventHandler(this.ObreForm);
             // 
             // ConsejoMenu

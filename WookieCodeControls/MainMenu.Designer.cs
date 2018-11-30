@@ -35,11 +35,11 @@
             // 
             // picMenu
             // 
-            this.picMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
-            | System.Windows.Forms.AnchorStyles.Left) 
-            | System.Windows.Forms.AnchorStyles.Right)));
+            this.picMenu.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Right)));
             this.picMenu.BackColor = System.Drawing.Color.IndianRed;
+            this.picMenu.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.picMenu.Location = new System.Drawing.Point(0, 0);
+            this.picMenu.Margin = new System.Windows.Forms.Padding(10, 100, 10, 100);
             this.picMenu.Name = "picMenu";
             this.picMenu.Size = new System.Drawing.Size(180, 173);
             this.picMenu.TabIndex = 0;
@@ -50,13 +50,14 @@
             // 
             this.lblControl.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.lblControl.BackColor = System.Drawing.Color.DarkOrange;
+            this.lblControl.BackColor = System.Drawing.Color.Maroon;
+            this.lblControl.BorderStyle = System.Windows.Forms.BorderStyle.Fixed3D;
             this.lblControl.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.lblControl.Font = new System.Drawing.Font("Segoe Print", 11.25F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.lblControl.Font = new System.Drawing.Font("Stencil", 12F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.lblControl.ForeColor = System.Drawing.Color.White;
-            this.lblControl.Location = new System.Drawing.Point(12, 147);
+            this.lblControl.Location = new System.Drawing.Point(0, 147);
             this.lblControl.Name = "lblControl";
-            this.lblControl.Size = new System.Drawing.Size(152, 26);
+            this.lblControl.Size = new System.Drawing.Size(180, 26);
             this.lblControl.TabIndex = 1;
             this.lblControl.Text = "FLOTA ESPACIAL";
             this.lblControl.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
