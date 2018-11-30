@@ -3,8 +3,6 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio 15
 VisualStudioVersion = 15.0.28010.2036
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantillaPrincipalStarWars", "PlantillaPrincipalStarWars\PlantillaPrincipalStarWars.csproj", "{494EE00C-8609-4AB3-B2F4-0A1A69197724}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "LogonScreen", "LogonScreen\LogonScreen.csproj", "{93110164-8F66-48D3-8E81-D9A0C95989B9}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConnectionClass", "ConnectionClass\ConnectionClass.csproj", "{BBBEE6F8-ABB3-428E-9B39-574546F407B0}"
@@ -31,16 +29,14 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WookieTablas", "WookieTabla
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PantallaCerca", "PantallaCerca\PantallaCerca.csproj", "{2F6B0D0C-6544-480B-A660-9B7F388A0C0D}"
 EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PlantillaPrincipalStarWars", "PlantillaPrincipalStarWars\PlantillaPrincipalStarWars.csproj", "{494EE00C-8609-4AB3-B2F4-0A1A69197724}"
+EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
 		Debug|Any CPU = Debug|Any CPU
 		Release|Any CPU = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(ProjectConfigurationPlatforms) = postSolution
-		{494EE00C-8609-4AB3-B2F4-0A1A69197724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{494EE00C-8609-4AB3-B2F4-0A1A69197724}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{494EE00C-8609-4AB3-B2F4-0A1A69197724}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{494EE00C-8609-4AB3-B2F4-0A1A69197724}.Release|Any CPU.Build.0 = Release|Any CPU
 		{93110164-8F66-48D3-8E81-D9A0C95989B9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{93110164-8F66-48D3-8E81-D9A0C95989B9}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{93110164-8F66-48D3-8E81-D9A0C95989B9}.Release|Any CPU.ActiveCfg = Release|Any CPU
@@ -93,6 +89,10 @@ Global
 		{2F6B0D0C-6544-480B-A660-9B7F388A0C0D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{2F6B0D0C-6544-480B-A660-9B7F388A0C0D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{2F6B0D0C-6544-480B-A660-9B7F388A0C0D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{494EE00C-8609-4AB3-B2F4-0A1A69197724}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{494EE00C-8609-4AB3-B2F4-0A1A69197724}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{494EE00C-8609-4AB3-B2F4-0A1A69197724}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{494EE00C-8609-4AB3-B2F4-0A1A69197724}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

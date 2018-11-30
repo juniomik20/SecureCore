@@ -133,7 +133,7 @@
       <Name>MenuSecureCore</Name>
     </ProjectReference>
     <ProjectReference Include="..\PlantillaPrincipalStarWars\PlantillaPrincipalStarWars.csproj">
-      <Project>{494EE00C-8609-4AB3-B2F4-0A1A69197724}</Project>
+      <Project>{494ee00c-8609-4ab3-b2f4-0a1a69197724}</Project>
       <Name>PlantillaPrincipalStarWars</Name>
     </ProjectReference>
   </ItemGroup>

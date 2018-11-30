@@ -17,39 +17,30 @@ namespace PlantillaPrincipalStarWars
         public PlantillaForm()
         {
             InitializeComponent();
-          
         }
         string _nombrePantalla;
-
         public string NombrePantalla
         {
-
             get { return _nombrePantalla; }
             set
             {
                 _nombrePantalla = value;
                 TittleScreen.Text = value;
             }
-
         }
         string _username;
-
         public string Username
         {
-
             get { return _username; }
             set
             {
                 _username = value;
                 UsernameTitle.Text = value;
             }
-
         }
         string _iconUser;
-
         public string IconUser
         {
-
             get { return _iconUser; }
             set
             {
@@ -57,14 +48,10 @@ namespace PlantillaPrincipalStarWars
                 UserIconTitle.ImageLocation = @"..\DLL\Imagenes\" + value;
                 UserIconTitle.SizeMode = PictureBoxSizeMode.StretchImage;
             }
-
         }
-
-
         private void ExitButtonTitle_Click(object sender, EventArgs e)
         {
-            DialogResult res = MessageBox.Show("Hazlo o no lo Hagas, pero no lo intentes", "¿Cerrar Sesion?",MessageBoxButtons.OKCancel);
-
+            DialogResult res = MessageBox.Show("Hazlo o no lo Hagas, pero no lo intentes", "¿Cerrar Sesion?", MessageBoxButtons.OKCancel);
             if (res == DialogResult.OK)
             {
                 Assembly ensamblat = Assembly.LoadFrom("LogonScreen.dll");
@@ -73,19 +60,14 @@ namespace PlantillaPrincipalStarWars
 
                 tipus = ensamblat.GetType("LogonScreen.LogonMainScreen");
                 dllBD = Activator.CreateInstance(tipus);
-
                 ((Form)dllBD).Show();
             }
-          
-
         }
-        public void CerrarPrograma() {
-
+        public void CerrarPrograma()
+        {
             Application.Exit();
-
         }
-
-        private void pictureBox1_Click(object sender, EventArgs e)
+        private void BotonAtras_Click(object sender, EventArgs e)
         {
             this.Close();
         }
