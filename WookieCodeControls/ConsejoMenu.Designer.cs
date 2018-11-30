@@ -36,11 +36,11 @@
             this.ButtonConsejo.BackColor = System.Drawing.Color.Maroon;
             this.ButtonConsejo.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Zoom;
             this.ButtonConsejo.FlatStyle = System.Windows.Forms.FlatStyle.Flat;
-            this.ButtonConsejo.Font = new System.Drawing.Font("Segoe UI Semibold", 9.75F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.ButtonConsejo.Font = new System.Drawing.Font("Segoe UI Semibold", 12F, System.Drawing.FontStyle.Bold);
             this.ButtonConsejo.ForeColor = System.Drawing.Color.White;
             this.ButtonConsejo.Location = new System.Drawing.Point(0, 0);
             this.ButtonConsejo.Name = "ButtonConsejo";
-            this.ButtonConsejo.Size = new System.Drawing.Size(99, 31);
+            this.ButtonConsejo.Size = new System.Drawing.Size(140, 52);
             this.ButtonConsejo.TabIndex = 0;
             this.ButtonConsejo.Text = "Text";
             this.ButtonConsejo.UseVisualStyleBackColor = false;
@@ -52,7 +52,7 @@
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.ButtonConsejo);
             this.Name = "ConsejoMenu";
-            this.Size = new System.Drawing.Size(99, 31);
+            this.Size = new System.Drawing.Size(140, 52);
             this.ResumeLayout(false);
 
         }
