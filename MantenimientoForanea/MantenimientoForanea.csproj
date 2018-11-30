@@ -1,0 +1,90 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Project ToolsVersion="15.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <Import Project="$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props" Condition="Exists('$(MSBuildExtensionsPath)\$(MSBuildToolsVersion)\Microsoft.Common.props')" />
+  <PropertyGroup>
+    <Configuration Condition=" '$(Configuration)' == '' ">Debug</Configuration>
+    <Platform Condition=" '$(Platform)' == '' ">AnyCPU</Platform>
+    <ProjectGuid>{6C88D447-A287-411E-A2C8-026BEEB90D4D}</ProjectGuid>
+    <OutputType>Library</OutputType>
+    <AppDesignerFolder>Properties</AppDesignerFolder>
+    <RootNamespace>MantenimientoForanea</RootNamespace>
+    <AssemblyName>MantenimientoForanea</AssemblyName>
+    <TargetFrameworkVersion>v4.6.1</TargetFrameworkVersion>
+    <FileAlignment>512</FileAlignment>
+    <Deterministic>true</Deterministic>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Debug|AnyCPU' ">
+    <DebugSymbols>true</DebugSymbols>
+    <DebugType>full</DebugType>
+    <Optimize>false</Optimize>
+    <OutputPath>..\DLL\</OutputPath>
+    <DefineConstants>DEBUG;TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <PropertyGroup Condition=" '$(Configuration)|$(Platform)' == 'Release|AnyCPU' ">
+    <DebugType>pdbonly</DebugType>
+    <Optimize>true</Optimize>
+    <OutputPath>bin\Release\</OutputPath>
+    <DefineConstants>TRACE</DefineConstants>
+    <ErrorReport>prompt</ErrorReport>
+    <WarningLevel>4</WarningLevel>
+  </PropertyGroup>
+  <ItemGroup>
+    <Reference Include="System" />
+    <Reference Include="System.Core" />
+    <Reference Include="System.Drawing" />
+    <Reference Include="System.Windows.Forms" />
+    <Reference Include="System.Xml.Linq" />
+    <Reference Include="System.Data.DataSetExtensions" />
+    <Reference Include="Microsoft.CSharp" />
+    <Reference Include="System.Data" />
+    <Reference Include="System.Net.Http" />
+    <Reference Include="System.Xml" />
+  </ItemGroup>
+  <ItemGroup>
+    <Compile Include="FormForanea.cs">
+      <SubType>Form</SubType>
+    </Compile>
+    <Compile Include="FormForanea.Designer.cs">
+      <DependentUpon>FormForanea.cs</DependentUpon>
+    </Compile>
+    <Compile Include="Properties\AssemblyInfo.cs" />
+  </ItemGroup>
+  <ItemGroup>
+    <ProjectReference Include="..\ConnectionClass\ConnectionClass.csproj">
+      <Project>{bbbee6f8-abb3-428e-9b39-574546f407b0}</Project>
+      <Name>ConnectionClass</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MantenimientoTest\MantenimientoTest.csproj">
+      <Project>{8f7f1e3c-4358-43a0-8079-d72ac5c1d48e}</Project>
+      <Name>MantenimientoTest</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\MenuSecureCore\MenuSecureCore.csproj">
+      <Project>{6c7ddce8-1180-4749-b3db-299e91d9bbaf}</Project>
+      <Name>MenuSecureCore</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\PlantillaPrincipalStarWars\PlantillaPrincipalStarWars.csproj">
+      <Project>{494ee00c-8609-4ab3-b2f4-0a1a69197724}</Project>
+      <Name>PlantillaPrincipalStarWars</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SdsTexBox\SdsTexBox.csproj">
+      <Project>{bf4d52ff-1166-4f33-9954-feced8827e8f}</Project>
+      <Name>SdsTexBox</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\SplashScreen\WindowsFormsApp2\SplashScreen.csproj">
+      <Project>{2db352f6-8d01-4a43-9dce-c738b60f33db}</Project>
+      <Name>SplashScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WookieCodeControls\WookieCodeControls.csproj">
+      <Project>{9fa849fb-9441-4261-a4c3-ca19857eb644}</Project>
+      <Name>WookieCodeControls</Name>
+    </ProjectReference>
+  </ItemGroup>
+  <ItemGroup>
+    <EmbeddedResource Include="FormForanea.resx">
+      <DependentUpon>FormForanea.cs</DependentUpon>
+    </EmbeddedResource>
+  </ItemGroup>
+  <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
+</Project>
