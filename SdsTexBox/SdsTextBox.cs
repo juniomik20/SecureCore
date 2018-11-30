@@ -179,14 +179,14 @@ namespace MantenimientoTest
             // 
             // TextBox1
             // 
-            this.TextBox1.Location = new System.Drawing.Point(0, 0);
-            this.TextBox1.Name = "TextBox1";
-            this.TextBox1.Size = new System.Drawing.Size(100, 20);
-            this.TextBox1.TabIndex = 0;
+            this.Location = new System.Drawing.Point(0, 0);
+            this.Name = "TextBox1";
+            this.Size = new System.Drawing.Size(100, 20);
+            this.TabIndex = 0;
+            this.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
             // 
             // SdsTextBox
             // 
-            //this.TextChanged += new System.EventHandler(this.TxtCode_TextChanged);
             this.Leave += new System.EventHandler(this.TxtCode_Leave);
             this.Validating += new System.ComponentModel.CancelEventHandler(this.TxtCode_Validating);
             this.Validated += new System.EventHandler(this.TxtCode_Validated);
@@ -227,30 +227,32 @@ namespace MantenimientoTest
                 {
                     if (frm.Name == nomFormulari)
                     {
-                        foreach (Control co in frm.Controls)
+                        foreach (Control frmControl in frm.Controls)
                         {
-                            if(co is sdsForanea)
+                            if (frmControl is sdsForanea)
                             {
                                 try
                                 {
-                                    foreach (Control c in frm.Controls)
+                                    if (frmControl.Name == this.NomControl)
                                     {
-                                        if (c.Name == ((sdsForanea)co).NomControl)
-                                        {
-                                            co.Text = c.Text;
-                                        }
+                                        frmControl.Text = this.Text;
                                     }
                                 }
                                 catch
                                 {
                                     MessageBox.Show("ERROR DE DADES");
                                 }
-                                
+
                             }
                         }
                     }
                 }
             }
+        }
+
+        private void TextBox1_TextChanged(object sender, EventArgs e)
+        {
+            EsForanea();
         }
     }
 }

@@ -34,6 +34,7 @@ namespace PantallaCerca
         public void RellenarGrid(DataSet dts)
         {
             dGVCerca.DataSource = dts.Tables[0];
+            dGVCerca.Columns[0].Visible = false;
         }
         public void Bindings()
         {
@@ -49,8 +50,19 @@ namespace PantallaCerca
             RellenarGrid(dts);
             dGVCerca.AllowUserToAddRows = false;
         }
+
         #endregion
 
-
+        private void dGVCerca_DoubleClick(object sender, EventArgs e)
+        {
+            try
+            {
+                MessageBox.Show(dGVCerca.SelectedCells[0].Value.ToString());
+            }
+            catch
+            {
+                MessageBox.Show("Selecciona toda la linea.");
+            }
+        }
     }
 }

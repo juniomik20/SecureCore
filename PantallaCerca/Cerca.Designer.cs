@@ -39,6 +39,7 @@
             this.dGVCerca.Name = "dGVCerca";
             this.dGVCerca.Size = new System.Drawing.Size(464, 453);
             this.dGVCerca.TabIndex = 0;
+            this.dGVCerca.DoubleClick += new System.EventHandler(this.dGVCerca_DoubleClick);
             // 
             // Cerca
             // 
