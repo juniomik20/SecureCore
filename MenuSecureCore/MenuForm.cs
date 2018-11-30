@@ -43,7 +43,7 @@ namespace MenuSecureCore
                 };
 
                 PanelButtonsMain.Controls.Add(MenuItem);
-                cont = cont + 1;
+                cont++;
             }
         }
         private void Actualizar() {
