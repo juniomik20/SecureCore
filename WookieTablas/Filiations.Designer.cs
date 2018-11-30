@@ -47,6 +47,7 @@
             // 
             // sdsTextBox1
             // 
+            this.sdsTextBox1.BackColor = System.Drawing.Color.LightGreen;
             this.sdsTextBox1.CodeSector = null;
             this.sdsTextBox1.ColumnName = "CodeFiliation";
             this.sdsTextBox1.DescCodi = null;
@@ -64,6 +65,7 @@
             // 
             // sdsTextBox3
             // 
+            this.sdsTextBox3.BackColor = System.Drawing.Color.LightGreen;
             this.sdsTextBox3.CodeSector = null;
             this.sdsTextBox3.ColumnName = "DescFiliations";
             this.sdsTextBox3.DescCodi = null;
