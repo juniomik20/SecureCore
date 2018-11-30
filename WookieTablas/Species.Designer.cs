@@ -36,6 +36,7 @@
             // 
             // sdsTextBoxCodeSpecie
             // 
+            this.sdsTextBoxCodeSpecie.BackColor = System.Drawing.Color.LightGreen;
             this.sdsTextBoxCodeSpecie.CodeSector = null;
             this.sdsTextBoxCodeSpecie.ColumnName = "CodeSpecie";
             this.sdsTextBoxCodeSpecie.DescCodi = null;
@@ -53,6 +54,7 @@
             // 
             // sdsTextBoxDescSpecie
             // 
+            this.sdsTextBoxDescSpecie.BackColor = System.Drawing.Color.LightGreen;
             this.sdsTextBoxDescSpecie.CodeSector = null;
             this.sdsTextBoxDescSpecie.ColumnName = "DescSpecie";
             this.sdsTextBoxDescSpecie.DescCodi = null;
