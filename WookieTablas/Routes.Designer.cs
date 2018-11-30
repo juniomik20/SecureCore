@@ -28,32 +28,120 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sdsTextBox1 = new MantenimientoTest.SdsTextBox();
+            this.lblCodeRoute = new System.Windows.Forms.Label();
+            this.lblDescRoute = new System.Windows.Forms.Label();
+            this.sdsTextBoxCodeRoute = new MantenimientoTest.SdsTextBox();
+            this.sdsTextBoxDescRoute = new MantenimientoTest.SdsTextBox();
+            this.sdsTextBoxRouteTypes = new MantenimientoTest.SdsTextBox();
+            this.sdsForaneaRouteTypes = new MantenimientoForanea.sdsForanea();
             this.SuspendLayout();
             // 
-            // sdsTextBox1
+            // lblCodeRoute
             // 
-            this.sdsTextBox1.ColumnName = "CodeRoute";
-            this.sdsTextBox1.Location = new System.Drawing.Point(116, 166);
-            this.sdsTextBox1.Name = "sdsTextBox1";
-            this.sdsTextBox1.Nom = null;
-            this.sdsTextBox1.NomBBDD = "SecureCore";
-            this.sdsTextBox1.Requerit = false;
-            this.sdsTextBox1.SiEsForana = false;
-            this.sdsTextBox1.Size = new System.Drawing.Size(100, 20);
-            this.sdsTextBox1.TabIndex = 9;
-            this.sdsTextBox1.KeyUp += new System.Windows.Forms.KeyEventHandler(this.sdsTextBox1_KeyUp);
+            this.lblCodeRoute.AutoSize = true;
+            this.lblCodeRoute.Location = new System.Drawing.Point(114, 146);
+            this.lblCodeRoute.Name = "lblCodeRoute";
+            this.lblCodeRoute.Size = new System.Drawing.Size(67, 13);
+            this.lblCodeRoute.TabIndex = 24;
+            this.lblCodeRoute.Text = "Code Route:";
+            // 
+            // lblDescRoute
+            // 
+            this.lblDescRoute.AutoSize = true;
+            this.lblDescRoute.Location = new System.Drawing.Point(114, 191);
+            this.lblDescRoute.Name = "lblDescRoute";
+            this.lblDescRoute.Size = new System.Drawing.Size(67, 13);
+            this.lblDescRoute.TabIndex = 25;
+            this.lblDescRoute.Text = "Desc Route:";
+            // 
+            // sdsTextBoxCodeRoute
+            // 
+            this.sdsTextBoxCodeRoute.CodeSector = null;
+            this.sdsTextBoxCodeRoute.ColumnName = "CodeRoute";
+            this.sdsTextBoxCodeRoute.DescCodi = null;
+            this.sdsTextBoxCodeRoute.Location = new System.Drawing.Point(207, 143);
+            this.sdsTextBoxCodeRoute.Name = "sdsTextBoxCodeRoute";
+            this.sdsTextBoxCodeRoute.Nom = null;
+            this.sdsTextBoxCodeRoute.NomBBDD = "SecureCore";
+            this.sdsTextBoxCodeRoute.NomCamp = null;
+            this.sdsTextBoxCodeRoute.NomControl = null;
+            this.sdsTextBoxCodeRoute.NomTaula = "Routes";
+            this.sdsTextBoxCodeRoute.Requerit = false;
+            this.sdsTextBoxCodeRoute.SiEsForana = false;
+            this.sdsTextBoxCodeRoute.Size = new System.Drawing.Size(100, 20);
+            this.sdsTextBoxCodeRoute.TabIndex = 26;
+            // 
+            // sdsTextBoxDescRoute
+            // 
+            this.sdsTextBoxDescRoute.CodeSector = null;
+            this.sdsTextBoxDescRoute.ColumnName = "DescRoute";
+            this.sdsTextBoxDescRoute.DescCodi = null;
+            this.sdsTextBoxDescRoute.Location = new System.Drawing.Point(207, 188);
+            this.sdsTextBoxDescRoute.Name = "sdsTextBoxDescRoute";
+            this.sdsTextBoxDescRoute.Nom = null;
+            this.sdsTextBoxDescRoute.NomBBDD = "SecureCore";
+            this.sdsTextBoxDescRoute.NomCamp = null;
+            this.sdsTextBoxDescRoute.NomControl = null;
+            this.sdsTextBoxDescRoute.NomTaula = "Routes";
+            this.sdsTextBoxDescRoute.Requerit = false;
+            this.sdsTextBoxDescRoute.SiEsForana = false;
+            this.sdsTextBoxDescRoute.Size = new System.Drawing.Size(100, 20);
+            this.sdsTextBoxDescRoute.TabIndex = 27;
+            // 
+            // sdsTextBoxRouteTypes
+            // 
+            this.sdsTextBoxRouteTypes.CodeSector = null;
+            this.sdsTextBoxRouteTypes.ColumnName = "idRouteType";
+            this.sdsTextBoxRouteTypes.DescCodi = null;
+            this.sdsTextBoxRouteTypes.Location = new System.Drawing.Point(344, 197);
+            this.sdsTextBoxRouteTypes.Name = "sdsTextBoxRouteTypes";
+            this.sdsTextBoxRouteTypes.Nom = null;
+            this.sdsTextBoxRouteTypes.NomBBDD = null;
+            this.sdsTextBoxRouteTypes.NomCamp = "idRouteType";
+            this.sdsTextBoxRouteTypes.NomControl = "sdsForaneaRouteTypes";
+            this.sdsTextBoxRouteTypes.NomTaula = "Routes";
+            this.sdsTextBoxRouteTypes.Requerit = false;
+            this.sdsTextBoxRouteTypes.SiEsForana = true;
+            this.sdsTextBoxRouteTypes.Size = new System.Drawing.Size(20, 20);
+            this.sdsTextBoxRouteTypes.TabIndex = 28;
+            // 
+            // sdsForaneaRouteTypes
+            // 
+            this.sdsForaneaRouteTypes.Control_Id = "txtidRoute";
+            this.sdsForaneaRouteTypes.DescCodi = "DescRouteType";
+            this.sdsForaneaRouteTypes.ErrorText = null;
+            this.sdsForaneaRouteTypes.Location = new System.Drawing.Point(0, 246);
+            this.sdsForaneaRouteTypes.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.sdsForaneaRouteTypes.Name = "sdsForaneaRouteTypes";
+            this.sdsForaneaRouteTypes.NomCamp = "CodeRouteType";
+            this.sdsForaneaRouteTypes.NomControl = "txtIDRoute";
+            this.sdsForaneaRouteTypes.NomID = "idRouteType";
+            this.sdsForaneaRouteTypes.NomTaula = "RouteTypes";
+            this.sdsForaneaRouteTypes.Requerit = false;
+            this.sdsForaneaRouteTypes.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaRouteTypes.TabIndex = 29;
+            this.sdsForaneaRouteTypes.TextLabel = "Tipus de Ruta";
             // 
             // Routes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(800, 450);
-            this.Controls.Add(this.sdsTextBox1);
+            this.Controls.Add(this.sdsForaneaRouteTypes);
+            this.Controls.Add(this.sdsTextBoxRouteTypes);
+            this.Controls.Add(this.sdsTextBoxDescRoute);
+            this.Controls.Add(this.sdsTextBoxCodeRoute);
+            this.Controls.Add(this.lblDescRoute);
+            this.Controls.Add(this.lblCodeRoute);
             this.Name = "Routes";
             this.Text = "Routes";
             this.Load += new System.EventHandler(this.Routes_Load);
-            this.Controls.SetChildIndex(this.sdsTextBox1, 0);
+            this.Controls.SetChildIndex(this.lblCodeRoute, 0);
+            this.Controls.SetChildIndex(this.lblDescRoute, 0);
+            this.Controls.SetChildIndex(this.sdsTextBoxCodeRoute, 0);
+            this.Controls.SetChildIndex(this.sdsTextBoxDescRoute, 0);
+            this.Controls.SetChildIndex(this.sdsTextBoxRouteTypes, 0);
+            this.Controls.SetChildIndex(this.sdsForaneaRouteTypes, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -61,6 +149,11 @@
 
         #endregion
 
-        private MantenimientoTest.SdsTextBox sdsTextBox1;
+        private System.Windows.Forms.Label lblCodeRoute;
+        private System.Windows.Forms.Label lblDescRoute;
+        private MantenimientoTest.SdsTextBox sdsTextBoxCodeRoute;
+        private MantenimientoTest.SdsTextBox sdsTextBoxDescRoute;
+        private MantenimientoTest.SdsTextBox sdsTextBoxRouteTypes;
+        private MantenimientoForanea.sdsForanea sdsForaneaRouteTypes;
     }
 }
