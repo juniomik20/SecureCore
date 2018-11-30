@@ -34,6 +34,7 @@ namespace PantallaCerca
         public void RellenarGrid(DataSet dts)
         {
             dGVCerca.DataSource = dts.Tables[0];
+            dGVCerca.Columns[0].Visible = false;
         }
         public void Bindings()
         {

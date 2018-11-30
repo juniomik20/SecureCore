@@ -35,37 +35,42 @@
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(59, 17);
+            this.txtCode.Location = new System.Drawing.Point(44, 14);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtCode.Name = "txtCode";
-            this.txtCode.Size = new System.Drawing.Size(137, 22);
+            this.txtCode.Size = new System.Drawing.Size(104, 20);
             this.txtCode.TabIndex = 1;
+            this.txtCode.KeyUp += new System.Windows.Forms.KeyEventHandler(this.txtCode_KeyUp);
             this.txtCode.Validating += new System.ComponentModel.CancelEventHandler(this.txtCode_Validating);
             // 
             // txtShow
             // 
-            this.txtShow.Location = new System.Drawing.Point(202, 17);
+            this.txtShow.Location = new System.Drawing.Point(152, 14);
+            this.txtShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.txtShow.Name = "txtShow";
-            this.txtShow.Size = new System.Drawing.Size(297, 22);
+            this.txtShow.Size = new System.Drawing.Size(224, 20);
             this.txtShow.TabIndex = 2;
             // 
             // label1
             // 
             this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(7, 20);
+            this.label1.Location = new System.Drawing.Point(5, 16);
+            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
             this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(46, 17);
+            this.label1.Size = new System.Drawing.Size(35, 13);
             this.label1.TabIndex = 3;
             this.label1.Text = "label1";
             // 
             // sdsForanea
             // 
-            this.AutoScaleDimensions = new System.Drawing.SizeF(8F, 16F);
+            this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.Controls.Add(this.label1);
             this.Controls.Add(this.txtShow);
             this.Controls.Add(this.txtCode);
+            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
             this.Name = "sdsForanea";
-            this.Size = new System.Drawing.Size(521, 56);
+            this.Size = new System.Drawing.Size(391, 46);
             this.ResumeLayout(false);
             this.PerformLayout();
 
