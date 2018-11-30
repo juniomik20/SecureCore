@@ -132,5 +132,6 @@ namespace MantenimientoTest
             this.IconUser = ConfigurationManager.AppSettings["Icon"].ToString();
         }
 
+
     }
 }

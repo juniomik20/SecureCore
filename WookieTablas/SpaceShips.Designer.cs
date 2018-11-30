@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(881, 452);
             this.Name = "SpaceShips";
             this.Text = "SpaceShips";
             this.Load += new System.EventHandler(this.SpaceShips_Load);
