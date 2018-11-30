@@ -9,6 +9,7 @@ using System.Threading.Tasks;
 using System.Windows.Forms;
 using ConnectionClass;
 using System.Configuration;
+using System.Reflection;
 
 namespace MantenimientoForanea
 {
@@ -161,6 +162,20 @@ namespace MantenimientoForanea
                         c.Text = ID;
                     }
                 }
+            }
+        }
+
+        private void txtCode_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.F2)
+            {
+                Assembly ensamblat = Assembly.LoadFrom("PantallaCerca.dll");
+                Object dllBD;
+                Type tipus;
+                tipus = ensamblat.GetType("PantallaCerca.Cerca");
+                dllBD = Activator.CreateInstance(tipus);
+
+                ((Form)dllBD).Show();
             }
         }
     }

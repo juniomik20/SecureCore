@@ -27,15 +27,5 @@ namespace WookieTablas
             ButtonAtras.Visible = true;
             TittleScreen.Text = "Routes";
         }
-
-        private void sdsTextBox1_KeyUp(object sender, KeyEventArgs e)
-        {
-            if (e.KeyCode == Keys.F2)
-            {
-                PantallaCerca.Cerca frmCerca = new PantallaCerca.Cerca();
-                frmCerca.query = "Select * from DefinedRoutes";
-                frmCerca.Show();
-            }
-        }
     }
 }
