@@ -22,6 +22,7 @@ namespace PantallaCerca
         DataSet dts;
         //Instanciamos la ConnectionClass
         ConnectionClass.ClassBDD BDD = new ConnectionClass.ClassBDD();
+        SdsTextBox sds = new SdsTextBox();
         //Hacemos la consulta
         public string query = "select * from Sectors";
         #endregion
@@ -57,6 +58,7 @@ namespace PantallaCerca
         {
             try
             {
+                query = "select * from " + sds.NomTaula;
                 MessageBox.Show(dGVCerca.SelectedCells[0].Value.ToString());
             }
             catch
