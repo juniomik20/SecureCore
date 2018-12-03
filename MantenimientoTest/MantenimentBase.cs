@@ -93,16 +93,27 @@ namespace MantenimientoBase
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
-            if (!bEsNou)
+            try
             {
-                CDB.Actualitzar(dts, query);
+                if (!bEsNou)
+                {
+                    CDB.Actualitzar(dts, query);
+                }
+                else
+                {
+                    AñadirFila();
+                    CDB.Actualitzar(dts, query);
+                    BindDades();
+                }
+                bEsNou = false;
             }
-            else
+            catch (DBConcurrencyException)
             {
-                AñadirFila();
-                CDB.Actualitzar(dts, query);
+                bEsNou = false;
                 BindDades();
             }
+
+
         }
 
         private void BtnInsert_Click(object sender, EventArgs e)
