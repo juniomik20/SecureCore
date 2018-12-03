@@ -42,15 +42,15 @@
             this.dgvMant_table.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
             this.dgvMant_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMant_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMant_table.Location = new System.Drawing.Point(350, 136);
+            this.dgvMant_table.Location = new System.Drawing.Point(502, 137);
             this.dgvMant_table.Name = "dgvMant_table";
-            this.dgvMant_table.Size = new System.Drawing.Size(457, 329);
+            this.dgvMant_table.Size = new System.Drawing.Size(457, 385);
             this.dgvMant_table.TabIndex = 0;
             // 
             // btnInsert
             // 
             this.btnInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnInsert.Location = new System.Drawing.Point(58, 442);
+            this.btnInsert.Location = new System.Drawing.Point(58, 498);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(72, 24);
             this.btnInsert.TabIndex = 7;
@@ -60,7 +60,7 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(156, 442);
+            this.btnUpdate.Location = new System.Drawing.Point(157, 498);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 8;
@@ -72,7 +72,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 508);
+            this.ClientSize = new System.Drawing.Size(959, 564);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.dgvMant_table);
