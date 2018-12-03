@@ -38,29 +38,29 @@
             this.ButtonEntrar = new System.Windows.Forms.Button();
             this.ErrorLabel = new System.Windows.Forms.Label();
             this.buttonExit = new System.Windows.Forms.Button();
-            this.timer1 = new System.Windows.Forms.Timer(this.components);
-            this.GifEasterEgg = new System.Windows.Forms.PictureBox();
-            this.pictureBox1 = new System.Windows.Forms.PictureBox();
-            this.pictureBox2 = new System.Windows.Forms.PictureBox();
-            this.pictureBox3 = new System.Windows.Forms.PictureBox();
-            this.pictureBox4 = new System.Windows.Forms.PictureBox();
-            this.pictureBox5 = new System.Windows.Forms.PictureBox();
-            this.pictureBox6 = new System.Windows.Forms.PictureBox();
-            this.pictureBox7 = new System.Windows.Forms.PictureBox();
+            this.Timer = new System.Windows.Forms.Timer(this.components);
+            this.EasterEgg1 = new System.Windows.Forms.PictureBox();
+            this.EasterEgg2 = new System.Windows.Forms.PictureBox();
+            this.EasterEgg3 = new System.Windows.Forms.PictureBox();
+            this.EasterEgg4 = new System.Windows.Forms.PictureBox();
+            this.EasterEgg5 = new System.Windows.Forms.PictureBox();
+            this.EasterEgg6 = new System.Windows.Forms.PictureBox();
+            this.EasterEgg7 = new System.Windows.Forms.PictureBox();
+            this.EasterEgg8 = new System.Windows.Forms.PictureBox();
             this.BarraBottom = new System.Windows.Forms.Panel();
             this.BarraRigth = new System.Windows.Forms.Panel();
             this.BarraTop = new System.Windows.Forms.Panel();
             this.BarraLeft = new System.Windows.Forms.Panel();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.Marco = new System.Windows.Forms.Panel();
             ((System.ComponentModel.ISupportInitialize)(this.IconStarWars)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GifEasterEgg)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg1)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg2)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg3)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg4)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg5)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg6)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg7)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg8)).BeginInit();
             this.BarraRigth.SuspendLayout();
             this.SuspendLayout();
             // 
@@ -127,74 +127,74 @@
             this.buttonExit.UseVisualStyleBackColor = false;
             this.buttonExit.Click += new System.EventHandler(this.ButtonExit_Click);
             // 
-            // timer1
+            // Timer
             // 
-            this.timer1.Interval = 1000;
-            this.timer1.Tick += new System.EventHandler(this.Timer1_Tick);
+            this.Timer.Interval = 1000;
+            this.Timer.Tick += new System.EventHandler(this.Timer1_Tick);
             // 
-            // GifEasterEgg
+            // EasterEgg1
             // 
-            resources.ApplyResources(this.GifEasterEgg, "GifEasterEgg");
-            this.GifEasterEgg.BackColor = System.Drawing.Color.Transparent;
-            this.GifEasterEgg.Name = "GifEasterEgg";
-            this.GifEasterEgg.TabStop = false;
-            this.GifEasterEgg.Click += new System.EventHandler(this.GifEasterEgg_Click);
+            resources.ApplyResources(this.EasterEgg1, "EasterEgg1");
+            this.EasterEgg1.BackColor = System.Drawing.Color.Transparent;
+            this.EasterEgg1.Name = "EasterEgg1";
+            this.EasterEgg1.TabStop = false;
+            this.EasterEgg1.Click += new System.EventHandler(this.GifEasterEgg_Click);
             // 
-            // pictureBox1
+            // EasterEgg2
             // 
-            resources.ApplyResources(this.pictureBox1, "pictureBox1");
-            this.pictureBox1.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox1.Name = "pictureBox1";
-            this.pictureBox1.TabStop = false;
-            this.pictureBox1.Click += new System.EventHandler(this.GifEasterEgg_Click);
+            resources.ApplyResources(this.EasterEgg2, "EasterEgg2");
+            this.EasterEgg2.BackColor = System.Drawing.Color.Transparent;
+            this.EasterEgg2.Name = "EasterEgg2";
+            this.EasterEgg2.TabStop = false;
+            this.EasterEgg2.Click += new System.EventHandler(this.GifEasterEgg_Click);
             // 
-            // pictureBox2
+            // EasterEgg3
             // 
-            resources.ApplyResources(this.pictureBox2, "pictureBox2");
-            this.pictureBox2.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox2.Name = "pictureBox2";
-            this.pictureBox2.TabStop = false;
-            this.pictureBox2.Click += new System.EventHandler(this.GifEasterEgg_Click);
+            resources.ApplyResources(this.EasterEgg3, "EasterEgg3");
+            this.EasterEgg3.BackColor = System.Drawing.Color.Transparent;
+            this.EasterEgg3.Name = "EasterEgg3";
+            this.EasterEgg3.TabStop = false;
+            this.EasterEgg3.Click += new System.EventHandler(this.GifEasterEgg_Click);
             // 
-            // pictureBox3
+            // EasterEgg4
             // 
-            resources.ApplyResources(this.pictureBox3, "pictureBox3");
-            this.pictureBox3.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox3.Name = "pictureBox3";
-            this.pictureBox3.TabStop = false;
-            this.pictureBox3.Click += new System.EventHandler(this.GifEasterEgg_Click);
+            resources.ApplyResources(this.EasterEgg4, "EasterEgg4");
+            this.EasterEgg4.BackColor = System.Drawing.Color.Transparent;
+            this.EasterEgg4.Name = "EasterEgg4";
+            this.EasterEgg4.TabStop = false;
+            this.EasterEgg4.Click += new System.EventHandler(this.GifEasterEgg_Click);
             // 
-            // pictureBox4
+            // EasterEgg5
             // 
-            resources.ApplyResources(this.pictureBox4, "pictureBox4");
-            this.pictureBox4.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox4.Name = "pictureBox4";
-            this.pictureBox4.TabStop = false;
-            this.pictureBox4.Click += new System.EventHandler(this.GifEasterEgg_Click);
+            resources.ApplyResources(this.EasterEgg5, "EasterEgg5");
+            this.EasterEgg5.BackColor = System.Drawing.Color.Transparent;
+            this.EasterEgg5.Name = "EasterEgg5";
+            this.EasterEgg5.TabStop = false;
+            this.EasterEgg5.Click += new System.EventHandler(this.GifEasterEgg_Click);
             // 
-            // pictureBox5
+            // EasterEgg6
             // 
-            resources.ApplyResources(this.pictureBox5, "pictureBox5");
-            this.pictureBox5.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox5.Name = "pictureBox5";
-            this.pictureBox5.TabStop = false;
-            this.pictureBox5.Click += new System.EventHandler(this.GifEasterEgg_Click);
+            resources.ApplyResources(this.EasterEgg6, "EasterEgg6");
+            this.EasterEgg6.BackColor = System.Drawing.Color.Transparent;
+            this.EasterEgg6.Name = "EasterEgg6";
+            this.EasterEgg6.TabStop = false;
+            this.EasterEgg6.Click += new System.EventHandler(this.GifEasterEgg_Click);
             // 
-            // pictureBox6
+            // EasterEgg7
             // 
-            resources.ApplyResources(this.pictureBox6, "pictureBox6");
-            this.pictureBox6.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox6.Name = "pictureBox6";
-            this.pictureBox6.TabStop = false;
-            this.pictureBox6.Click += new System.EventHandler(this.GifEasterEgg_Click);
+            resources.ApplyResources(this.EasterEgg7, "EasterEgg7");
+            this.EasterEgg7.BackColor = System.Drawing.Color.Transparent;
+            this.EasterEgg7.Name = "EasterEgg7";
+            this.EasterEgg7.TabStop = false;
+            this.EasterEgg7.Click += new System.EventHandler(this.GifEasterEgg_Click);
             // 
-            // pictureBox7
+            // EasterEgg8
             // 
-            resources.ApplyResources(this.pictureBox7, "pictureBox7");
-            this.pictureBox7.BackColor = System.Drawing.Color.Transparent;
-            this.pictureBox7.Name = "pictureBox7";
-            this.pictureBox7.TabStop = false;
-            this.pictureBox7.Click += new System.EventHandler(this.GifEasterEgg_Click);
+            resources.ApplyResources(this.EasterEgg8, "EasterEgg8");
+            this.EasterEgg8.BackColor = System.Drawing.Color.Transparent;
+            this.EasterEgg8.Name = "EasterEgg8";
+            this.EasterEgg8.TabStop = false;
+            this.EasterEgg8.Click += new System.EventHandler(this.GifEasterEgg_Click);
             // 
             // BarraBottom
             // 
@@ -221,30 +221,30 @@
             resources.ApplyResources(this.BarraLeft, "BarraLeft");
             this.BarraLeft.Name = "BarraLeft";
             // 
-            // panel1
+            // Marco
             // 
-            this.panel1.BackColor = System.Drawing.Color.OrangeRed;
-            resources.ApplyResources(this.panel1, "panel1");
-            this.panel1.Name = "panel1";
+            this.Marco.BackColor = System.Drawing.Color.OrangeRed;
+            resources.ApplyResources(this.Marco, "Marco");
+            this.Marco.Name = "Marco";
             // 
             // LogonMainScreen
             // 
             resources.ApplyResources(this, "$this");
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Dpi;
-            this.Controls.Add(this.pictureBox3);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.EasterEgg4);
+            this.Controls.Add(this.Marco);
             this.Controls.Add(this.BarraLeft);
             this.Controls.Add(this.ErrorLabel);
             this.Controls.Add(this.BarraRigth);
-            this.Controls.Add(this.pictureBox7);
-            this.Controls.Add(this.pictureBox5);
+            this.Controls.Add(this.EasterEgg8);
+            this.Controls.Add(this.EasterEgg6);
             this.Controls.Add(this.IconStarWars);
             this.Controls.Add(this.BarraBottom);
-            this.Controls.Add(this.pictureBox6);
-            this.Controls.Add(this.pictureBox4);
-            this.Controls.Add(this.pictureBox2);
-            this.Controls.Add(this.pictureBox1);
-            this.Controls.Add(this.GifEasterEgg);
+            this.Controls.Add(this.EasterEgg7);
+            this.Controls.Add(this.EasterEgg5);
+            this.Controls.Add(this.EasterEgg3);
+            this.Controls.Add(this.EasterEgg2);
+            this.Controls.Add(this.EasterEgg1);
             this.Controls.Add(this.buttonExit);
             this.Controls.Add(this.ButtonEntrar);
             this.Controls.Add(this.PasswordTitle);
@@ -256,14 +256,14 @@
             this.Name = "LogonMainScreen";
             this.Load += new System.EventHandler(this.LogonMainScreen_Load);
             ((System.ComponentModel.ISupportInitialize)(this.IconStarWars)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.GifEasterEgg)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox1)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox2)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox3)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox4)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox5)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox6)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.pictureBox7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg1)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg2)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg3)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg4)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg5)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg6)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg7)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.EasterEgg8)).EndInit();
             this.BarraRigth.ResumeLayout(false);
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -280,20 +280,20 @@
         private System.Windows.Forms.Button ButtonEntrar;
         private System.Windows.Forms.Label ErrorLabel;
         private System.Windows.Forms.Button buttonExit;
-        private System.Windows.Forms.Timer timer1;
-        private System.Windows.Forms.PictureBox GifEasterEgg;
-        private System.Windows.Forms.PictureBox pictureBox1;
-        private System.Windows.Forms.PictureBox pictureBox2;
-        private System.Windows.Forms.PictureBox pictureBox3;
-        private System.Windows.Forms.PictureBox pictureBox4;
-        private System.Windows.Forms.PictureBox pictureBox5;
-        private System.Windows.Forms.PictureBox pictureBox6;
-        private System.Windows.Forms.PictureBox pictureBox7;
+        private System.Windows.Forms.Timer Timer;
+        private System.Windows.Forms.PictureBox EasterEgg1;
+        private System.Windows.Forms.PictureBox EasterEgg2;
+        private System.Windows.Forms.PictureBox EasterEgg3;
+        private System.Windows.Forms.PictureBox EasterEgg4;
+        private System.Windows.Forms.PictureBox EasterEgg5;
+        private System.Windows.Forms.PictureBox EasterEgg6;
+        private System.Windows.Forms.PictureBox EasterEgg7;
+        private System.Windows.Forms.PictureBox EasterEgg8;
         private System.Windows.Forms.Panel BarraBottom;
         private System.Windows.Forms.Panel BarraRigth;
         private System.Windows.Forms.Panel BarraTop;
         private System.Windows.Forms.Panel BarraLeft;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel Marco;
     }
 }
 

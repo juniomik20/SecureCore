@@ -30,11 +30,15 @@
         {
             this.SuspendLayout();
             // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(47, 452);
+            // 
             // DefinedRoutes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(800, 488);
             this.Name = "DefinedRoutes";
             this.Text = "DefinedRoutes";
             this.Load += new System.EventHandler(this.DefinedRoutes_Load);

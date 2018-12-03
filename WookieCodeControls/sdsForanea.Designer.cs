@@ -30,13 +30,13 @@
         {
             this.txtCode = new System.Windows.Forms.TextBox();
             this.txtShow = new System.Windows.Forms.TextBox();
-            this.label1 = new System.Windows.Forms.Label();
+            this.LabelCode = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCode
             // 
             this.txtCode.Location = new System.Drawing.Point(44, 14);
-            this.txtCode.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtCode.Margin = new System.Windows.Forms.Padding(2);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(104, 20);
             this.txtCode.TabIndex = 1;
@@ -46,29 +46,29 @@
             // txtShow
             // 
             this.txtShow.Location = new System.Drawing.Point(152, 14);
-            this.txtShow.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.txtShow.Margin = new System.Windows.Forms.Padding(2);
             this.txtShow.Name = "txtShow";
             this.txtShow.Size = new System.Drawing.Size(224, 20);
             this.txtShow.TabIndex = 2;
             // 
-            // label1
+            // LabelCode
             // 
-            this.label1.AutoSize = true;
-            this.label1.Location = new System.Drawing.Point(5, 16);
-            this.label1.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(35, 13);
-            this.label1.TabIndex = 3;
-            this.label1.Text = "label1";
+            this.LabelCode.AutoSize = true;
+            this.LabelCode.Location = new System.Drawing.Point(5, 16);
+            this.LabelCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
+            this.LabelCode.Name = "LabelCode";
+            this.LabelCode.Size = new System.Drawing.Size(35, 13);
+            this.LabelCode.TabIndex = 3;
+            this.LabelCode.Text = "label1";
             // 
             // sdsForanea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.label1);
+            this.Controls.Add(this.LabelCode);
             this.Controls.Add(this.txtShow);
             this.Controls.Add(this.txtCode);
-            this.Margin = new System.Windows.Forms.Padding(2, 2, 2, 2);
+            this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "sdsForanea";
             this.Size = new System.Drawing.Size(391, 46);
             this.ResumeLayout(false);
@@ -80,6 +80,6 @@
 
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.TextBox txtShow;
-        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label LabelCode;
     }
 }

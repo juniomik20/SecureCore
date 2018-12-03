@@ -32,14 +32,14 @@
             this.PanelTableTitle = new System.Windows.Forms.TableLayoutPanel();
             this.TittleScreen = new System.Windows.Forms.Label();
             this.UsernameTitle = new System.Windows.Forms.Label();
-            this.UserIconTitle = new System.Windows.Forms.PictureBox();
-            this.ExitButtonTitle = new System.Windows.Forms.PictureBox();
             this.ButtonAtras = new System.Windows.Forms.PictureBox();
-            this.panel1 = new System.Windows.Forms.Panel();
+            this.ExitButtonTitle = new System.Windows.Forms.PictureBox();
+            this.UserIconTitle = new System.Windows.Forms.PictureBox();
+            this.SeparadorPanel = new System.Windows.Forms.Panel();
             this.PanelTableTitle.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UserIconTitle)).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExitButtonTitle)).BeginInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonAtras)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitButtonTitle)).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserIconTitle)).BeginInit();
             this.SuspendLayout();
             // 
             // PanelTableTitle
@@ -94,14 +94,17 @@
             this.UsernameTitle.Text = "UserName";
             this.UsernameTitle.TextAlign = System.Drawing.ContentAlignment.MiddleRight;
             // 
-            // UserIconTitle
+            // ButtonAtras
             // 
-            this.UserIconTitle.Location = new System.Drawing.Point(736, 18);
-            this.UserIconTitle.Name = "UserIconTitle";
-            this.UserIconTitle.Size = new System.Drawing.Size(138, 64);
-            this.UserIconTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.UserIconTitle.TabIndex = 1;
-            this.UserIconTitle.TabStop = false;
+            this.ButtonAtras.Image = ((System.Drawing.Image)(resources.GetObject("ButtonAtras.Image")));
+            this.ButtonAtras.Location = new System.Drawing.Point(13, 18);
+            this.ButtonAtras.Name = "ButtonAtras";
+            this.ButtonAtras.Size = new System.Drawing.Size(82, 64);
+            this.ButtonAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.ButtonAtras.TabIndex = 4;
+            this.ButtonAtras.TabStop = false;
+            this.ButtonAtras.Visible = false;
+            this.ButtonAtras.Click += new System.EventHandler(this.BotonAtras_Click);
             // 
             // ExitButtonTitle
             // 
@@ -116,26 +119,23 @@
             this.ExitButtonTitle.TabStop = false;
             this.ExitButtonTitle.Click += new System.EventHandler(this.ExitButtonTitle_Click);
             // 
-            // ButtonAtras
+            // UserIconTitle
             // 
-            this.ButtonAtras.Image = ((System.Drawing.Image)(resources.GetObject("ButtonAtras.Image")));
-            this.ButtonAtras.Location = new System.Drawing.Point(13, 18);
-            this.ButtonAtras.Name = "ButtonAtras";
-            this.ButtonAtras.Size = new System.Drawing.Size(82, 64);
-            this.ButtonAtras.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
-            this.ButtonAtras.TabIndex = 4;
-            this.ButtonAtras.TabStop = false;
-            this.ButtonAtras.Visible = false;
-            this.ButtonAtras.Click += new System.EventHandler(this.BotonAtras_Click);
+            this.UserIconTitle.Location = new System.Drawing.Point(736, 18);
+            this.UserIconTitle.Name = "UserIconTitle";
+            this.UserIconTitle.Size = new System.Drawing.Size(138, 64);
+            this.UserIconTitle.SizeMode = System.Windows.Forms.PictureBoxSizeMode.StretchImage;
+            this.UserIconTitle.TabIndex = 1;
+            this.UserIconTitle.TabStop = false;
             // 
-            // panel1
+            // SeparadorPanel
             // 
-            this.panel1.BackColor = System.Drawing.Color.Black;
-            this.panel1.Dock = System.Windows.Forms.DockStyle.Top;
-            this.panel1.Location = new System.Drawing.Point(0, 95);
-            this.panel1.Name = "panel1";
-            this.panel1.Size = new System.Drawing.Size(950, 4);
-            this.panel1.TabIndex = 23;
+            this.SeparadorPanel.BackColor = System.Drawing.Color.Black;
+            this.SeparadorPanel.Dock = System.Windows.Forms.DockStyle.Top;
+            this.SeparadorPanel.Location = new System.Drawing.Point(0, 95);
+            this.SeparadorPanel.Name = "SeparadorPanel";
+            this.SeparadorPanel.Size = new System.Drawing.Size(950, 4);
+            this.SeparadorPanel.TabIndex = 23;
             // 
             // PlantillaForm
             // 
@@ -144,7 +144,7 @@
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.BackgroundImageLayout = System.Windows.Forms.ImageLayout.Stretch;
             this.ClientSize = new System.Drawing.Size(950, 561);
-            this.Controls.Add(this.panel1);
+            this.Controls.Add(this.SeparadorPanel);
             this.Controls.Add(this.PanelTableTitle);
             this.DoubleBuffered = true;
             this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.None;
@@ -154,9 +154,9 @@
             this.WindowState = System.Windows.Forms.FormWindowState.Maximized;
             this.PanelTableTitle.ResumeLayout(false);
             this.PanelTableTitle.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)(this.UserIconTitle)).EndInit();
-            ((System.ComponentModel.ISupportInitialize)(this.ExitButtonTitle)).EndInit();
             ((System.ComponentModel.ISupportInitialize)(this.ButtonAtras)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.ExitButtonTitle)).EndInit();
+            ((System.ComponentModel.ISupportInitialize)(this.UserIconTitle)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -170,7 +170,7 @@
         public System.Windows.Forms.Label UsernameTitle;
         public System.Windows.Forms.Label TittleScreen;
         public System.Windows.Forms.PictureBox ButtonAtras;
-        private System.Windows.Forms.Panel panel1;
+        private System.Windows.Forms.Panel SeparadorPanel;
     }
 }
 

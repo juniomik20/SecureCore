@@ -120,12 +120,6 @@ namespace MantenimientoBase
             Actualizar();
 
         }
-
-        private void PictureBox1_Click(object sender, EventArgs e)
-        {
-            this.Close();
-
-        }
         public void Actualizar() {
             ButtonAtras.Visible = true;
             TittleScreen.Text = " Mantenimiento de UserRanks";
