@@ -30,11 +30,15 @@
         {
             this.SuspendLayout();
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(149, 443);
+            // 
             // Filiations
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(893, 499);
+            this.ClientSize = new System.Drawing.Size(943, 500);
             this.Name = "Filiations";
             this.Text = "Filiations";
             this.Load += new System.EventHandler(this.Filiations_Load);
