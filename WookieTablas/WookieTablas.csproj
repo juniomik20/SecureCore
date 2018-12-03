@@ -163,9 +163,9 @@
       <Project>{6c88d447-a287-411e-a2c8-026beeb90d4d}</Project>
       <Name>MantenimientoForanea</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MantenimientoTest\MantenimientoTest.csproj">
+    <ProjectReference Include="..\MantenimientoTest\MantenimientoBase.csproj">
       <Project>{8f7f1e3c-4358-43a0-8079-d72ac5c1d48e}</Project>
-      <Name>MantenimientoTest</Name>
+      <Name>MantenimientoBase</Name>
     </ProjectReference>
     <ProjectReference Include="..\PantallaCerca\PantallaCerca.csproj">
       <Project>{2f6b0d0c-6544-480b-a660-9b7f388a0c0d}</Project>

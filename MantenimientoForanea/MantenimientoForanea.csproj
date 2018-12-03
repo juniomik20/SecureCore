@@ -56,9 +56,9 @@
       <Project>{bbbee6f8-abb3-428e-9b39-574546f407b0}</Project>
       <Name>ConnectionClass</Name>
     </ProjectReference>
-    <ProjectReference Include="..\MantenimientoTest\MantenimientoTest.csproj">
+    <ProjectReference Include="..\MantenimientoTest\MantenimientoBase.csproj">
       <Project>{8f7f1e3c-4358-43a0-8079-d72ac5c1d48e}</Project>
-      <Name>MantenimientoTest</Name>
+      <Name>MantenimientoBase</Name>
     </ProjectReference>
     <ProjectReference Include="..\MenuSecureCore\MenuSecureCore.csproj">
       <Project>{6c7ddce8-1180-4749-b3db-299e91d9bbaf}</Project>

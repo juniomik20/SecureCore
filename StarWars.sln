@@ -15,7 +15,7 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "WookieCodeControls", "Wooki
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "AboutVideo", "AboutVideo\AboutVideo.csproj", "{DF4CB72D-CDA6-4582-A857-6197DE9292D7}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MantenimientoTest", "MantenimientoTest\MantenimientoTest.csproj", "{8F7F1E3C-4358-43A0-8079-D72AC5C1D48E}"
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MantenimientoBase", "MantenimientoTest\MantenimientoBase.csproj", "{8F7F1E3C-4358-43A0-8079-D72AC5C1D48E}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MantenimientoForanea", "MantenimientoForanea\MantenimientoForanea.csproj", "{6C88D447-A287-411E-A2C8-026BEEB90D4D}"
 EndProject
