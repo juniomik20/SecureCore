@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sdsTextBoxCodeSpecie = new MantenimientoBase.SdsTextBox();
-            this.sdsTextBoxDescSpecie = new MantenimientoBase.SdsTextBox();
+            this.sdsTextBoxCodeSpecie = new SdsTexBox.SdsTexBox();
+            this.sdsTextBoxDescSpecie = new SdsTexBox.SdsTexBox();
             this.lblDescSpecie = new System.Windows.Forms.Label();
             this.lblCodeSpecie = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -111,8 +111,8 @@
 
         #endregion
 
-        private MantenimientoBase.SdsTextBox sdsTextBoxCodeSpecie;
-        private MantenimientoBase.SdsTextBox sdsTextBoxDescSpecie;
+        private SdsTexBox.SdsTexBox sdsTextBoxCodeSpecie;
+        private SdsTexBox.SdsTexBox sdsTextBoxDescSpecie;
         private System.Windows.Forms.Label lblDescSpecie;
         private System.Windows.Forms.Label lblCodeSpecie;
     }

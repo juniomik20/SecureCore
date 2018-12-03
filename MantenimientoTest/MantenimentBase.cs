@@ -9,6 +9,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 using ConnectionClass;
+using SdsTexBox;
 
 namespace MantenimientoBase
 {
@@ -32,7 +33,7 @@ namespace MantenimientoBase
         private void Inicializaciones()
         {
             CDB = new ClassBDD();
-            SdsTextBox CSDStxtBox = new SdsTextBox();
+            SdsTexBox.SdsTexBox CSDStxtBox = new SdsTexBox.SdsTexBox();
             dts = CDB.PortaPerConsulta(query);
             RellenarDataGrid(dts);
             dgvMant_table.AllowUserToAddRows = false;
@@ -47,11 +48,11 @@ namespace MantenimientoBase
         {
             foreach (Control sdsControl in this.Controls)
             {
-                if (sdsControl is SdsTextBox)
+                if (sdsControl is SdsTexBox.SdsTexBox)
                 {
-                    ((SdsTextBox)sdsControl).DataBindings.Clear();
-                    ((SdsTextBox)sdsControl).DataBindings.Add("Text", dts.Tables[0], ((SdsTextBox)sdsControl).ColumnName.ToString());
-                    ((SdsTextBox)sdsControl).Validated += new EventHandler(Validar);
+                    ((SdsTexBox.SdsTexBox)sdsControl).DataBindings.Clear();
+                    ((SdsTexBox.SdsTexBox)sdsControl).DataBindings.Add("Text", dts.Tables[0], ((SdsTexBox.SdsTexBox)sdsControl).ColumnName.ToString());
+                    ((SdsTexBox.SdsTexBox)sdsControl).Validated += new EventHandler(Validar);
                 }
             }
         }
@@ -59,9 +60,9 @@ namespace MantenimientoBase
         {
             foreach (Control sdsControl in this.Controls)
             {
-                if (sdsControl is SdsTextBox)
+                if (sdsControl is SdsTexBox.SdsTexBox)
                 {
-                    ((SdsTextBox)sdsControl).DataBindings.Clear();
+                    ((SdsTexBox.SdsTexBox)sdsControl).DataBindings.Clear();
                     sdsControl.Text = "";             
                 }
             }
@@ -72,9 +73,9 @@ namespace MantenimientoBase
             DataRow dr = dts.Tables[0].NewRow();
             foreach (Control sdsControl in this.Controls)
             {
-                if (sdsControl is SdsTextBox)
+                if (sdsControl is SdsTexBox.SdsTexBox)
                 {
-                    nomCamp = ((SdsTextBox)sdsControl).ColumnName;
+                    nomCamp = ((SdsTexBox.SdsTexBox)sdsControl).ColumnName;
                     dr[nomCamp] = sdsControl.Text;
                     
                 }

@@ -172,7 +172,7 @@
       <Name>PlantillaPrincipalStarWars</Name>
     </ProjectReference>
     <ProjectReference Include="..\SdsTexBox\SdsTexBox.csproj">
-      <Project>{BF4D52FF-1166-4F33-9954-FECED8827E8F}</Project>
+      <Project>{bf4d52ff-1166-4f33-9954-feced8827e8f}</Project>
       <Name>SdsTexBox</Name>
     </ProjectReference>
     <ProjectReference Include="..\WookieCodeControls\WookieCodeControls.csproj">

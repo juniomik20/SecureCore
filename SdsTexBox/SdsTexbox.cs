@@ -1,25 +1,22 @@
 ﻿using System;
 using System.Collections.Generic;
+using System.Drawing;
 using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
-using System.Drawing;
-using static System.Net.Mime.MediaTypeNames;
-using System.Text.RegularExpressions;
-using ConnectionClass;
-using System.Data;
-using System.ComponentModel;
-using Application = System.Windows.Forms.Application;
 
-namespace MantenimientoBase
+namespace SdsTexBox
 {
-   public class SdsTextBox : TextBox
-    {
-        public SdsTextBox()
+    public class SdsTexBox : TextBox
+        {
+
+        public SdsTexBox()
         {
             InitializeComponent();
         }
+
+
         //barris menjavergas
         string _Nom;
         public string Nom
@@ -112,9 +109,9 @@ namespace MantenimientoBase
         }
         /////////////////////////METODES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
 
-        
-                //MessageBox.Show("Mail correcte");
-        
+
+        //MessageBox.Show("Mail correcte");
+
         private void TxtCode_Validated(object sender, EventArgs e)
         {
             //ValidaDades();

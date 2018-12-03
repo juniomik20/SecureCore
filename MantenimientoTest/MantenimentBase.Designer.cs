@@ -31,7 +31,6 @@
             this.dgvMant_table = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.sdsTextBox0 = new MantenimientoBase.SdsTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMant_table)).BeginInit();
             this.SuspendLayout();
             // 
@@ -69,23 +68,7 @@
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
-            // 
-            // sdsTextBox0
-            // 
-            this.sdsTextBox0.CodeSector = null;
-            this.sdsTextBox0.ColumnName = null;
-            this.sdsTextBox0.DescCodi = null;
-            this.sdsTextBox0.Location = new System.Drawing.Point(154, 163);
-            this.sdsTextBox0.Name = "sdsTextBox0";
-            this.sdsTextBox0.Nom = null;
-            this.sdsTextBox0.NomBBDD = null;
-            this.sdsTextBox0.NomCamp = null;
-            this.sdsTextBox0.NomControl = null;
-            this.sdsTextBox0.NomTaula = null;
-            this.sdsTextBox0.Requerit = false;
-            this.sdsTextBox0.SiEsForana = false;
-            this.sdsTextBox0.Size = new System.Drawing.Size(100, 20);
-            this.sdsTextBox0.TabIndex = 11;
+
             // 
             // MantenimentBase
             // 
@@ -111,11 +94,9 @@
         #endregion
 
         private System.Windows.Forms.DataGridView dgvMant_table;
-        private SdsTextBox txtBoxCodeType;
-        private SdsTextBox txtBoxDescType;
+
         private System.Windows.Forms.Button btnInsert;
         private System.Windows.Forms.Button btnUpdate;
-        private SdsTextBox sdsTextBox0;
     }
 }
 
