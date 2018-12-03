@@ -32,7 +32,11 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(190, 460);
+            this.btnUpdate.Location = new System.Drawing.Point(155, 460);
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(68, 460);
             // 
             // LogUsers
             // 
