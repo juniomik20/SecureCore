@@ -34,7 +34,7 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(869, 450);
+            this.ClientSize = new System.Drawing.Size(911, 547);
             this.Name = "UserRanks";
             this.Text = "UserRanks";
             this.Load += new System.EventHandler(this.UserRanks_Load);

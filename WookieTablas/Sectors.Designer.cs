@@ -34,11 +34,12 @@
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(865, 546);
             this.Name = "Sectors";
             this.Text = "Sectors";
             this.Load += new System.EventHandler(this.Sectors_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 

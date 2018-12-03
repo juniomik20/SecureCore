@@ -28,20 +28,16 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.SuspendLayout();
-          
             // 
             // Species
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
-
+            this.ClientSize = new System.Drawing.Size(885, 564);
             this.Name = "Species";
             this.Text = "Species";
             this.Load += new System.EventHandler(this.Species_Load);
-
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -28,9 +28,15 @@
         /// </summary>
         private void InitializeComponent()
         {
-
             this.SuspendLayout();
-           
+            // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(168, 396);
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(53, 395);
             // 
             // Regions
             // 
@@ -40,7 +46,6 @@
             this.Name = "Regions";
             this.Text = "Regions";
             this.Load += new System.EventHandler(this.Regions_Load);
-
             this.ResumeLayout(false);
             this.PerformLayout();
 
