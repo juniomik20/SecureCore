@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WookieTablas
 {
-    public partial class UserRanks : MantenimientoTest.MantenimentBase
+    public partial class UserRanks : MantenimientoBase.MantenimentBase
     {
         public UserRanks()
         {

@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WookieTablas
 {
-    public partial class MilitaryCamps : MantenimientoTest.MantenimentBase
+    public partial class MilitaryCamps : MantenimientoBase.MantenimentBase
     {
         public MilitaryCamps()
         {

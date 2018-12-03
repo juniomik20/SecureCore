@@ -30,8 +30,8 @@
         {
             this.labCodeRegion = new System.Windows.Forms.Label();
             this.labDescRegion = new System.Windows.Forms.Label();
-            this.sdstxtCodeRegion = new MantenimientoTest.SdsTextBox();
-            this.sdstxtDescRegion = new MantenimientoTest.SdsTextBox();
+            this.sdstxtCodeRegion = new MantenimientoBase.SdsTextBox();
+            this.sdstxtDescRegion = new MantenimientoBase.SdsTextBox();
             this.SuspendLayout();
             // 
             // labCodeRegion
@@ -113,7 +113,7 @@
 
         private System.Windows.Forms.Label labCodeRegion;
         private System.Windows.Forms.Label labDescRegion;
-        private MantenimientoTest.SdsTextBox sdstxtCodeRegion;
-        private MantenimientoTest.SdsTextBox sdstxtDescRegion;
+        private MantenimientoBase.SdsTextBox sdstxtCodeRegion;
+        private MantenimientoBase.SdsTextBox sdstxtDescRegion;
     }
 }

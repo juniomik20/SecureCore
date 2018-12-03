@@ -12,7 +12,7 @@ using System.Windows.Forms;
 namespace WookieTablas
 {
 
-    public partial class RouteTypes : MantenimientoTest.MantenimentBase
+    public partial class RouteTypes : MantenimientoBase.MantenimentBase
     {        
         public RouteTypes()
         {

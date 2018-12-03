@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sdsTextBoxCodeRoute = new MantenimientoTest.SdsTextBox();
-            this.sdsTextBoxDescRoute = new MantenimientoTest.SdsTextBox();
+            this.sdsTextBoxCodeRoute = new MantenimientoBase.SdsTextBox();
+            this.sdsTextBoxDescRoute = new MantenimientoBase.SdsTextBox();
             this.lblCodeRouteType = new System.Windows.Forms.Label();
             this.lblDescRouteType = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -115,8 +115,8 @@
 
         #endregion
 
-        private MantenimientoTest.SdsTextBox sdsTextBoxCodeRoute;
-        private MantenimientoTest.SdsTextBox sdsTextBoxDescRoute;
+        private MantenimientoBase.SdsTextBox sdsTextBoxCodeRoute;
+        private MantenimientoBase.SdsTextBox sdsTextBoxDescRoute;
         private System.Windows.Forms.Label lblCodeRouteType;
         private System.Windows.Forms.Label lblDescRouteType;
     }

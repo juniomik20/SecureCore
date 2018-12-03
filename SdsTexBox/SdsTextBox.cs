@@ -12,7 +12,7 @@ using System.Data;
 using System.ComponentModel;
 using Application = System.Windows.Forms.Application;
 
-namespace MantenimientoTest
+namespace MantenimientoBase
 {
    public class SdsTextBox : TextBox
     {

@@ -100,10 +100,6 @@
       <Project>{bf4d52ff-1166-4f33-9954-feced8827e8f}</Project>
       <Name>SdsTexBox</Name>
     </ProjectReference>
-    <ProjectReference Include="..\SplashScreen\WindowsFormsApp2\SplashScreen.csproj">
-      <Project>{2db352f6-8d01-4a43-9dce-c738b60f33db}</Project>
-      <Name>SplashScreen</Name>
-    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

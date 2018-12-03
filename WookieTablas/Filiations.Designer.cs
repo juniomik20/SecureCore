@@ -29,8 +29,8 @@
         private void InitializeComponent()
         {
             this.label1 = new System.Windows.Forms.Label();
-            this.sdsTextBox1 = new MantenimientoTest.SdsTextBox();
-            this.sdsTextBox3 = new MantenimientoTest.SdsTextBox();
+            this.sdsTextBox1 = new MantenimientoBase.SdsTextBox();
+            this.sdsTextBox3 = new MantenimientoBase.SdsTextBox();
             this.label2 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
@@ -116,8 +116,8 @@
         #endregion
 
         private System.Windows.Forms.Label label1;
-        private MantenimientoTest.SdsTextBox sdsTextBox1;
-        private MantenimientoTest.SdsTextBox sdsTextBox3;
+        private MantenimientoBase.SdsTextBox sdsTextBox1;
+        private MantenimientoBase.SdsTextBox sdsTextBox3;
         private System.Windows.Forms.Label label2;
     }
 }

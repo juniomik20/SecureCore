@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WookieTablas
 {
-    public partial class PlanetRoutes : MantenimientoTest.MantenimentBase
+    public partial class PlanetRoutes : MantenimientoBase.MantenimentBase
     {
         public PlanetRoutes()
         {

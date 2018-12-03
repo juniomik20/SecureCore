@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WookieTablas
 {
-    public partial class Filiations : MantenimientoTest.MantenimentBase
+    public partial class Filiations : MantenimientoBase.MantenimentBase
     {
         public Filiations()
         {

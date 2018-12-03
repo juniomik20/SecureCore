@@ -1,4 +1,4 @@
-﻿namespace MantenimientoTest
+﻿namespace MantenimientoBase
 {
     partial class MantenimentBase
     {
@@ -31,7 +31,7 @@
             this.dgvMant_table = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
-            this.sdsTextBox0 = new MantenimientoTest.SdsTextBox();
+            this.sdsTextBox0 = new MantenimientoBase.SdsTextBox();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMant_table)).BeginInit();
             this.SuspendLayout();
             // 

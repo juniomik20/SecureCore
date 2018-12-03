@@ -28,8 +28,8 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sdstxtDescRank = new MantenimientoTest.SdsTextBox();
-            this.sdstxtCodeRank = new MantenimientoTest.SdsTextBox();
+            this.sdstxtDescRank = new MantenimientoBase.SdsTextBox();
+            this.sdstxtCodeRank = new MantenimientoBase.SdsTextBox();
             this.labDescRank = new System.Windows.Forms.Label();
             this.labCodeRank = new System.Windows.Forms.Label();
             this.SuspendLayout();
@@ -111,8 +111,8 @@
 
         #endregion
 
-        private MantenimientoTest.SdsTextBox sdstxtDescRank;
-        private MantenimientoTest.SdsTextBox sdstxtCodeRank;
+        private MantenimientoBase.SdsTextBox sdstxtDescRank;
+        private MantenimientoBase.SdsTextBox sdstxtCodeRank;
         private System.Windows.Forms.Label labDescRank;
         private System.Windows.Forms.Label labCodeRank;
     }

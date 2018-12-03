@@ -11,7 +11,7 @@ using System.Windows.Forms;
 
 namespace WookieTablas
 {
-    public partial class MenuSecureCore : MantenimientoTest.MantenimentBase
+    public partial class MenuSecureCore : MantenimientoBase.MantenimentBase
     {
         public MenuSecureCore()
         {

@@ -30,9 +30,9 @@
         {
             this.lblCodeRoute = new System.Windows.Forms.Label();
             this.lblDescRoute = new System.Windows.Forms.Label();
-            this.sdsTextBoxCodeRoute = new MantenimientoTest.SdsTextBox();
-            this.sdsTextBoxDescRoute = new MantenimientoTest.SdsTextBox();
-            this.sdsTextBoxRouteTypes = new MantenimientoTest.SdsTextBox();
+            this.sdsTextBoxCodeRoute = new MantenimientoBase.SdsTextBox();
+            this.sdsTextBoxDescRoute = new MantenimientoBase.SdsTextBox();
+            this.sdsTextBoxRouteTypes = new MantenimientoBase.SdsTextBox();
             this.sdsForaneaRouteTypes = new WookieCodeControls.sdsForanea();
             this.SuspendLayout();
             // 
@@ -151,9 +151,9 @@
 
         private System.Windows.Forms.Label lblCodeRoute;
         private System.Windows.Forms.Label lblDescRoute;
-        private MantenimientoTest.SdsTextBox sdsTextBoxCodeRoute;
-        private MantenimientoTest.SdsTextBox sdsTextBoxDescRoute;
-        private MantenimientoTest.SdsTextBox sdsTextBoxRouteTypes;
+        private MantenimientoBase.SdsTextBox sdsTextBoxCodeRoute;
+        private MantenimientoBase.SdsTextBox sdsTextBoxDescRoute;
+        private MantenimientoBase.SdsTextBox sdsTextBoxRouteTypes;
         private WookieCodeControls.sdsForanea sdsForaneaRouteTypes;
     }
 }
