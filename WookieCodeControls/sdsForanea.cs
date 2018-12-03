@@ -168,7 +168,7 @@ namespace WookieCodeControls
         private void txtCode_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F2)
-            {
+            {                
                 Assembly ensamblat = Assembly.LoadFrom("PantallaCerca.dll");
                 Object dllBD;
                 Type tipus;

@@ -13,6 +13,14 @@ namespace PantallaCerca
 {
     public partial class Cerca : Form
     {
+        private string _TableName;
+
+        public string TableName
+        {
+            get { return _TableName; }
+            set { _TableName = value; }
+        }
+
         public Cerca()
         {
             InitializeComponent();
@@ -24,11 +32,13 @@ namespace PantallaCerca
         ConnectionClass.ClassBDD BDD = new ConnectionClass.ClassBDD();
         //Hacemos la consulta
         public string query = "select * from Sectors";
+        
         #endregion
 
         #region Metodos
         public void Inicializar()
         {
+            query = "select * from " + TableName;
             dts = BDD.PortaPerConsulta(query);
         }
         public void RellenarGrid(DataSet dts)
