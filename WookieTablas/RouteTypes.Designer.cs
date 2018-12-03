@@ -43,7 +43,6 @@
             this.sdsTexBoxCodeRouteType.SiEsForana = false;
             this.sdsTexBoxCodeRouteType.Size = new System.Drawing.Size(100, 20);
             this.sdsTexBoxCodeRouteType.TabIndex = 24;
-            this.sdsTexBoxCodeRouteType.TipusDada = SdsTexBox.SdsTexBox.Num.txt;
             // 
             // sdsTexBoxDescRouteType
             // 
@@ -56,7 +55,6 @@
             this.sdsTexBoxDescRouteType.SiEsForana = false;
             this.sdsTexBoxDescRouteType.Size = new System.Drawing.Size(100, 20);
             this.sdsTexBoxDescRouteType.TabIndex = 25;
-            this.sdsTexBoxDescRouteType.TipusDada = SdsTexBox.SdsTexBox.Num.txt;
             // 
             // RouteTypes
             // 

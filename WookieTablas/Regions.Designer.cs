@@ -38,11 +38,11 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(143, 498);
+            this.btnUpdate.Location = new System.Drawing.Point(168, 431);
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(48, 498);
+            this.btnInsert.Location = new System.Drawing.Point(57, 430);
             // 
             // labDescRegion
             // 
