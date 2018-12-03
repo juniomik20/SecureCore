@@ -19,8 +19,6 @@ Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MantenimientoTest", "Manten
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "MantenimientoForanea", "MantenimientoForanea\MantenimientoForanea.csproj", "{6C88D447-A287-411E-A2C8-026BEEB90D4D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Test", "Test\Test.csproj", "{B64DED4A-D24F-4099-B909-CD6FAAFE4B46}"
-EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "SdsTexBox", "SdsTexBox\SdsTexBox.csproj", "{BF4D52FF-1166-4F33-9954-FECED8827E8F}"
 EndProject
 Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ConsejoJedai", "ConsejoJedai\ConsejoJedai.csproj", "{CB42A2A0-3621-429A-B618-9962B8A9E3F3}"
@@ -69,10 +67,6 @@ Global
 		{6C88D447-A287-411E-A2C8-026BEEB90D4D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{6C88D447-A287-411E-A2C8-026BEEB90D4D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{6C88D447-A287-411E-A2C8-026BEEB90D4D}.Release|Any CPU.Build.0 = Release|Any CPU
-		{B64DED4A-D24F-4099-B909-CD6FAAFE4B46}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
-		{B64DED4A-D24F-4099-B909-CD6FAAFE4B46}.Debug|Any CPU.Build.0 = Debug|Any CPU
-		{B64DED4A-D24F-4099-B909-CD6FAAFE4B46}.Release|Any CPU.ActiveCfg = Release|Any CPU
-		{B64DED4A-D24F-4099-B909-CD6FAAFE4B46}.Release|Any CPU.Build.0 = Release|Any CPU
 		{BF4D52FF-1166-4F33-9954-FECED8827E8F}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
 		{BF4D52FF-1166-4F33-9954-FECED8827E8F}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{BF4D52FF-1166-4F33-9954-FECED8827E8F}.Release|Any CPU.ActiveCfg = Release|Any CPU

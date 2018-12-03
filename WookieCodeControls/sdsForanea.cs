@@ -11,7 +11,7 @@ using ConnectionClass;
 using System.Configuration;
 using System.Reflection;
 
-namespace MantenimientoForanea
+namespace WookieCodeControls
 {
     public partial class sdsForanea : UserControl
     {

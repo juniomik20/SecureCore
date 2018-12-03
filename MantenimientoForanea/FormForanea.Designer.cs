@@ -1,4 +1,4 @@
-﻿namespace MantenimientoForanea
+﻿namespace WookieCodeControls
 {
     partial class FormForanea
     {

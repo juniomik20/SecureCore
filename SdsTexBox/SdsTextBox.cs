@@ -10,7 +10,6 @@ using System.Text.RegularExpressions;
 using ConnectionClass;
 using System.Data;
 using System.ComponentModel;
-using MantenimientoForanea;
 using Application = System.Windows.Forms.Application;
 
 namespace MantenimientoTest
@@ -229,7 +228,7 @@ namespace MantenimientoTest
                     {
                         foreach (Control frmControl in frm.Controls)
                         {
-                            if (frmControl is sdsForanea)
+                            if (frmControl is WookieCodeControls.sdsForanea)
                             {
                                 try
                                 {

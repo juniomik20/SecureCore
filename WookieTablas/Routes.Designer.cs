@@ -33,7 +33,7 @@
             this.sdsTextBoxCodeRoute = new MantenimientoTest.SdsTextBox();
             this.sdsTextBoxDescRoute = new MantenimientoTest.SdsTextBox();
             this.sdsTextBoxRouteTypes = new MantenimientoTest.SdsTextBox();
-            this.sdsForaneaRouteTypes = new MantenimientoForanea.sdsForanea();
+            this.sdsForaneaRouteTypes = new WookieCodeControls.sdsForanea();
             this.SuspendLayout();
             // 
             // lblCodeRoute
@@ -154,6 +154,6 @@
         private MantenimientoTest.SdsTextBox sdsTextBoxCodeRoute;
         private MantenimientoTest.SdsTextBox sdsTextBoxDescRoute;
         private MantenimientoTest.SdsTextBox sdsTextBoxRouteTypes;
-        private MantenimientoForanea.sdsForanea sdsForaneaRouteTypes;
+        private WookieCodeControls.sdsForanea sdsForaneaRouteTypes;
     }
 }

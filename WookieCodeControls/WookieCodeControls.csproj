@@ -63,6 +63,12 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>Resources.resx</DependentUpon>
     </Compile>
+    <Compile Include="sdsForanea.cs">
+      <SubType>UserControl</SubType>
+    </Compile>
+    <Compile Include="sdsForanea.Designer.cs">
+      <DependentUpon>sdsForanea.cs</DependentUpon>
+    </Compile>
     <Service Include="{94E38DFF-614B-4cbd-B67C-F211BB35CE8B}" />
   </ItemGroup>
   <ItemGroup>
@@ -75,6 +81,9 @@
     <EmbeddedResource Include="Properties\Resources.resx">
       <Generator>ResXFileCodeGenerator</Generator>
       <LastGenOutput>Resources.Designer.cs</LastGenOutput>
+    </EmbeddedResource>
+    <EmbeddedResource Include="sdsForanea.resx">
+      <DependentUpon>sdsForanea.cs</DependentUpon>
     </EmbeddedResource>
   </ItemGroup>
   <ItemGroup>

@@ -8,7 +8,7 @@ using System.Text;
 using System.Threading.Tasks;
 using System.Windows.Forms;
 
-namespace MantenimientoForanea
+namespace WookieCodeControls
 {
     public partial class FormForanea : MantenimientoTest.MantenimentBase
     {

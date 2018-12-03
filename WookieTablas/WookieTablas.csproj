@@ -159,6 +159,10 @@
       <Project>{bbbee6f8-abb3-428e-9b39-574546f407b0}</Project>
       <Name>ConnectionClass</Name>
     </ProjectReference>
+    <ProjectReference Include="..\MantenimientoForanea\MantenimientoForanea.csproj">
+      <Project>{6c88d447-a287-411e-a2c8-026beeb90d4d}</Project>
+      <Name>MantenimientoForanea</Name>
+    </ProjectReference>
     <ProjectReference Include="..\MantenimientoTest\MantenimientoTest.csproj">
       <Project>{8f7f1e3c-4358-43a0-8079-d72ac5c1d48e}</Project>
       <Name>MantenimientoTest</Name>
@@ -178,6 +182,10 @@
     <ProjectReference Include="..\SplashScreen\WindowsFormsApp2\SplashScreen.csproj">
       <Project>{2db352f6-8d01-4a43-9dce-c738b60f33db}</Project>
       <Name>SplashScreen</Name>
+    </ProjectReference>
+    <ProjectReference Include="..\WookieCodeControls\WookieCodeControls.csproj">
+      <Project>{9fa849fb-9441-4261-a4c3-ca19857eb644}</Project>
+      <Name>WookieCodeControls</Name>
     </ProjectReference>
   </ItemGroup>
   <ItemGroup>
