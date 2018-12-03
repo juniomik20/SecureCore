@@ -30,15 +30,20 @@
         {
             this.SuspendLayout();
             // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(79, 498);
+            // 
             // Planets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(959, 564);
             this.Name = "Planets";
             this.Text = "Planets";
             this.Load += new System.EventHandler(this.Planets_Load);
             this.ResumeLayout(false);
+            this.PerformLayout();
 
         }
 
