@@ -42,15 +42,14 @@
             this.dgvMant_table.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
             this.dgvMant_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMant_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMant_table.Location = new System.Drawing.Point(502, 137);
+            this.dgvMant_table.Location = new System.Drawing.Point(486, 137);
             this.dgvMant_table.Name = "dgvMant_table";
             this.dgvMant_table.Size = new System.Drawing.Size(457, 385);
             this.dgvMant_table.TabIndex = 0;
             // 
             // btnInsert
             // 
-            this.btnInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnInsert.Location = new System.Drawing.Point(58, 498);
+            this.btnInsert.Location = new System.Drawing.Point(79, 498);
             this.btnInsert.Name = "btnInsert";
             this.btnInsert.Size = new System.Drawing.Size(72, 24);
             this.btnInsert.TabIndex = 7;
