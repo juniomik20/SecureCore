@@ -39,20 +39,20 @@
             this.dgvMant_table.AllowUserToOrderColumns = true;
             this.dgvMant_table.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Right)));
-            this.dgvMant_table.BackgroundColor = System.Drawing.SystemColors.WindowFrame;
+            this.dgvMant_table.BackgroundColor = System.Drawing.SystemColors.MenuHighlight;
             this.dgvMant_table.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.dgvMant_table.ColumnHeadersHeightSizeMode = System.Windows.Forms.DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            this.dgvMant_table.Location = new System.Drawing.Point(321, 119);
+            this.dgvMant_table.Location = new System.Drawing.Point(336, 137);
             this.dgvMant_table.Name = "dgvMant_table";
-            this.dgvMant_table.Size = new System.Drawing.Size(611, 503);
+            this.dgvMant_table.Size = new System.Drawing.Size(457, 329);
             this.dgvMant_table.TabIndex = 0;
             // 
             // btnInsert
             // 
             this.btnInsert.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnInsert.Location = new System.Drawing.Point(94, 586);
+            this.btnInsert.Location = new System.Drawing.Point(57, 442);
             this.btnInsert.Name = "btnInsert";
-            this.btnInsert.Size = new System.Drawing.Size(75, 23);
+            this.btnInsert.Size = new System.Drawing.Size(72, 24);
             this.btnInsert.TabIndex = 7;
             this.btnInsert.Text = "Insert";
             this.btnInsert.UseVisualStyleBackColor = true;
@@ -60,21 +60,19 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Anchor = ((System.Windows.Forms.AnchorStyles)((System.Windows.Forms.AnchorStyles.Bottom | System.Windows.Forms.AnchorStyles.Left)));
-            this.btnUpdate.Location = new System.Drawing.Point(175, 586);
+            this.btnUpdate.Location = new System.Drawing.Point(156, 442);
             this.btnUpdate.Name = "btnUpdate";
             this.btnUpdate.Size = new System.Drawing.Size(75, 23);
             this.btnUpdate.TabIndex = 8;
             this.btnUpdate.Text = "Update";
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
-
             // 
             // MantenimentBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(1031, 652);
+            this.ClientSize = new System.Drawing.Size(869, 508);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.dgvMant_table);

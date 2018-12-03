@@ -19,7 +19,7 @@ namespace LogonScreen
         bool musicOn = false;
         SoundPlayer player = new SoundPlayer
         {
-            SoundLocation = AppDomain.CurrentDomain.BaseDirectory + "\\CANTINA.wav"
+            SoundLocation = Application.StartupPath + @"\\CANTINA.wav"
         };
         public LogonMainScreen()
         {

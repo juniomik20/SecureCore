@@ -8561,6 +8561,15 @@
   <data name="&gt;&gt;BarraBottom.ZOrder" xml:space="preserve">
     <value>8</value>
   </data>
+  <data name="BarraTop.Location" type="System.Drawing.Point, System.Drawing">
+    <value>0, 251</value>
+  </data>
+  <data name="BarraTop.Size" type="System.Drawing.Size, System.Drawing">
+    <value>608, 3</value>
+  </data>
+  <data name="BarraTop.TabIndex" type="System.Int32, mscorlib">
+    <value>2</value>
+  </data>
   <data name="&gt;&gt;BarraTop.Name" xml:space="preserve">
     <value>BarraTop</value>
   </data>
@@ -8596,27 +8605,6 @@
   </data>
   <data name="&gt;&gt;BarraRigth.ZOrder" xml:space="preserve">
     <value>4</value>
-  </data>
-  <data name="BarraTop.Location" type="System.Drawing.Point, System.Drawing">
-    <value>0, 251</value>
-  </data>
-  <data name="BarraTop.Size" type="System.Drawing.Size, System.Drawing">
-    <value>608, 3</value>
-  </data>
-  <data name="BarraTop.TabIndex" type="System.Int32, mscorlib">
-    <value>2</value>
-  </data>
-  <data name="&gt;&gt;BarraTop.Name" xml:space="preserve">
-    <value>BarraTop</value>
-  </data>
-  <data name="&gt;&gt;BarraTop.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Panel, System.Windows.Forms, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;BarraTop.Parent" xml:space="preserve">
-    <value>BarraRigth</value>
-  </data>
-  <data name="&gt;&gt;BarraTop.ZOrder" xml:space="preserve">
-    <value>0</value>
   </data>
   <data name="BarraLeft.Dock" type="System.Windows.Forms.DockStyle, System.Windows.Forms">
     <value>Left</value>

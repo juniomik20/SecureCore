@@ -36,7 +36,8 @@ namespace WookieCodeControls
             set
             {
                 _Image = value;
-                picMenu.ImageLocation = @"..\DLL\Imagenes\" + value+"";   
+            
+            picMenu.ImageLocation = Application.StartupPath + @"\\Imagenes\" + value;
                 picMenu.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }

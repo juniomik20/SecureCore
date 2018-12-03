@@ -45,7 +45,9 @@ namespace PlantillaPrincipalStarWars
             set
             {
                 _iconUser = value;
-                UserIconTitle.ImageLocation = @"..\DLL\Imagenes\" + value;
+                
+                UserIconTitle.ImageLocation = Application.StartupPath+@"\\Imagenes\"+value;
+
                 UserIconTitle.SizeMode = PictureBoxSizeMode.StretchImage;
             }
         }
