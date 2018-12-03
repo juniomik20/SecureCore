@@ -50,6 +50,7 @@ namespace PantallaCerca
             Inicializar();
             RellenarGrid(dts);
             dGVCerca.AllowUserToAddRows = false;
+            query = "select * from " + sds.NomTaula;
         }
 
         #endregion
@@ -57,8 +58,7 @@ namespace PantallaCerca
         private void dGVCerca_DoubleClick(object sender, EventArgs e)
         {
             try
-            {
-                query = "select * from " + sds.NomTaula;
+            {                
                 MessageBox.Show(dGVCerca.SelectedCells[0].Value.ToString());
             }
             catch
