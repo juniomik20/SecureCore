@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sdstxtDescSpecie = new SdsTexBox.SdsTexBox();
-            this.sdstxtCodeSpecie = new SdsTexBox.SdsTexBox();
-            this.labDescSpecie = new System.Windows.Forms.Label();
-            this.labCodeSpecie = new System.Windows.Forms.Label();
             this.sdsTexBox1 = new SdsTexBox.SdsTexBox();
             this.sdsTexBox2 = new SdsTexBox.SdsTexBox();
             this.label1 = new System.Windows.Forms.Label();
@@ -45,60 +41,6 @@
             // btnInsert
             // 
             this.btnInsert.Location = new System.Drawing.Point(65, 401);
-            // 
-            // sdstxtDescSpecie
-            // 
-            this.sdstxtDescSpecie.BackColor = System.Drawing.Color.LightGreen;
-            this.sdstxtDescSpecie.CodeSector = null;
-            this.sdstxtDescSpecie.ColumnName = "DescSpecie";
-            this.sdstxtDescSpecie.DescCodi = null;
-            this.sdstxtDescSpecie.Location = new System.Drawing.Point(129, 338);
-            this.sdstxtDescSpecie.Name = "sdstxtDescSpecie";
-            this.sdstxtDescSpecie.Nom = null;
-            this.sdstxtDescSpecie.NomBBDD = "SecureCore";
-            this.sdstxtDescSpecie.NomCamp = null;
-            this.sdstxtDescSpecie.NomControl = null;
-            this.sdstxtDescSpecie.NomTaula = "Species";
-            this.sdstxtDescSpecie.Requerit = false;
-            this.sdstxtDescSpecie.SiEsForana = false;
-            this.sdstxtDescSpecie.Size = new System.Drawing.Size(100, 20);
-            this.sdstxtDescSpecie.TabIndex = 41;
-            // 
-            // sdstxtCodeSpecie
-            // 
-            this.sdstxtCodeSpecie.BackColor = System.Drawing.Color.LightGreen;
-            this.sdstxtCodeSpecie.CodeSector = null;
-            this.sdstxtCodeSpecie.ColumnName = "CodeSpecie";
-            this.sdstxtCodeSpecie.DescCodi = null;
-            this.sdstxtCodeSpecie.Location = new System.Drawing.Point(129, 286);
-            this.sdstxtCodeSpecie.Name = "sdstxtCodeSpecie";
-            this.sdstxtCodeSpecie.Nom = null;
-            this.sdstxtCodeSpecie.NomBBDD = "SecureCore";
-            this.sdstxtCodeSpecie.NomCamp = null;
-            this.sdstxtCodeSpecie.NomControl = null;
-            this.sdstxtCodeSpecie.NomTaula = "Species";
-            this.sdstxtCodeSpecie.Requerit = false;
-            this.sdstxtCodeSpecie.SiEsForana = false;
-            this.sdstxtCodeSpecie.Size = new System.Drawing.Size(100, 20);
-            this.sdstxtCodeSpecie.TabIndex = 42;
-            // 
-            // labDescSpecie
-            // 
-            this.labDescSpecie.AutoSize = true;
-            this.labDescSpecie.Location = new System.Drawing.Point(40, 341);
-            this.labDescSpecie.Name = "labDescSpecie";
-            this.labDescSpecie.Size = new System.Drawing.Size(65, 13);
-            this.labDescSpecie.TabIndex = 44;
-            this.labDescSpecie.Text = "DescSpecie";
-            // 
-            // labCodeSpecie
-            // 
-            this.labCodeSpecie.AutoSize = true;
-            this.labCodeSpecie.Location = new System.Drawing.Point(40, 289);
-            this.labCodeSpecie.Name = "labCodeSpecie";
-            this.labCodeSpecie.Size = new System.Drawing.Size(65, 13);
-            this.labCodeSpecie.TabIndex = 43;
-            this.labCodeSpecie.Text = "CodeSpecie";
             // 
             // sdsTexBox1
             // 
@@ -163,19 +105,11 @@
             this.Controls.Add(this.sdsTexBox2);
             this.Controls.Add(this.label1);
             this.Controls.Add(this.label2);
-            this.Controls.Add(this.sdstxtDescSpecie);
-            this.Controls.Add(this.sdstxtCodeSpecie);
-            this.Controls.Add(this.labDescSpecie);
-            this.Controls.Add(this.labCodeSpecie);
             this.Name = "Species";
             this.Text = "Species";
             this.Load += new System.EventHandler(this.Species_Load);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
-            this.Controls.SetChildIndex(this.labCodeSpecie, 0);
-            this.Controls.SetChildIndex(this.labDescSpecie, 0);
-            this.Controls.SetChildIndex(this.sdstxtCodeSpecie, 0);
-            this.Controls.SetChildIndex(this.sdstxtDescSpecie, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.sdsTexBox2, 0);
@@ -187,11 +121,6 @@
 
 
         #endregion
-
-        private SdsTexBox.SdsTexBox sdstxtDescSpecie;
-        private SdsTexBox.SdsTexBox sdstxtCodeSpecie;
-        private System.Windows.Forms.Label labDescSpecie;
-        private System.Windows.Forms.Label labCodeSpecie;
         private SdsTexBox.SdsTexBox sdsTexBox1;
         private SdsTexBox.SdsTexBox sdsTexBox2;
         private System.Windows.Forms.Label label1;

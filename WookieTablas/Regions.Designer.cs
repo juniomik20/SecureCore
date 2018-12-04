@@ -28,10 +28,6 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labDescRegion = new System.Windows.Forms.Label();
-            this.labCodeRegion = new System.Windows.Forms.Label();
-            this.sdstxtCodeRegion = new SdsTexBox.SdsTexBox();
-            this.sdstxtDescRegion = new SdsTexBox.SdsTexBox();
             this.sdsTexBox2 = new SdsTexBox.SdsTexBox();
             this.sdsTexBox3 = new SdsTexBox.SdsTexBox();
             this.label2 = new System.Windows.Forms.Label();
@@ -45,60 +41,6 @@
             // btnInsert
             // 
             this.btnInsert.Location = new System.Drawing.Point(53, 395);
-            // 
-            // sdsTexBox10
-            // 
-            this.labDescRegion.AutoSize = true;
-            this.labDescRegion.Location = new System.Drawing.Point(291, 249);
-            this.labDescRegion.Name = "labDescRegion";
-            this.labDescRegion.Size = new System.Drawing.Size(66, 13);
-            this.labDescRegion.TabIndex = 28;
-            this.labDescRegion.Text = "DescRegion";
-            // 
-            // sdsTexBox3
-            // 
-            this.labCodeRegion.AutoSize = true;
-            this.labCodeRegion.Location = new System.Drawing.Point(291, 197);
-            this.labCodeRegion.Name = "labCodeRegion";
-            this.labCodeRegion.Size = new System.Drawing.Size(66, 13);
-            this.labCodeRegion.TabIndex = 27;
-            this.labCodeRegion.Text = "CodeRegion";
-            // 
-            // label2
-            // 
-            this.sdstxtCodeRegion.BackColor = System.Drawing.Color.LightGreen;
-            this.sdstxtCodeRegion.CodeSector = null;
-            this.sdstxtCodeRegion.ColumnName = "CodeRegion";
-            this.sdstxtCodeRegion.DescCodi = null;
-            this.sdstxtCodeRegion.Location = new System.Drawing.Point(380, 194);
-            this.sdstxtCodeRegion.Name = "sdstxtCodeRegion";
-            this.sdstxtCodeRegion.Nom = null;
-            this.sdstxtCodeRegion.NomBBDD = "SecureCore";
-            this.sdstxtCodeRegion.NomCamp = null;
-            this.sdstxtCodeRegion.NomControl = null;
-            this.sdstxtCodeRegion.NomTaula = "Regions";
-            this.sdstxtCodeRegion.Requerit = false;
-            this.sdstxtCodeRegion.SiEsForana = false;
-            this.sdstxtCodeRegion.Size = new System.Drawing.Size(100, 20);
-            this.sdstxtCodeRegion.TabIndex = 0;
-            // 
-            // sdsTexBox2
-            // 
-            this.sdstxtDescRegion.BackColor = System.Drawing.Color.LightGreen;
-            this.sdstxtDescRegion.CodeSector = null;
-            this.sdstxtDescRegion.ColumnName = "DescRegion";
-            this.sdstxtDescRegion.DescCodi = null;
-            this.sdstxtDescRegion.Location = new System.Drawing.Point(380, 246);
-            this.sdstxtDescRegion.Name = "sdstxtDescRegion";
-            this.sdstxtDescRegion.Nom = null;
-            this.sdstxtDescRegion.NomBBDD = "SecureCore";
-            this.sdstxtDescRegion.NomCamp = null;
-            this.sdstxtDescRegion.NomControl = null;
-            this.sdstxtDescRegion.NomTaula = "Regions";
-            this.sdstxtDescRegion.Requerit = false;
-            this.sdstxtDescRegion.SiEsForana = false;
-            this.sdstxtDescRegion.Size = new System.Drawing.Size(100, 20);
-            this.sdstxtDescRegion.TabIndex = 0;
             // 
             // sdsTexBox2
             // 
@@ -163,17 +105,11 @@
             this.Controls.Add(this.sdsTexBox3);
             this.Controls.Add(this.label2);
             this.Controls.Add(this.label3);
-            this.Controls.Add(this.sdstxtDescRegion);
-            this.Controls.Add(this.sdstxtCodeRegion);
-            this.Controls.Add(this.labDescRegion);
-            this.Controls.Add(this.labCodeRegion);
             this.Name = "Regions";
             this.Text = "Regions";
             this.Load += new System.EventHandler(this.Regions_Load);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
-            this.Controls.SetChildIndex(this.sdstxtCodeRegion, 0);
-            this.Controls.SetChildIndex(this.sdstxtDescRegion, 0);
             this.Controls.SetChildIndex(this.label3, 0);
             this.Controls.SetChildIndex(this.label2, 0);
             this.Controls.SetChildIndex(this.sdsTexBox3, 0);
@@ -185,11 +121,6 @@
 
 
         #endregion
-
-        private System.Windows.Forms.Label labDescRegion;
-        private System.Windows.Forms.Label labCodeRegion;
-        private SdsTexBox.SdsTexBox sdstxtCodeRegion;
-        private SdsTexBox.SdsTexBox sdstxtDescRegion;
         private SdsTexBox.SdsTexBox sdsTexBox2;
         private SdsTexBox.SdsTexBox sdsTexBox3;
         private System.Windows.Forms.Label label2;

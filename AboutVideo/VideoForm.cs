@@ -25,6 +25,7 @@ namespace AboutVideo
             this.IconUser = ConfigurationManager.AppSettings["Icon"].ToString();
             ButtonAtras.Visible = true;
             TittleScreen.Text = "Creditos";
+            mediaPlayer.URL = Application.StartupPath + @"\\Imagenes\StarWars.mp3";
         }
 
         private void VideoForm_Load(object sender, EventArgs e)

@@ -38,10 +38,10 @@
             this.mediaPlayer.CausesValidation = false;
             this.mediaPlayer.Dock = System.Windows.Forms.DockStyle.Fill;
             this.mediaPlayer.Enabled = true;
-            this.mediaPlayer.Location = new System.Drawing.Point(0, 95);
+            this.mediaPlayer.Location = new System.Drawing.Point(0, 0);
             this.mediaPlayer.Name = "mediaPlayer";
             this.mediaPlayer.OcxState = ((System.Windows.Forms.AxHost.State)(resources.GetObject("mediaPlayer.OcxState")));
-            this.mediaPlayer.Size = new System.Drawing.Size(800, 355);
+            this.mediaPlayer.Size = new System.Drawing.Size(800, 450);
             this.mediaPlayer.TabIndex = 0;
             // 
             // VideoForm
