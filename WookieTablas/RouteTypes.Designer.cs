@@ -58,6 +58,7 @@
             this.sdsTexBoxDescRouteType.ColumnName = "DescRouteType";
             this.sdsTexBoxDescRouteType.DescCodi = null;
             this.sdsTexBoxDescRouteType.Location = new System.Drawing.Point(131, 258);
+            this.sdsTexBoxDescRouteType.MaxLength = 50;
             this.sdsTexBoxDescRouteType.Name = "sdsTexBoxDescRouteType";
             this.sdsTexBoxDescRouteType.Nom = null;
             this.sdsTexBoxDescRouteType.NomBBDD = "SecureCore";
