@@ -27,5 +27,10 @@ namespace WookieTablas
             ButtonAtras.Visible = true;
             TittleScreen.Text = "SpaceShips";
         }
+
+        private void sdsTexBox1_TextChanged(object sender, EventArgs e)
+        {
+
+        }
     }
 }

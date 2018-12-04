@@ -34,7 +34,7 @@ namespace LogonScreen
             if (dts.Tables[0].Rows.Count == 1)
             {
                 ErrorLabel.Visible = true;
-                timer1.Start();
+                Timer.Start();
                 ErrorLabel.Text = "Bienvenido "+ dts.Tables[0].Rows[0]["DescCategory"].ToString() + " "+ dts.Tables[0].Rows[0]["UserName"].ToString();
 
               
@@ -51,7 +51,7 @@ namespace LogonScreen
                 #endregion
             }
             else {
-                if (UserBox.Text.ToUpper().Equals("DEATH START"))
+                if (UserBox.Text.ToUpper().Equals("DEATHSTART"))
                 {
                     System.Diagnostics.Process.Start("EstrelladelaMuerte.vbs");
                     MessageBox.Show("Felicidades Ganaste un Porta Vasos!", "SEGUNDO EASTER EGG");                    
@@ -100,14 +100,14 @@ namespace LogonScreen
             {
                 player.Play();
                 musicOn = true;
-                GifEasterEgg.Visible = true;
-                pictureBox1.Visible = true;
-                pictureBox2.Visible = true;
-                pictureBox3.Visible = true;
-                pictureBox4.Visible = true;
-                pictureBox5.Visible = true;
-                pictureBox6.Visible = true;
-                pictureBox7.Visible = true;
+                EasterEgg1.Visible = true;
+                EasterEgg2.Visible = true;
+                EasterEgg3.Visible = true;
+                EasterEgg4.Visible = true;
+                EasterEgg5.Visible = true;
+                EasterEgg6.Visible = true;
+                EasterEgg7.Visible = true;
+                EasterEgg8.Visible = true;
             }
         }
         private void GifEasterEgg_Click(object sender, EventArgs e)
@@ -119,16 +119,18 @@ namespace LogonScreen
             {
                 player.Stop();
                 musicOn = false;
-                GifEasterEgg.Visible = false;
-                pictureBox1.Visible = false;
-                pictureBox2.Visible = false;
-                pictureBox3.Visible = false;
-                pictureBox4.Visible = false;
-                pictureBox5.Visible = false;
-                pictureBox6.Visible = false;
-                pictureBox7.Visible = false;
+                EasterEgg1.Visible = false;
+                EasterEgg2.Visible = false;
+                EasterEgg3.Visible = false;
+                EasterEgg4.Visible = false;
+                EasterEgg5.Visible = false;
+                EasterEgg6.Visible = false;
+                EasterEgg7.Visible = false;
+                EasterEgg8.Visible = false;
 
             }
         }
+
+     
     }
 }

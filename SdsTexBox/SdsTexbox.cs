@@ -104,66 +104,15 @@ namespace SdsTexBox
             }
         }
         /////////////////////////METODES///////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////////
-
-
-        //MessageBox.Show("Mail correcte");
-
+        
         private void TxtCode_Validated(object sender, EventArgs e)
         {
             //ValidaDades();
         }
-        //private void TxtCode_TextChanged(object sender, EventArgs e)
-        //{
-        //    Focus();
-        //    BackColor = Color.LightGreen;
-
-        //}
         private void TxtCode_Leave(object sender, EventArgs e)
         {
             BackColor = Color.White;
         }
-        //static class RegexUtil
-        //{
-        //    static Regex _regexTxt = new Regex(@"([a-zA-Z])$");
-        //    static Regex _regexNum = new Regex(@"([0-9])$");
-        //    static Regex _regexMail = new Regex(@"^[\w!#$%&'*+\-/=?\^_`{|}~]+(\.[\w!#$%&'*+\-/=?\^_`{|}~]+)*" + "@" + @"((([\-\w]+\.)+[a-zA-Z]{2,4})|(([0-9]{1,3}\.){3}[0-9]{1,3}))$");
-        //    static Regex _regexTelf = new Regex(@"^([0-9]{9})$");
-
-        //    static public bool MatchKey(string input, Num tipus)
-        //    {
-        //        Match matchtxt = _regexTxt.Match(input.ToLower());
-        //        Match matchNum = _regexNum.Match(input);
-        //        Match matchMail = _regexMail.Match(input);
-        //        Match matchTelf = _regexTelf.Match(input);
-        //        if (matchtxt.Success && Num.txt == tipus)
-        //        {
-        //            return true;
-        //        }
-        //        else if (matchNum.Success && Num.Numero == tipus)
-        //        {
-        //            return true;
-        //        }
-        //        else if (matchMail.Success && Num.Mail == tipus)
-        //        {
-        //            return true;
-        //        }
-        //        else if (matchTelf.Success && Num.Telf == tipus)
-        //        {
-        //            if (input.Length == 9)
-        //            {
-        //                return true;
-        //            }
-        //            else
-        //            {
-        //                return false;
-        //            }
-        //        }
-        //        else
-        //        {
-        //            return false;
-        //        }
-        //    }
-        //}
         private void InitializeComponent()
         {
             this.TextBox1 = new System.Windows.Forms.TextBox();
