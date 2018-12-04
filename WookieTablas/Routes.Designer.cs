@@ -40,6 +40,23 @@
             // 
             this.btnUpdate.Location = new System.Drawing.Point(160, 464);
             // 
+            // sdsTextBoxCodeRoute
+            // 
+            this.sdsTextBoxCodeRoute.CodeSector = null;
+            this.sdsTextBoxCodeRoute.ColumnName = "CodeRoute";
+            this.sdsTextBoxCodeRoute.DescCodi = null;
+            this.sdsTextBoxCodeRoute.Location = new System.Drawing.Point(141, 179);
+            this.sdsTextBoxCodeRoute.Name = "sdsTextBoxCodeRoute";
+            this.sdsTextBoxCodeRoute.Nom = null;
+            this.sdsTextBoxCodeRoute.NomBBDD = "SecureCore";
+            this.sdsTextBoxCodeRoute.NomCamp = null;
+            this.sdsTextBoxCodeRoute.NomControl = null;
+            this.sdsTextBoxCodeRoute.NomTaula = "Routes";
+            this.sdsTextBoxCodeRoute.Requerit = false;
+            this.sdsTextBoxCodeRoute.SiEsForana = false;
+            this.sdsTextBoxCodeRoute.Size = new System.Drawing.Size(100, 20);
+            this.sdsTextBoxCodeRoute.TabIndex = 0;
+            // 
             // sdsTextBoxDescRoute
             // 
             this.sdsTextBoxDescRoute.CodeSector = null;
