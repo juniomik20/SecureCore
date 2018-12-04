@@ -169,11 +169,10 @@ namespace WookieCodeControls
         {
             if (e.KeyCode == Keys.F2)
             {                
-                Assembly ensamblat = Assembly.LoadFrom("PantallaCerca.dll");
-                Object dllBD;
-                Type tipus;
-                tipus = ensamblat.GetType("PantallaCerca.Cerca");
-                dllBD = Activator.CreateInstance(tipus);
+                Assembly ensamblat = Assembly.LoadFrom("PantallaCerca.dll");                
+                Type tipus = ensamblat.GetType("PantallaCerca.Cerca");
+                Object[] args = { this.NomTaula, this.NomControl };
+                Object dllBD = Activator.CreateInstance(tipus, args);
 
                 ((Form)dllBD).Show();
             }

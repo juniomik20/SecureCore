@@ -30,8 +30,8 @@
         {
             this.sdsTextBoxCodeRoute = new SdsTexBox.SdsTexBox();
             this.sdsTextBoxDescRoute = new SdsTexBox.SdsTexBox();
-            this.sdsForaneaRouteTypes = new WookieCodeControls.sdsForanea();
             this.sdsTextBoxRouteTypes = new SdsTexBox.SdsTexBox();
+            this.sdsForaneaRouteTypes = new WookieCodeControls.sdsForanea();
             this.SuspendLayout();
             // 
             // sdsTextBoxCodeRoute
@@ -68,23 +68,6 @@
             this.sdsTextBoxDescRoute.Size = new System.Drawing.Size(100, 20);
             this.sdsTextBoxDescRoute.TabIndex = 0;
             // 
-            // sdsForaneaRouteTypes
-            // 
-            this.sdsForaneaRouteTypes.Control_Id = "sdsTextBoxRouteTypes";
-            this.sdsForaneaRouteTypes.DescCodi = "DescRouteType";
-            this.sdsForaneaRouteTypes.ErrorText = null;
-            this.sdsForaneaRouteTypes.Location = new System.Drawing.Point(0, 276);
-            this.sdsForaneaRouteTypes.Margin = new System.Windows.Forms.Padding(2);
-            this.sdsForaneaRouteTypes.Name = "sdsForaneaRouteTypes";
-            this.sdsForaneaRouteTypes.NomCamp = "CodeRouteType";
-            this.sdsForaneaRouteTypes.NomControl = "txtIDRoute";
-            this.sdsForaneaRouteTypes.NomID = "idRouteType";
-            this.sdsForaneaRouteTypes.NomTaula = "RouteTypes";
-            this.sdsForaneaRouteTypes.Requerit = false;
-            this.sdsForaneaRouteTypes.Size = new System.Drawing.Size(391, 46);
-            this.sdsForaneaRouteTypes.TabIndex = 24;
-            this.sdsForaneaRouteTypes.TextLabel = "Tipus de Ruta";
-            // 
             // sdsTextBoxRouteTypes
             // 
             this.sdsTextBoxRouteTypes.CodeSector = null;
@@ -101,6 +84,23 @@
             this.sdsTextBoxRouteTypes.SiEsForana = true;
             this.sdsTextBoxRouteTypes.Size = new System.Drawing.Size(20, 20);
             this.sdsTextBoxRouteTypes.TabIndex = 0;
+            // 
+            // sdsForaneaRouteTypes
+            // 
+            this.sdsForaneaRouteTypes.Control_Id = "sdsTextBoxRouteTypes";
+            this.sdsForaneaRouteTypes.DescCodi = "DescRouteType";
+            this.sdsForaneaRouteTypes.ErrorText = null;
+            this.sdsForaneaRouteTypes.Location = new System.Drawing.Point(0, 276);
+            this.sdsForaneaRouteTypes.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForaneaRouteTypes.Name = "sdsForaneaRouteTypes";
+            this.sdsForaneaRouteTypes.NomCamp = "CodeRouteType";
+            this.sdsForaneaRouteTypes.NomControl = "txtIDRoute";
+            this.sdsForaneaRouteTypes.NomID = "idRouteType";
+            this.sdsForaneaRouteTypes.NomTaula = "RouteTypes";
+            this.sdsForaneaRouteTypes.Requerit = false;
+            this.sdsForaneaRouteTypes.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaRouteTypes.TabIndex = 24;
+            this.sdsForaneaRouteTypes.TextLabel = "Tipus de Ruta";
             // 
             // Routes
             // 

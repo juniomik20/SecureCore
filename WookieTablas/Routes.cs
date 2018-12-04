@@ -13,7 +13,6 @@ namespace WookieTablas
 {
     public partial class Routes : MantenimientoBase.MantenimentBase
     {
-        PantallaCerca.Cerca CCerca;
         public Routes()
         {
             InitializeComponent();
@@ -22,13 +21,11 @@ namespace WookieTablas
         }
 
         private void Routes_Load(object sender, EventArgs e)
-        {
-            //PantallaCerca.Cerca CCerca = new PantallaCerca.Cerca();
+        {         
             this.Username = ConfigurationManager.AppSettings["UserName"].ToString();
             this.IconUser = ConfigurationManager.AppSettings["Icon"].ToString();
             ButtonAtras.Visible = true;
             TittleScreen.Text = "Routes";
-            CCerca.TableName = sdsForaneaRouteTypes.NomTaula;
         }
     }
 }

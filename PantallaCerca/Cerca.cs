@@ -21,9 +21,25 @@ namespace PantallaCerca
             set { _TableName = value; }
         }
 
+        private string _ControlName;
+
+        public string ControlName
+        {
+            get { return _ControlName; }
+            set { _ControlName = value; }
+        }
+
         public Cerca()
         {
             InitializeComponent();
+        }
+
+        public Cerca(string TableName, string ControlName)
+        {
+            InitializeComponent();
+
+            this.TableName = TableName;
+            this.ControlName = ControlName;
         }
         #region Variables
         //Creamos el dataset
@@ -31,8 +47,8 @@ namespace PantallaCerca
         //Instanciamos la ConnectionClass
         ConnectionClass.ClassBDD BDD = new ConnectionClass.ClassBDD();
         //Hacemos la consulta
-        public string query = "select * from Sectors";
-        
+        public string query /*= "select * from Sectors"*/;
+
         #endregion
 
         #region Metodos
