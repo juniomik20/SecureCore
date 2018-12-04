@@ -41,6 +41,12 @@
             this.pictureBoxPreview = new System.Windows.Forms.PictureBox();
             this.Planetsforanea = new WookieCodeControls.sdsForanea();
             this.sdsTexBoxidplanetes = new SdsTexBox.SdsTexBox();
+            this.ForaneaIdSpecie = new WookieCodeControls.sdsForanea();
+            this.idSpecies = new SdsTexBox.SdsTexBox();
+            this.ForaneaidUserRanks = new WookieCodeControls.sdsForanea();
+            this.ForaneaCategories = new WookieCodeControls.sdsForanea();
+            this.idUserRanks = new SdsTexBox.SdsTexBox();
+            this.idUsercategories = new SdsTexBox.SdsTexBox();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -218,7 +224,7 @@
             this.Planetsforanea.Control_Id = "sdsTexBoxidplanetes";
             this.Planetsforanea.DescCodi = "DescPlanet";
             this.Planetsforanea.ErrorText = null;
-            this.Planetsforanea.Location = new System.Drawing.Point(61, 281);
+            this.Planetsforanea.Location = new System.Drawing.Point(37, 413);
             this.Planetsforanea.Margin = new System.Windows.Forms.Padding(2);
             this.Planetsforanea.Name = "Planetsforanea";
             this.Planetsforanea.NomCamp = "CodePlanet";
@@ -232,10 +238,13 @@
             // 
             // sdsTexBoxidplanetes
             // 
+            this.sdsTexBoxidplanetes.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsTexBoxidplanetes.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sdsTexBoxidplanetes.CodeSector = null;
             this.sdsTexBoxidplanetes.ColumnName = "idPlanet";
             this.sdsTexBoxidplanetes.DescCodi = null;
-            this.sdsTexBoxidplanetes.Location = new System.Drawing.Point(104, 332);
+            this.sdsTexBoxidplanetes.Enabled = false;
+            this.sdsTexBoxidplanetes.Location = new System.Drawing.Point(426, 427);
             this.sdsTexBoxidplanetes.Name = "sdsTexBoxidplanetes";
             this.sdsTexBoxidplanetes.Nom = null;
             this.sdsTexBoxidplanetes.NomBBDD = "SecureCore";
@@ -244,15 +253,128 @@
             this.sdsTexBoxidplanetes.NomTaula = "Planets";
             this.sdsTexBoxidplanetes.Requerit = false;
             this.sdsTexBoxidplanetes.SiEsForana = true;
-            this.sdsTexBoxidplanetes.Size = new System.Drawing.Size(40, 20);
+            this.sdsTexBoxidplanetes.Size = new System.Drawing.Size(40, 13);
             this.sdsTexBoxidplanetes.TabIndex = 40;
+            // 
+            // ForaneaIdSpecie
+            // 
+            this.ForaneaIdSpecie.Control_Id = "idSpecies";
+            this.ForaneaIdSpecie.DescCodi = "DescSpecie";
+            this.ForaneaIdSpecie.ErrorText = null;
+            this.ForaneaIdSpecie.Location = new System.Drawing.Point(38, 475);
+            this.ForaneaIdSpecie.Margin = new System.Windows.Forms.Padding(2);
+            this.ForaneaIdSpecie.Name = "ForaneaIdSpecie";
+            this.ForaneaIdSpecie.NomCamp = "CodeSpecie";
+            this.ForaneaIdSpecie.NomControl = "idSpecies";
+            this.ForaneaIdSpecie.NomID = "idSpecie";
+            this.ForaneaIdSpecie.NomTaula = "Species";
+            this.ForaneaIdSpecie.Requerit = false;
+            this.ForaneaIdSpecie.Size = new System.Drawing.Size(391, 46);
+            this.ForaneaIdSpecie.TabIndex = 41;
+            this.ForaneaIdSpecie.TextLabel = null;
+            // 
+            // idSpecies
+            // 
+            this.idSpecies.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.idSpecies.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idSpecies.CodeSector = null;
+            this.idSpecies.ColumnName = "idSpecie";
+            this.idSpecies.DescCodi = null;
+            this.idSpecies.Enabled = false;
+            this.idSpecies.Location = new System.Drawing.Point(426, 489);
+            this.idSpecies.Name = "idSpecies";
+            this.idSpecies.Nom = null;
+            this.idSpecies.NomBBDD = "SecureCore";
+            this.idSpecies.NomCamp = null;
+            this.idSpecies.NomControl = "ForaneaIdSpecie";
+            this.idSpecies.NomTaula = "Species";
+            this.idSpecies.Requerit = false;
+            this.idSpecies.SiEsForana = true;
+            this.idSpecies.Size = new System.Drawing.Size(40, 13);
+            this.idSpecies.TabIndex = 42;
+            // 
+            // ForaneaidUserRanks
+            // 
+            this.ForaneaidUserRanks.Control_Id = "idUserRanks";
+            this.ForaneaidUserRanks.DescCodi = "DescRank";
+            this.ForaneaidUserRanks.ErrorText = null;
+            this.ForaneaidUserRanks.Location = new System.Drawing.Point(37, 316);
+            this.ForaneaidUserRanks.Margin = new System.Windows.Forms.Padding(2);
+            this.ForaneaidUserRanks.Name = "ForaneaidUserRanks";
+            this.ForaneaidUserRanks.NomCamp = "CodeRank";
+            this.ForaneaidUserRanks.NomControl = "idUserRanks";
+            this.ForaneaidUserRanks.NomID = "idUserRank";
+            this.ForaneaidUserRanks.NomTaula = "UserRanks";
+            this.ForaneaidUserRanks.Requerit = false;
+            this.ForaneaidUserRanks.Size = new System.Drawing.Size(391, 46);
+            this.ForaneaidUserRanks.TabIndex = 43;
+            this.ForaneaidUserRanks.TextLabel = null;
+            // 
+            // ForaneaCategories
+            // 
+            this.ForaneaCategories.Control_Id = "idUsercategories";
+            this.ForaneaCategories.DescCodi = "DescCategory";
+            this.ForaneaCategories.ErrorText = null;
+            this.ForaneaCategories.Location = new System.Drawing.Point(38, 366);
+            this.ForaneaCategories.Margin = new System.Windows.Forms.Padding(2);
+            this.ForaneaCategories.Name = "ForaneaCategories";
+            this.ForaneaCategories.NomCamp = "CodeCategory";
+            this.ForaneaCategories.NomControl = "idUsercategories";
+            this.ForaneaCategories.NomID = "idUserCategory";
+            this.ForaneaCategories.NomTaula = "UserCategories";
+            this.ForaneaCategories.Requerit = false;
+            this.ForaneaCategories.Size = new System.Drawing.Size(391, 46);
+            this.ForaneaCategories.TabIndex = 44;
+            this.ForaneaCategories.TextLabel = null;
+            // 
+            // idUserRanks
+            // 
+            this.idUserRanks.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.idUserRanks.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idUserRanks.CodeSector = null;
+            this.idUserRanks.ColumnName = "idUserRank";
+            this.idUserRanks.DescCodi = null;
+            this.idUserRanks.Enabled = false;
+            this.idUserRanks.Location = new System.Drawing.Point(426, 330);
+            this.idUserRanks.Name = "idUserRanks";
+            this.idUserRanks.Nom = null;
+            this.idUserRanks.NomBBDD = "SecureCore";
+            this.idUserRanks.NomCamp = null;
+            this.idUserRanks.NomControl = "ForaneaidUserRanks";
+            this.idUserRanks.NomTaula = "UserRanks";
+            this.idUserRanks.Requerit = false;
+            this.idUserRanks.SiEsForana = true;
+            this.idUserRanks.Size = new System.Drawing.Size(40, 13);
+            this.idUserRanks.TabIndex = 45;
+            // 
+            // idUsercategories
+            // 
+            this.idUsercategories.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.idUsercategories.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.idUsercategories.CodeSector = null;
+            this.idUsercategories.ColumnName = "idUserCategory";
+            this.idUsercategories.DescCodi = null;
+            this.idUsercategories.Enabled = false;
+            this.idUsercategories.Location = new System.Drawing.Point(426, 381);
+            this.idUsercategories.Name = "idUsercategories";
+            this.idUsercategories.Nom = null;
+            this.idUsercategories.NomBBDD = "SecureCore";
+            this.idUsercategories.NomCamp = null;
+            this.idUsercategories.NomControl = "ForaneaCategories";
+            this.idUsercategories.NomTaula = "UserCategories";
+            this.idUsercategories.Requerit = false;
+            this.idUsercategories.SiEsForana = true;
+            this.idUsercategories.Size = new System.Drawing.Size(40, 13);
+            this.idUsercategories.TabIndex = 46;
             // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 775);
-            this.Controls.Add(this.sdsTexBoxidplanetes);
+            this.Controls.Add(this.ForaneaCategories);
+            this.Controls.Add(this.ForaneaidUserRanks);
+            this.Controls.Add(this.ForaneaIdSpecie);
             this.Controls.Add(this.Planetsforanea);
             this.Controls.Add(this.pictureBoxPreview);
             this.Controls.Add(this.sdsTexBox5);
@@ -265,9 +387,17 @@
             this.Controls.Add(this.label3);
             this.Controls.Add(this.UserName);
             this.Controls.Add(this.CodeUserlabel);
+            this.Controls.Add(this.idUsercategories);
+            this.Controls.Add(this.idUserRanks);
+            this.Controls.Add(this.idSpecies);
+            this.Controls.Add(this.sdsTexBoxidplanetes);
             this.Name = "Users";
             this.Text = "Users";
             this.Load += new System.EventHandler(this.Users_Load);
+            this.Controls.SetChildIndex(this.sdsTexBoxidplanetes, 0);
+            this.Controls.SetChildIndex(this.idSpecies, 0);
+            this.Controls.SetChildIndex(this.idUserRanks, 0);
+            this.Controls.SetChildIndex(this.idUsercategories, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.CodeUserlabel, 0);
@@ -282,7 +412,9 @@
             this.Controls.SetChildIndex(this.sdsTexBox5, 0);
             this.Controls.SetChildIndex(this.pictureBoxPreview, 0);
             this.Controls.SetChildIndex(this.Planetsforanea, 0);
-            this.Controls.SetChildIndex(this.sdsTexBoxidplanetes, 0);
+            this.Controls.SetChildIndex(this.ForaneaIdSpecie, 0);
+            this.Controls.SetChildIndex(this.ForaneaidUserRanks, 0);
+            this.Controls.SetChildIndex(this.ForaneaCategories, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -303,5 +435,11 @@
         private System.Windows.Forms.PictureBox pictureBoxPreview;
         private WookieCodeControls.sdsForanea Planetsforanea;
         private SdsTexBox.SdsTexBox sdsTexBoxidplanetes;
+        private WookieCodeControls.sdsForanea ForaneaIdSpecie;
+        private SdsTexBox.SdsTexBox idSpecies;
+        private WookieCodeControls.sdsForanea ForaneaidUserRanks;
+        private WookieCodeControls.sdsForanea ForaneaCategories;
+        private SdsTexBox.SdsTexBox idUserRanks;
+        private SdsTexBox.SdsTexBox idUsercategories;
     }
 }

@@ -17,7 +17,7 @@ namespace WookieTablas
         {
             InitializeComponent();
             query = "Select * from Users";
-            id = "idUser";
+            base.id = "idUser";
         }
         private void Users_Load(object sender, EventArgs e)
         {

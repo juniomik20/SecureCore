@@ -77,12 +77,10 @@ namespace MantenimientoBase
                 {
                     nomCamp = ((SdsTexBox.SdsTexBox)sdsControl).ColumnName;
                     dr[nomCamp] = sdsControl.Text;
-                    
                 }
             }
             dts.Tables[0].Rows.Add(dr);
         }
-
         public void Validar(object sender, EventArgs e)
         {
             if (!bEsNou)
