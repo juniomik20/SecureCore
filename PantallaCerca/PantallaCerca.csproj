@@ -69,6 +69,10 @@
       <Project>{BF4D52FF-1166-4F33-9954-FECED8827E8F}</Project>
       <Name>SdsTexBox</Name>
     </ProjectReference>
+    <ProjectReference Include="..\WookieCodeControls\WookieCodeControls.csproj">
+      <Project>{9fa849fb-9441-4261-a4c3-ca19857eb644}</Project>
+      <Name>WookieCodeControls</Name>
+    </ProjectReference>
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.CSharp.targets" />
 </Project>

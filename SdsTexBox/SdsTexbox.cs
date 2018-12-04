@@ -14,6 +14,12 @@ namespace SdsTexBox
         {
             InitializeComponent();
         }
+
+        //public SdsTexBox(string id)
+        //{
+        //    InitializeComponent();
+        //    this.id = id;
+        //}
         string _Nom;
         public string Nom
         {
