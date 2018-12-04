@@ -64,13 +64,13 @@
             // 
             // sdstxtRegion
             // 
-            this.sdstxtRegion.BackColor = System.Drawing.SystemColors.ControlDarkDark;
+            this.sdstxtRegion.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.sdstxtRegion.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sdstxtRegion.CodeSector = null;
             this.sdstxtRegion.ColumnName = "idRegion";
             this.sdstxtRegion.DescCodi = null;
-            this.sdstxtRegion.ForeColor = System.Drawing.Color.Transparent;
-            this.sdstxtRegion.Location = new System.Drawing.Point(319, 214);
+            this.sdstxtRegion.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdstxtRegion.Location = new System.Drawing.Point(728, 158);
             this.sdstxtRegion.Name = "sdstxtRegion";
             this.sdstxtRegion.Nom = null;
             this.sdstxtRegion.NomBBDD = "SecureCore";
