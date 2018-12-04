@@ -40,6 +40,7 @@
             this.sdsTexBoxCodeRouteType.ColumnName = "CodeRouteType";
             this.sdsTexBoxCodeRouteType.DescCodi = null;
             this.sdsTexBoxCodeRouteType.Location = new System.Drawing.Point(131, 201);
+            this.sdsTexBoxCodeRouteType.MaxLength = 5;
             this.sdsTexBoxCodeRouteType.Name = "sdsTexBoxCodeRouteType";
             this.sdsTexBoxCodeRouteType.Nom = null;
             this.sdsTexBoxCodeRouteType.NomBBDD = "SecureCore";
