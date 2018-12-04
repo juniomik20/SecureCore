@@ -19,13 +19,17 @@ namespace WookieTablas
             query = "Select * from Users";
             id = "idUser";
         }
-
         private void Users_Load(object sender, EventArgs e)
         {
             this.Username = ConfigurationManager.AppSettings["UserName"].ToString();
             this.IconUser = ConfigurationManager.AppSettings["Icon"].ToString();
             ButtonAtras.Visible = true;
             TittleScreen.Text = "Users";
+        }
+        private void sdsTexBox5_TextChanged(object sender, EventArgs e)
+        {
+            pictureBoxPreview.ImageLocation = Application.StartupPath + @"\\Imagenes\" + sdsTexBox5.Text;
+            pictureBoxPreview.SizeMode = PictureBoxSizeMode.StretchImage;
         }
     }
 }
