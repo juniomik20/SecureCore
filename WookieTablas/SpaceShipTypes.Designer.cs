@@ -28,14 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.labDescSector = new System.Windows.Forms.Label();
-            this.labCodeSector = new System.Windows.Forms.Label();
-            this.sdstxtRegion = new SdsTexBox.SdsTexBox();
-            this.sdsForaneaRegion = new WookieCodeControls.sdsForanea();
-            this.sdstxtDescSector = new SdsTexBox.SdsTexBox();
             this.sdstxtCodeSector = new SdsTexBox.SdsTexBox();
-            this.sdsForanea1 = new WookieCodeControls.sdsForanea();
-            this.sdsForanea2 = new WookieCodeControls.sdsForanea();
+            this.sdstxtDescSpaceShipType = new SdsTexBox.SdsTexBox();
+            this.labCodeSpaceShipType = new System.Windows.Forms.Label();
+            this.labDescSpaceShipType = new System.Windows.Forms.Label();
+            this.sdsForaneaSpaceShipCategory = new WookieCodeControls.sdsForanea();
+            this.sdstxtFiliation = new SdsTexBox.SdsTexBox();
+            this.sdsForaneaFiliation = new WookieCodeControls.sdsForanea();
+            this.sdstxtSpaceShipCategories = new SdsTexBox.SdsTexBox();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -46,79 +46,10 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(47, 417);
             // 
-            // labDescSector
-            // 
-            this.labDescSector.AutoSize = true;
-            this.labDescSector.Location = new System.Drawing.Point(66, 225);
-            this.labDescSector.Name = "labDescSector";
-            this.labDescSector.Size = new System.Drawing.Size(77, 13);
-            this.labDescSector.TabIndex = 36;
-            this.labDescSector.Text = "labDescSector";
-            // 
-            // labCodeSector
-            // 
-            this.labCodeSector.AutoSize = true;
-            this.labCodeSector.Location = new System.Drawing.Point(66, 181);
-            this.labCodeSector.Name = "labCodeSector";
-            this.labCodeSector.Size = new System.Drawing.Size(77, 13);
-            this.labCodeSector.TabIndex = 35;
-            this.labCodeSector.Text = "labCodeSector";
-            // 
-            // sdstxtRegion
-            // 
-            this.sdstxtRegion.CodeSector = null;
-            this.sdstxtRegion.ColumnName = "idRegion";
-            this.sdstxtRegion.DescCodi = null;
-            this.sdstxtRegion.Location = new System.Drawing.Point(327, 234);
-            this.sdstxtRegion.Name = "sdstxtRegion";
-            this.sdstxtRegion.Nom = null;
-            this.sdstxtRegion.NomBBDD = "SecureCore";
-            this.sdstxtRegion.NomCamp = "idRegion";
-            this.sdstxtRegion.NomControl = "sdsForaneaRegion";
-            this.sdstxtRegion.NomTaula = "Sectors";
-            this.sdstxtRegion.Requerit = false;
-            this.sdstxtRegion.SiEsForana = true;
-            this.sdstxtRegion.Size = new System.Drawing.Size(20, 20);
-            this.sdstxtRegion.TabIndex = 31;
-            // 
-            // sdsForaneaRegion
-            // 
-            this.sdsForaneaRegion.Control_Id = "sdstxtRegion";
-            this.sdsForaneaRegion.DescCodi = "DescRegion";
-            this.sdsForaneaRegion.ErrorText = null;
-            this.sdsForaneaRegion.Location = new System.Drawing.Point(8, 275);
-            this.sdsForaneaRegion.Margin = new System.Windows.Forms.Padding(2);
-            this.sdsForaneaRegion.Name = "sdsForaneaRegion";
-            this.sdsForaneaRegion.NomCamp = "CodeRegion";
-            this.sdsForaneaRegion.NomControl = "txtIDRegion";
-            this.sdsForaneaRegion.NomID = "idRegion";
-            this.sdsForaneaRegion.NomTaula = "Regions";
-            this.sdsForaneaRegion.Requerit = false;
-            this.sdsForaneaRegion.Size = new System.Drawing.Size(391, 46);
-            this.sdsForaneaRegion.TabIndex = 34;
-            this.sdsForaneaRegion.TextLabel = "Region";
-            // 
-            // sdstxtDescSector
-            // 
-            this.sdstxtDescSector.CodeSector = null;
-            this.sdstxtDescSector.ColumnName = "DescSector";
-            this.sdstxtDescSector.DescCodi = null;
-            this.sdstxtDescSector.Location = new System.Drawing.Point(149, 225);
-            this.sdstxtDescSector.Name = "sdstxtDescSector";
-            this.sdstxtDescSector.Nom = null;
-            this.sdstxtDescSector.NomBBDD = "SecureCore";
-            this.sdstxtDescSector.NomCamp = null;
-            this.sdstxtDescSector.NomControl = null;
-            this.sdstxtDescSector.NomTaula = "Sectors";
-            this.sdstxtDescSector.Requerit = false;
-            this.sdstxtDescSector.SiEsForana = false;
-            this.sdstxtDescSector.Size = new System.Drawing.Size(100, 20);
-            this.sdstxtDescSector.TabIndex = 32;
-            // 
             // sdstxtCodeSector
             // 
             this.sdstxtCodeSector.CodeSector = null;
-            this.sdstxtCodeSector.ColumnName = "CodeSector";
+            this.sdstxtCodeSector.ColumnName = "CodeSpaceShipType";
             this.sdstxtCodeSector.DescCodi = null;
             this.sdstxtCodeSector.Location = new System.Drawing.Point(149, 181);
             this.sdstxtCodeSector.Name = "sdstxtCodeSector";
@@ -126,72 +57,146 @@
             this.sdstxtCodeSector.NomBBDD = "SecureCore";
             this.sdstxtCodeSector.NomCamp = null;
             this.sdstxtCodeSector.NomControl = null;
-            this.sdstxtCodeSector.NomTaula = "Sectors";
+            this.sdstxtCodeSector.NomTaula = "SpaceShipTypes";
             this.sdstxtCodeSector.Requerit = false;
             this.sdstxtCodeSector.SiEsForana = false;
             this.sdstxtCodeSector.Size = new System.Drawing.Size(100, 20);
             this.sdstxtCodeSector.TabIndex = 33;
             // 
-            // sdsForanea1
+            // sdstxtDescSpaceShipType
             // 
-            this.sdsForanea1.Control_Id = "sdstxtRegion";
-            this.sdsForanea1.DescCodi = "DescRegion";
-            this.sdsForanea1.ErrorText = null;
-            this.sdsForanea1.Location = new System.Drawing.Point(8, 325);
-            this.sdsForanea1.Margin = new System.Windows.Forms.Padding(2);
-            this.sdsForanea1.Name = "sdsForanea1";
-            this.sdsForanea1.NomCamp = "CodeRegion";
-            this.sdsForanea1.NomControl = "txtIDRegion";
-            this.sdsForanea1.NomID = "idRegion";
-            this.sdsForanea1.NomTaula = "Regions";
-            this.sdsForanea1.Requerit = false;
-            this.sdsForanea1.Size = new System.Drawing.Size(391, 46);
-            this.sdsForanea1.TabIndex = 37;
-            this.sdsForanea1.TextLabel = "Region";
+            this.sdstxtDescSpaceShipType.CodeSector = null;
+            this.sdstxtDescSpaceShipType.ColumnName = "DescSpaceShipType";
+            this.sdstxtDescSpaceShipType.DescCodi = null;
+            this.sdstxtDescSpaceShipType.Location = new System.Drawing.Point(149, 225);
+            this.sdstxtDescSpaceShipType.Name = "sdstxtDescSpaceShipType";
+            this.sdstxtDescSpaceShipType.Nom = null;
+            this.sdstxtDescSpaceShipType.NomBBDD = "SecureCore";
+            this.sdstxtDescSpaceShipType.NomCamp = null;
+            this.sdstxtDescSpaceShipType.NomControl = null;
+            this.sdstxtDescSpaceShipType.NomTaula = "SpaceShipTypes";
+            this.sdstxtDescSpaceShipType.Requerit = false;
+            this.sdstxtDescSpaceShipType.SiEsForana = false;
+            this.sdstxtDescSpaceShipType.Size = new System.Drawing.Size(100, 20);
+            this.sdstxtDescSpaceShipType.TabIndex = 32;
             // 
-            // sdsForanea2
+            // labCodeSpaceShipType
             // 
-            this.sdsForanea2.Control_Id = "sdstxtRegion";
-            this.sdsForanea2.DescCodi = "DescRegion";
-            this.sdsForanea2.ErrorText = null;
-            this.sdsForanea2.Location = new System.Drawing.Point(172, 530);
-            this.sdsForanea2.Margin = new System.Windows.Forms.Padding(2);
-            this.sdsForanea2.Name = "sdsForanea2";
-            this.sdsForanea2.NomCamp = "CodeRegion";
-            this.sdsForanea2.NomControl = "txtIDRegion";
-            this.sdsForanea2.NomID = "idRegion";
-            this.sdsForanea2.NomTaula = "Regions";
-            this.sdsForanea2.Requerit = false;
-            this.sdsForanea2.Size = new System.Drawing.Size(391, 46);
-            this.sdsForanea2.TabIndex = 44;
-            this.sdsForanea2.TextLabel = "Region";
+            this.labCodeSpaceShipType.AutoSize = true;
+            this.labCodeSpaceShipType.Location = new System.Drawing.Point(35, 184);
+            this.labCodeSpaceShipType.Name = "labCodeSpaceShipType";
+            this.labCodeSpaceShipType.Size = new System.Drawing.Size(108, 13);
+            this.labCodeSpaceShipType.TabIndex = 35;
+            this.labCodeSpaceShipType.Text = "CodeSpaceShipType";
+            // 
+            // labDescSpaceShipType
+            // 
+            this.labDescSpaceShipType.AutoSize = true;
+            this.labDescSpaceShipType.Location = new System.Drawing.Point(35, 225);
+            this.labDescSpaceShipType.Name = "labDescSpaceShipType";
+            this.labDescSpaceShipType.Size = new System.Drawing.Size(108, 13);
+            this.labDescSpaceShipType.TabIndex = 36;
+            this.labDescSpaceShipType.Text = "DescSpaceShipType";
+            // 
+            // sdsForaneaSpaceShipCategory
+            // 
+            this.sdsForaneaSpaceShipCategory.Control_Id = "sdsForaneaSpaceShipCategory";
+            this.sdsForaneaSpaceShipCategory.DescCodi = "DescSpaceShipCategory";
+            this.sdsForaneaSpaceShipCategory.ErrorText = null;
+            this.sdsForaneaSpaceShipCategory.Location = new System.Drawing.Point(8, 351);
+            this.sdsForaneaSpaceShipCategory.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForaneaSpaceShipCategory.Name = "sdsForaneaSpaceShipCategory";
+            this.sdsForaneaSpaceShipCategory.NomCamp = "CodeSpaceShipCategory";
+            this.sdsForaneaSpaceShipCategory.NomControl = "sdsForaneaSpaceShipCategory";
+            this.sdsForaneaSpaceShipCategory.NomID = "idSpaceShipCategory";
+            this.sdsForaneaSpaceShipCategory.NomTaula = "SpaceShipCategories";
+            this.sdsForaneaSpaceShipCategory.Requerit = false;
+            this.sdsForaneaSpaceShipCategory.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaSpaceShipCategory.TabIndex = 44;
+            this.sdsForaneaSpaceShipCategory.TextLabel = "SpaceShipCategory";
+            // 
+            // sdstxtFiliation
+            // 
+            this.sdstxtFiliation.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdstxtFiliation.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sdstxtFiliation.CodeSector = null;
+            this.sdstxtFiliation.ColumnName = "idFiliation";
+            this.sdstxtFiliation.DescCodi = null;
+            this.sdstxtFiliation.Location = new System.Drawing.Point(327, 234);
+            this.sdstxtFiliation.Name = "sdstxtFiliation";
+            this.sdstxtFiliation.Nom = null;
+            this.sdstxtFiliation.NomBBDD = "SecureCore";
+            this.sdstxtFiliation.NomCamp = "idFiliation";
+            this.sdstxtFiliation.NomControl = "sdsForaneaFiliation";
+            this.sdstxtFiliation.NomTaula = "SpaceShipType";
+            this.sdstxtFiliation.Requerit = false;
+            this.sdstxtFiliation.SiEsForana = true;
+            this.sdstxtFiliation.Size = new System.Drawing.Size(20, 13);
+            this.sdstxtFiliation.TabIndex = 31;
+            // 
+            // sdsForaneaFiliation
+            // 
+            this.sdsForaneaFiliation.Control_Id = "sdsForaneaFiliation";
+            this.sdsForaneaFiliation.DescCodi = "DescFiliation";
+            this.sdsForaneaFiliation.ErrorText = null;
+            this.sdsForaneaFiliation.Location = new System.Drawing.Point(8, 275);
+            this.sdsForaneaFiliation.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForaneaFiliation.Name = "sdsForaneaFiliation";
+            this.sdsForaneaFiliation.NomCamp = "CodeFiliation";
+            this.sdsForaneaFiliation.NomControl = "sdsForaneaFiliation";
+            this.sdsForaneaFiliation.NomID = "idFiliation";
+            this.sdsForaneaFiliation.NomTaula = "Filiations";
+            this.sdsForaneaFiliation.Requerit = false;
+            this.sdsForaneaFiliation.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaFiliation.TabIndex = 34;
+            this.sdsForaneaFiliation.TextLabel = "Filiations";
+            // 
+            // sdstxtSpaceShipCategories
+            // 
+            this.sdstxtSpaceShipCategories.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdstxtSpaceShipCategories.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sdstxtSpaceShipCategories.CodeSector = null;
+            this.sdstxtSpaceShipCategories.ColumnName = "idSpaceShipCategory";
+            this.sdstxtSpaceShipCategories.DescCodi = null;
+            this.sdstxtSpaceShipCategories.Location = new System.Drawing.Point(327, 326);
+            this.sdstxtSpaceShipCategories.Name = "sdstxtSpaceShipCategories";
+            this.sdstxtSpaceShipCategories.Nom = null;
+            this.sdstxtSpaceShipCategories.NomBBDD = "SecureCore";
+            this.sdstxtSpaceShipCategories.NomCamp = "idSpaceShipCategory";
+            this.sdstxtSpaceShipCategories.NomControl = "sdsForaneaSpaceShipCategory";
+            this.sdstxtSpaceShipCategories.NomTaula = "SpaceShipCategory";
+            this.sdstxtSpaceShipCategories.Requerit = false;
+            this.sdstxtSpaceShipCategories.SiEsForana = true;
+            this.sdstxtSpaceShipCategories.Size = new System.Drawing.Size(20, 13);
+            this.sdstxtSpaceShipCategories.TabIndex = 45;
             // 
             // SpaceShipTypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(905, 628);
-            this.Controls.Add(this.sdsForanea2);
-            this.Controls.Add(this.sdsForanea1);
-            this.Controls.Add(this.labDescSector);
-            this.Controls.Add(this.labCodeSector);
-            this.Controls.Add(this.sdstxtRegion);
-            this.Controls.Add(this.sdsForaneaRegion);
-            this.Controls.Add(this.sdstxtDescSector);
+            this.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.ClientSize = new System.Drawing.Size(891, 482);
+            this.Controls.Add(this.sdstxtSpaceShipCategories);
+            this.Controls.Add(this.sdsForaneaSpaceShipCategory);
+            this.Controls.Add(this.labDescSpaceShipType);
+            this.Controls.Add(this.labCodeSpaceShipType);
+            this.Controls.Add(this.sdstxtFiliation);
+            this.Controls.Add(this.sdsForaneaFiliation);
+            this.Controls.Add(this.sdstxtDescSpaceShipType);
             this.Controls.Add(this.sdstxtCodeSector);
             this.Name = "SpaceShipTypes";
             this.Text = "SpaceShipTypes";
             this.Load += new System.EventHandler(this.SpaceShipTypes_Load);
+            this.Controls.SetChildIndex(this.sdstxtCodeSector, 0);
+            this.Controls.SetChildIndex(this.sdstxtDescSpaceShipType, 0);
+            this.Controls.SetChildIndex(this.sdsForaneaFiliation, 0);
+            this.Controls.SetChildIndex(this.sdstxtFiliation, 0);
+            this.Controls.SetChildIndex(this.labCodeSpaceShipType, 0);
+            this.Controls.SetChildIndex(this.labDescSpaceShipType, 0);
+            this.Controls.SetChildIndex(this.sdsForaneaSpaceShipCategory, 0);
+            this.Controls.SetChildIndex(this.sdstxtSpaceShipCategories, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
-            this.Controls.SetChildIndex(this.sdstxtCodeSector, 0);
-            this.Controls.SetChildIndex(this.sdstxtDescSector, 0);
-            this.Controls.SetChildIndex(this.sdsForaneaRegion, 0);
-            this.Controls.SetChildIndex(this.sdstxtRegion, 0);
-            this.Controls.SetChildIndex(this.labCodeSector, 0);
-            this.Controls.SetChildIndex(this.labDescSector, 0);
-            this.Controls.SetChildIndex(this.sdsForanea1, 0);
-            this.Controls.SetChildIndex(this.sdsForanea2, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -199,13 +204,13 @@
 
         #endregion
 
-        private System.Windows.Forms.Label labDescSector;
-        private System.Windows.Forms.Label labCodeSector;
-        private SdsTexBox.SdsTexBox sdstxtRegion;
-        private WookieCodeControls.sdsForanea sdsForaneaRegion;
-        private SdsTexBox.SdsTexBox sdstxtDescSector;
         private SdsTexBox.SdsTexBox sdstxtCodeSector;
-        private WookieCodeControls.sdsForanea sdsForanea1;
-        private WookieCodeControls.sdsForanea sdsForanea2;
+        private SdsTexBox.SdsTexBox sdstxtDescSpaceShipType;
+        private System.Windows.Forms.Label labCodeSpaceShipType;
+        private System.Windows.Forms.Label labDescSpaceShipType;
+        private WookieCodeControls.sdsForanea sdsForaneaSpaceShipCategory;
+        private SdsTexBox.SdsTexBox sdstxtFiliation;
+        private WookieCodeControls.sdsForanea sdsForaneaFiliation;
+        private SdsTexBox.SdsTexBox sdstxtSpaceShipCategories;
     }
 }

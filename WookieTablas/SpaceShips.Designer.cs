@@ -28,12 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.label3 = new System.Windows.Forms.Label();
-            this.sdsTexBox3 = new SdsTexBox.SdsTexBox();
-            this.label2 = new System.Windows.Forms.Label();
-            this.sdsTexBox2 = new SdsTexBox.SdsTexBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.sdsTexBox1 = new SdsTexBox.SdsTexBox();
+            this.lblPortPlanet = new System.Windows.Forms.Label();
+            this.sdsTexBoxPortPlanet = new SdsTexBox.SdsTexBox();
+            this.lblCodeSpaceShip = new System.Windows.Forms.Label();
+            this.sdsTexBoxCodeSpaceShip = new SdsTexBox.SdsTexBox();
+            this.lblIPSpaceShip = new System.Windows.Forms.Label();
+            this.sdsTexBoxIPSpaceShip = new SdsTexBox.SdsTexBox();
+            this.sdsTexBoxSpaceShipTypes = new SdsTexBox.SdsTexBox();
+            this.sdsForaneaSpaceShipTypes = new WookieCodeControls.sdsForanea();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -44,121 +46,166 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(180, 372);
             // 
-            // label3
+            // lblPortPlanet
             // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(71, 310);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 34;
-            this.label3.Text = "PortPlanet";
+            this.lblPortPlanet.AutoSize = true;
+            this.lblPortPlanet.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblPortPlanet.Location = new System.Drawing.Point(17, 252);
+            this.lblPortPlanet.Name = "lblPortPlanet";
+            this.lblPortPlanet.Size = new System.Drawing.Size(62, 13);
+            this.lblPortPlanet.TabIndex = 32;
+            this.lblPortPlanet.Text = "Port Planet:";
             // 
-            // sdsTexBox3
+            // sdsTexBoxPortPlanet
             // 
-            this.sdsTexBox3.CodeSector = null;
-            this.sdsTexBox3.ColumnName = null;
-            this.sdsTexBox3.DescCodi = null;
-            this.sdsTexBox3.Location = new System.Drawing.Point(133, 307);
-            this.sdsTexBox3.Name = "sdsTexBox3";
-            this.sdsTexBox3.Nom = null;
-            this.sdsTexBox3.NomBBDD = null;
-            this.sdsTexBox3.NomCamp = null;
-            this.sdsTexBox3.NomControl = null;
-            this.sdsTexBox3.NomTaula = null;
-            this.sdsTexBox3.Requerit = false;
-            this.sdsTexBox3.SiEsForana = false;
-            this.sdsTexBox3.Size = new System.Drawing.Size(200, 20);
-            this.sdsTexBox3.TabIndex = 33;
+            this.sdsTexBoxPortPlanet.CodeSector = null;
+            this.sdsTexBoxPortPlanet.ColumnName = "PortPlanet";
+            this.sdsTexBoxPortPlanet.DescCodi = null;
+            this.sdsTexBoxPortPlanet.Location = new System.Drawing.Point(133, 252);
+            this.sdsTexBoxPortPlanet.Name = "sdsTexBoxPortPlanet";
+            this.sdsTexBoxPortPlanet.Nom = null;
+            this.sdsTexBoxPortPlanet.NomBBDD = "SecureCore";
+            this.sdsTexBoxPortPlanet.NomCamp = null;
+            this.sdsTexBoxPortPlanet.NomControl = null;
+            this.sdsTexBoxPortPlanet.NomTaula = "SpaceShips";
+            this.sdsTexBoxPortPlanet.Requerit = false;
+            this.sdsTexBoxPortPlanet.SiEsForana = false;
+            this.sdsTexBoxPortPlanet.Size = new System.Drawing.Size(200, 20);
+            this.sdsTexBoxPortPlanet.TabIndex = 31;
             // 
-            // label2
+            // lblCodeSpaceShip
             // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(58, 284);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 32;
-            this.label2.Text = "IPSpaceShip";
+            this.lblCodeSpaceShip.AutoSize = true;
+            this.lblCodeSpaceShip.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblCodeSpaceShip.Location = new System.Drawing.Point(12, 169);
+            this.lblCodeSpaceShip.Name = "lblCodeSpaceShip";
+            this.lblCodeSpaceShip.Size = new System.Drawing.Size(93, 13);
+            this.lblCodeSpaceShip.TabIndex = 30;
+            this.lblCodeSpaceShip.Text = "Code Space Ship:";
             // 
-            // sdsTexBox2
+            // sdsTexBoxCodeSpaceShip
             // 
-            this.sdsTexBox2.CodeSector = null;
-            this.sdsTexBox2.ColumnName = null;
-            this.sdsTexBox2.DescCodi = null;
-            this.sdsTexBox2.Location = new System.Drawing.Point(133, 281);
-            this.sdsTexBox2.Name = "sdsTexBox2";
-            this.sdsTexBox2.Nom = null;
-            this.sdsTexBox2.NomBBDD = null;
-            this.sdsTexBox2.NomCamp = null;
-            this.sdsTexBox2.NomControl = null;
-            this.sdsTexBox2.NomTaula = null;
-            this.sdsTexBox2.Requerit = false;
-            this.sdsTexBox2.SiEsForana = false;
-            this.sdsTexBox2.Size = new System.Drawing.Size(100, 20);
-            this.sdsTexBox2.TabIndex = 31;
+            this.sdsTexBoxCodeSpaceShip.CodeSector = null;
+            this.sdsTexBoxCodeSpaceShip.ColumnName = "CodeSpaceShip";
+            this.sdsTexBoxCodeSpaceShip.DescCodi = null;
+            this.sdsTexBoxCodeSpaceShip.Location = new System.Drawing.Point(133, 166);
+            this.sdsTexBoxCodeSpaceShip.Name = "sdsTexBoxCodeSpaceShip";
+            this.sdsTexBoxCodeSpaceShip.Nom = null;
+            this.sdsTexBoxCodeSpaceShip.NomBBDD = "SecureCore";
+            this.sdsTexBoxCodeSpaceShip.NomCamp = null;
+            this.sdsTexBoxCodeSpaceShip.NomControl = null;
+            this.sdsTexBoxCodeSpaceShip.NomTaula = "SpaceShips";
+            this.sdsTexBoxCodeSpaceShip.Requerit = false;
+            this.sdsTexBoxCodeSpaceShip.SiEsForana = false;
+            this.sdsTexBoxCodeSpaceShip.Size = new System.Drawing.Size(200, 20);
+            this.sdsTexBoxCodeSpaceShip.TabIndex = 29;
             // 
-            // label1
+            // lblIPSpaceShip
             // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(43, 258);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
-            this.label1.TabIndex = 30;
-            this.label1.Text = "CodeSpaceShip";
+            this.lblIPSpaceShip.AutoSize = true;
+            this.lblIPSpaceShip.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.lblIPSpaceShip.Location = new System.Drawing.Point(12, 212);
+            this.lblIPSpaceShip.Name = "lblIPSpaceShip";
+            this.lblIPSpaceShip.Size = new System.Drawing.Size(78, 13);
+            this.lblIPSpaceShip.TabIndex = 34;
+            this.lblIPSpaceShip.Text = "IP Space Ship:";
             // 
-            // sdsTexBox1
+            // sdsTexBoxIPSpaceShip
             // 
-            this.sdsTexBox1.CodeSector = null;
-            this.sdsTexBox1.ColumnName = null;
-            this.sdsTexBox1.DescCodi = null;
-            this.sdsTexBox1.Location = new System.Drawing.Point(133, 255);
-            this.sdsTexBox1.Name = "sdsTexBox1";
-            this.sdsTexBox1.Nom = null;
-            this.sdsTexBox1.NomBBDD = null;
-            this.sdsTexBox1.NomCamp = null;
-            this.sdsTexBox1.NomControl = null;
-            this.sdsTexBox1.NomTaula = null;
-            this.sdsTexBox1.Requerit = false;
-            this.sdsTexBox1.SiEsForana = false;
-            this.sdsTexBox1.Size = new System.Drawing.Size(260, 20);
-            this.sdsTexBox1.TabIndex = 29;
+            this.sdsTexBoxIPSpaceShip.CodeSector = null;
+            this.sdsTexBoxIPSpaceShip.ColumnName = "IPSpaceShip";
+            this.sdsTexBoxIPSpaceShip.DescCodi = null;
+            this.sdsTexBoxIPSpaceShip.Location = new System.Drawing.Point(133, 209);
+            this.sdsTexBoxIPSpaceShip.Name = "sdsTexBoxIPSpaceShip";
+            this.sdsTexBoxIPSpaceShip.Nom = null;
+            this.sdsTexBoxIPSpaceShip.NomBBDD = "SecureCore";
+            this.sdsTexBoxIPSpaceShip.NomCamp = null;
+            this.sdsTexBoxIPSpaceShip.NomControl = null;
+            this.sdsTexBoxIPSpaceShip.NomTaula = "SpaceShips";
+            this.sdsTexBoxIPSpaceShip.Requerit = false;
+            this.sdsTexBoxIPSpaceShip.SiEsForana = false;
+            this.sdsTexBoxIPSpaceShip.Size = new System.Drawing.Size(200, 20);
+            this.sdsTexBoxIPSpaceShip.TabIndex = 33;
+            // 
+            // sdsTexBoxSpaceShipTypes
+            // 
+            this.sdsTexBoxSpaceShipTypes.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsTexBoxSpaceShipTypes.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sdsTexBoxSpaceShipTypes.CodeSector = null;
+            this.sdsTexBoxSpaceShipTypes.ColumnName = "idSpaceShipType";
+            this.sdsTexBoxSpaceShipTypes.DescCodi = null;
+            this.sdsTexBoxSpaceShipTypes.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sdsTexBoxSpaceShipTypes.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsTexBoxSpaceShipTypes.Location = new System.Drawing.Point(939, 117);
+            this.sdsTexBoxSpaceShipTypes.Name = "sdsTexBoxSpaceShipTypes";
+            this.sdsTexBoxSpaceShipTypes.Nom = null;
+            this.sdsTexBoxSpaceShipTypes.NomBBDD = "SecureCore";
+            this.sdsTexBoxSpaceShipTypes.NomCamp = "idSpaceShipType";
+            this.sdsTexBoxSpaceShipTypes.NomControl = "sdsForaneaSpaceShipTypes";
+            this.sdsTexBoxSpaceShipTypes.NomTaula = "SpaceShips";
+            this.sdsTexBoxSpaceShipTypes.ReadOnly = true;
+            this.sdsTexBoxSpaceShipTypes.Requerit = false;
+            this.sdsTexBoxSpaceShipTypes.SiEsForana = true;
+            this.sdsTexBoxSpaceShipTypes.Size = new System.Drawing.Size(1, 2);
+            this.sdsTexBoxSpaceShipTypes.TabIndex = 35;
+            this.sdsTexBoxSpaceShipTypes.TabStop = false;
+            // 
+            // sdsForaneaSpaceShipTypes
+            // 
+            this.sdsForaneaSpaceShipTypes.Control_Id = null;
+            this.sdsForaneaSpaceShipTypes.DescCodi = "DescSpaceShipType";
+            this.sdsForaneaSpaceShipTypes.ErrorText = null;
+            this.sdsForaneaSpaceShipTypes.Location = new System.Drawing.Point(0, 298);
+            this.sdsForaneaSpaceShipTypes.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForaneaSpaceShipTypes.Name = "sdsForaneaSpaceShipTypes";
+            this.sdsForaneaSpaceShipTypes.NomCamp = "CodeSpaceShipType";
+            this.sdsForaneaSpaceShipTypes.NomControl = "sdsTexBoxSpaceShipTypes";
+            this.sdsForaneaSpaceShipTypes.NomID = "idSpaceShipType";
+            this.sdsForaneaSpaceShipTypes.NomTaula = "SpaceShipTypes";
+            this.sdsForaneaSpaceShipTypes.Requerit = false;
+            this.sdsForaneaSpaceShipTypes.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaSpaceShipTypes.TabIndex = 36;
+            this.sdsForaneaSpaceShipTypes.TextLabel = "Space Ship Types:";
             // 
             // SpaceShips
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 564);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.sdsTexBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.sdsTexBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.sdsTexBox1);
+            this.Controls.Add(this.sdsForaneaSpaceShipTypes);
+            this.Controls.Add(this.lblIPSpaceShip);
+            this.Controls.Add(this.sdsTexBoxIPSpaceShip);
+            this.Controls.Add(this.lblPortPlanet);
+            this.Controls.Add(this.sdsTexBoxPortPlanet);
+            this.Controls.Add(this.lblCodeSpaceShip);
+            this.Controls.Add(this.sdsTexBoxCodeSpaceShip);
+            this.Controls.Add(this.sdsTexBoxSpaceShipTypes);
             this.Name = "SpaceShips";
             this.Text = "SpaceShips";
             this.Load += new System.EventHandler(this.SpaceShips_Load);
+            this.Controls.SetChildIndex(this.sdsTexBoxSpaceShipTypes, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox1, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox2, 0);
-            this.Controls.SetChildIndex(this.label2, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox3, 0);
-            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.sdsTexBoxCodeSpaceShip, 0);
+            this.Controls.SetChildIndex(this.lblCodeSpaceShip, 0);
+            this.Controls.SetChildIndex(this.sdsTexBoxPortPlanet, 0);
+            this.Controls.SetChildIndex(this.lblPortPlanet, 0);
+            this.Controls.SetChildIndex(this.sdsTexBoxIPSpaceShip, 0);
+            this.Controls.SetChildIndex(this.lblIPSpaceShip, 0);
+            this.Controls.SetChildIndex(this.sdsForaneaSpaceShipTypes, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private System.Windows.Forms.Label label3;
-        private SdsTexBox.SdsTexBox sdsTexBox3;
-        private System.Windows.Forms.Label label2;
-        private SdsTexBox.SdsTexBox sdsTexBox2;
-        private System.Windows.Forms.Label label1;
-        private SdsTexBox.SdsTexBox sdsTexBox1;
+        private System.Windows.Forms.Label lblPortPlanet;
+        private SdsTexBox.SdsTexBox sdsTexBoxPortPlanet;
+        private System.Windows.Forms.Label lblCodeSpaceShip;
+        private SdsTexBox.SdsTexBox sdsTexBoxCodeSpaceShip;
+        private System.Windows.Forms.Label lblIPSpaceShip;
+        private SdsTexBox.SdsTexBox sdsTexBoxIPSpaceShip;
+        private SdsTexBox.SdsTexBox sdsTexBoxSpaceShipTypes;
+        private WookieCodeControls.sdsForanea sdsForaneaSpaceShipTypes;
     }
 }
