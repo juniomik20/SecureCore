@@ -120,14 +120,15 @@ namespace SdsTexBox
             // 
             // TextBox1
             // 
-            this.Location = new System.Drawing.Point(0, 0);
+            this.TextBox1.Location = new System.Drawing.Point(0, 0);
+            this.TextBox1.Name = "TextBox1";
+            this.TextBox1.Size = new System.Drawing.Size(100, 20);
+            this.TextBox1.TabIndex = 0;
+            // 
+            // SdsTexBox
+            // 
             this.Name = "TextBox1";
-            this.Size = new System.Drawing.Size(100, 20);
-            this.TabIndex = 0;
             this.TextChanged += new System.EventHandler(this.TextBox1_TextChanged);
-            // 
-            // SdsTextBox
-            // 
             this.Leave += new System.EventHandler(this.TxtCode_Leave);
             this.Validating += new System.ComponentModel.CancelEventHandler(this.TxtCode_Validating);
             this.Validated += new System.EventHandler(this.TxtCode_Validated);
@@ -177,7 +178,7 @@ namespace SdsTexBox
 
         private void TextBox1_TextChanged(object sender, EventArgs e)
         {
-           // EsForanea();
+           EsForanea();
         }
     }
 }

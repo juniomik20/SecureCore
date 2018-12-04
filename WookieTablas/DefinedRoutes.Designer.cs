@@ -28,25 +28,14 @@
         /// </summary>
         private void InitializeComponent()
         {
-            this.sdsTexBox1 = new SdsTexBox.SdsTexBox();
-            this.label1 = new System.Windows.Forms.Label();
-            this.label2 = new System.Windows.Forms.Label();
-            this.sdsTexBox2 = new SdsTexBox.SdsTexBox();
-            this.label3 = new System.Windows.Forms.Label();
-            this.sdsTexBox3 = new SdsTexBox.SdsTexBox();
-            this.label4 = new System.Windows.Forms.Label();
-            this.sdsTexBox4 = new SdsTexBox.SdsTexBox();
-            this.label5 = new System.Windows.Forms.Label();
-            this.sdsTexBox5 = new SdsTexBox.SdsTexBox();
-            this.label6 = new System.Windows.Forms.Label();
-            this.sdsTexBox6 = new SdsTexBox.SdsTexBox();
             this.label7 = new System.Windows.Forms.Label();
             this.sdsTexBox7 = new SdsTexBox.SdsTexBox();
             this.label8 = new System.Windows.Forms.Label();
-            this.sdsTexBox8 = new SdsTexBox.SdsTexBox();
             this.label9 = new System.Windows.Forms.Label();
             this.sdsTexBox9 = new SdsTexBox.SdsTexBox();
-            this.sdsTexBox10 = new SdsTexBox.SdsTexBox();
+            this.sdsTexBox8 = new SdsTexBox.SdsTexBox();
+            this.sdsForanea1 = new WookieCodeControls.sdsForanea();
+            this.sdsTxtidRoute = new SdsTexBox.SdsTexBox();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -57,190 +46,28 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(166, 389);
             // 
-            // sdsTexBox1
-            // 
-            this.sdsTexBox1.CodeSector = null;
-            this.sdsTexBox1.ColumnName = null;
-            this.sdsTexBox1.DescCodi = null;
-            this.sdsTexBox1.Location = new System.Drawing.Point(119, 230);
-            this.sdsTexBox1.Name = "sdsTexBox1";
-            this.sdsTexBox1.Nom = null;
-            this.sdsTexBox1.NomBBDD = null;
-            this.sdsTexBox1.NomCamp = null;
-            this.sdsTexBox1.NomControl = null;
-            this.sdsTexBox1.NomTaula = null;
-            this.sdsTexBox1.Requerit = false;
-            this.sdsTexBox1.SiEsForana = false;
-            this.sdsTexBox1.Size = new System.Drawing.Size(260, 20);
-            this.sdsTexBox1.TabIndex = 0;
-            // 
-            // label1
-            // 
-            this.label1.AutoSize = true;
-            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label1.Location = new System.Drawing.Point(29, 233);
-            this.label1.Name = "label1";
-            this.label1.Size = new System.Drawing.Size(84, 13);
-            this.label1.TabIndex = 24;
-            this.label1.Text = "CodeSpaceShip";
-            // 
-            // label2
-            // 
-            this.label2.AutoSize = true;
-            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label2.Location = new System.Drawing.Point(44, 259);
-            this.label2.Name = "label2";
-            this.label2.Size = new System.Drawing.Size(69, 13);
-            this.label2.TabIndex = 26;
-            this.label2.Text = "IPSpaceShip";
-            // 
-            // sdsTexBox2
-            // 
-            this.sdsTexBox2.CodeSector = null;
-            this.sdsTexBox2.ColumnName = null;
-            this.sdsTexBox2.DescCodi = null;
-            this.sdsTexBox2.Location = new System.Drawing.Point(119, 256);
-            this.sdsTexBox2.Name = "sdsTexBox2";
-            this.sdsTexBox2.Nom = null;
-            this.sdsTexBox2.NomBBDD = null;
-            this.sdsTexBox2.NomCamp = null;
-            this.sdsTexBox2.NomControl = null;
-            this.sdsTexBox2.NomTaula = null;
-            this.sdsTexBox2.Requerit = false;
-            this.sdsTexBox2.SiEsForana = false;
-            this.sdsTexBox2.Size = new System.Drawing.Size(100, 20);
-            this.sdsTexBox2.TabIndex = 25;
-            // 
-            // label3
-            // 
-            this.label3.AutoSize = true;
-            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label3.Location = new System.Drawing.Point(57, 285);
-            this.label3.Name = "label3";
-            this.label3.Size = new System.Drawing.Size(56, 13);
-            this.label3.TabIndex = 28;
-            this.label3.Text = "PortPlanet";
-            // 
-            // sdsTexBox3
-            // 
-            this.sdsTexBox3.CodeSector = null;
-            this.sdsTexBox3.ColumnName = null;
-            this.sdsTexBox3.DescCodi = null;
-            this.sdsTexBox3.Location = new System.Drawing.Point(119, 282);
-            this.sdsTexBox3.Name = "sdsTexBox3";
-            this.sdsTexBox3.Nom = null;
-            this.sdsTexBox3.NomBBDD = null;
-            this.sdsTexBox3.NomCamp = null;
-            this.sdsTexBox3.NomControl = null;
-            this.sdsTexBox3.NomTaula = null;
-            this.sdsTexBox3.Requerit = false;
-            this.sdsTexBox3.SiEsForana = false;
-            this.sdsTexBox3.Size = new System.Drawing.Size(200, 20);
-            this.sdsTexBox3.TabIndex = 27;
-            // 
-            // label4
-            // 
-            this.label4.AutoSize = true;
-            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label4.Location = new System.Drawing.Point(57, 363);
-            this.label4.Name = "label4";
-            this.label4.Size = new System.Drawing.Size(56, 13);
-            this.label4.TabIndex = 34;
-            this.label4.Text = "PortPlanet";
-            // 
-            // sdsTexBox4
-            // 
-            this.sdsTexBox4.CodeSector = null;
-            this.sdsTexBox4.ColumnName = null;
-            this.sdsTexBox4.DescCodi = null;
-            this.sdsTexBox4.Location = new System.Drawing.Point(119, 360);
-            this.sdsTexBox4.Name = "sdsTexBox4";
-            this.sdsTexBox4.Nom = null;
-            this.sdsTexBox4.NomBBDD = null;
-            this.sdsTexBox4.NomCamp = null;
-            this.sdsTexBox4.NomControl = null;
-            this.sdsTexBox4.NomTaula = null;
-            this.sdsTexBox4.Requerit = false;
-            this.sdsTexBox4.SiEsForana = false;
-            this.sdsTexBox4.Size = new System.Drawing.Size(200, 20);
-            this.sdsTexBox4.TabIndex = 33;
-            // 
-            // label5
-            // 
-            this.label5.AutoSize = true;
-            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label5.Location = new System.Drawing.Point(44, 337);
-            this.label5.Name = "label5";
-            this.label5.Size = new System.Drawing.Size(69, 13);
-            this.label5.TabIndex = 32;
-            this.label5.Text = "IPSpaceShip";
-            // 
-            // sdsTexBox5
-            // 
-            this.sdsTexBox5.CodeSector = null;
-            this.sdsTexBox5.ColumnName = null;
-            this.sdsTexBox5.DescCodi = null;
-            this.sdsTexBox5.Location = new System.Drawing.Point(119, 334);
-            this.sdsTexBox5.Name = "sdsTexBox5";
-            this.sdsTexBox5.Nom = null;
-            this.sdsTexBox5.NomBBDD = null;
-            this.sdsTexBox5.NomCamp = null;
-            this.sdsTexBox5.NomControl = null;
-            this.sdsTexBox5.NomTaula = null;
-            this.sdsTexBox5.Requerit = false;
-            this.sdsTexBox5.SiEsForana = false;
-            this.sdsTexBox5.Size = new System.Drawing.Size(100, 20);
-            this.sdsTexBox5.TabIndex = 31;
-            // 
-            // label6
-            // 
-            this.label6.AutoSize = true;
-            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label6.Location = new System.Drawing.Point(29, 311);
-            this.label6.Name = "label6";
-            this.label6.Size = new System.Drawing.Size(84, 13);
-            this.label6.TabIndex = 30;
-            this.label6.Text = "CodeSpaceShip";
-            // 
-            // sdsTexBox6
-            // 
-            this.sdsTexBox6.CodeSector = null;
-            this.sdsTexBox6.ColumnName = null;
-            this.sdsTexBox6.DescCodi = null;
-            this.sdsTexBox6.Location = new System.Drawing.Point(119, 308);
-            this.sdsTexBox6.Name = "sdsTexBox6";
-            this.sdsTexBox6.Nom = null;
-            this.sdsTexBox6.NomBBDD = null;
-            this.sdsTexBox6.NomCamp = null;
-            this.sdsTexBox6.NomControl = null;
-            this.sdsTexBox6.NomTaula = null;
-            this.sdsTexBox6.Requerit = false;
-            this.sdsTexBox6.SiEsForana = false;
-            this.sdsTexBox6.Size = new System.Drawing.Size(260, 20);
-            this.sdsTexBox6.TabIndex = 29;
-            // 
             // label7
             // 
             this.label7.AutoSize = true;
             this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label7.Location = new System.Drawing.Point(57, 207);
             this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
+            this.label7.Size = new System.Drawing.Size(57, 13);
             this.label7.TabIndex = 40;
-            this.label7.Text = "PortPlanet";
+            this.label7.Text = "RouteMap";
             // 
             // sdsTexBox7
             // 
             this.sdsTexBox7.CodeSector = null;
-            this.sdsTexBox7.ColumnName = null;
+            this.sdsTexBox7.ColumnName = "RouteMap";
             this.sdsTexBox7.DescCodi = null;
             this.sdsTexBox7.Location = new System.Drawing.Point(119, 204);
             this.sdsTexBox7.Name = "sdsTexBox7";
             this.sdsTexBox7.Nom = null;
-            this.sdsTexBox7.NomBBDD = null;
+            this.sdsTexBox7.NomBBDD = "SecureCore";
             this.sdsTexBox7.NomCamp = null;
             this.sdsTexBox7.NomControl = null;
-            this.sdsTexBox7.NomTaula = null;
+            this.sdsTexBox7.NomTaula = "DefinedRoutes";
             this.sdsTexBox7.Requerit = false;
             this.sdsTexBox7.SiEsForana = false;
             this.sdsTexBox7.Size = new System.Drawing.Size(200, 20);
@@ -250,28 +77,11 @@
             // 
             this.label8.AutoSize = true;
             this.label8.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label8.Location = new System.Drawing.Point(44, 181);
+            this.label8.Location = new System.Drawing.Point(15, 181);
             this.label8.Name = "label8";
-            this.label8.Size = new System.Drawing.Size(69, 13);
+            this.label8.Size = new System.Drawing.Size(98, 13);
             this.label8.TabIndex = 38;
-            this.label8.Text = "IPSpaceShip";
-            // 
-            // sdsTexBox8
-            // 
-            this.sdsTexBox8.CodeSector = null;
-            this.sdsTexBox8.ColumnName = null;
-            this.sdsTexBox8.DescCodi = null;
-            this.sdsTexBox8.Location = new System.Drawing.Point(119, 178);
-            this.sdsTexBox8.Name = "sdsTexBox8";
-            this.sdsTexBox8.Nom = null;
-            this.sdsTexBox8.NomBBDD = null;
-            this.sdsTexBox8.NomCamp = null;
-            this.sdsTexBox8.NomControl = null;
-            this.sdsTexBox8.NomTaula = null;
-            this.sdsTexBox8.Requerit = false;
-            this.sdsTexBox8.SiEsForana = false;
-            this.sdsTexBox8.Size = new System.Drawing.Size(100, 20);
-            this.sdsTexBox8.TabIndex = 37;
+            this.label8.Text = "idPlanetDestination";
             // 
             // label9
             // 
@@ -279,117 +89,117 @@
             this.label9.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label9.Location = new System.Drawing.Point(29, 155);
             this.label9.Name = "label9";
-            this.label9.Size = new System.Drawing.Size(84, 13);
+            this.label9.Size = new System.Drawing.Size(72, 13);
             this.label9.TabIndex = 36;
-            this.label9.Text = "CodeSpaceShip";
+            this.label9.Text = "idPlanetOrigin";
             // 
             // sdsTexBox9
             // 
             this.sdsTexBox9.CodeSector = null;
-            this.sdsTexBox9.ColumnName = null;
+            this.sdsTexBox9.ColumnName = "idPlanetOri";
             this.sdsTexBox9.DescCodi = null;
             this.sdsTexBox9.Location = new System.Drawing.Point(119, 152);
             this.sdsTexBox9.Name = "sdsTexBox9";
             this.sdsTexBox9.Nom = null;
-            this.sdsTexBox9.NomBBDD = null;
+            this.sdsTexBox9.NomBBDD = "SecureCore";
             this.sdsTexBox9.NomCamp = null;
             this.sdsTexBox9.NomControl = null;
-            this.sdsTexBox9.NomTaula = null;
+            this.sdsTexBox9.NomTaula = "DefinedRoutes";
             this.sdsTexBox9.Requerit = false;
             this.sdsTexBox9.SiEsForana = false;
             this.sdsTexBox9.Size = new System.Drawing.Size(260, 20);
             this.sdsTexBox9.TabIndex = 35;
             // 
-            // sdsTexBox10
+            // sdsTexBox8
             // 
-            this.sdsTexBox10.CodeSector = null;
-            this.sdsTexBox10.ColumnName = null;
-            this.sdsTexBox10.DescCodi = null;
-            this.sdsTexBox10.Location = new System.Drawing.Point(119, 126);
-            this.sdsTexBox10.Name = "sdsTexBox10";
-            this.sdsTexBox10.Nom = null;
-            this.sdsTexBox10.NomBBDD = null;
-            this.sdsTexBox10.NomCamp = null;
-            this.sdsTexBox10.NomControl = null;
-            this.sdsTexBox10.NomTaula = null;
-            this.sdsTexBox10.Requerit = false;
-            this.sdsTexBox10.SiEsForana = false;
-            this.sdsTexBox10.Size = new System.Drawing.Size(100, 20);
-            this.sdsTexBox10.TabIndex = 0;
+            this.sdsTexBox8.CodeSector = null;
+            this.sdsTexBox8.ColumnName = "idPlanetDest";
+            this.sdsTexBox8.DescCodi = null;
+            this.sdsTexBox8.Location = new System.Drawing.Point(119, 178);
+            this.sdsTexBox8.Name = "sdsTexBox8";
+            this.sdsTexBox8.Nom = null;
+            this.sdsTexBox8.NomBBDD = "SecureCore";
+            this.sdsTexBox8.NomCamp = null;
+            this.sdsTexBox8.NomControl = null;
+            this.sdsTexBox8.NomTaula = "DefinedRoutes";
+            this.sdsTexBox8.Requerit = false;
+            this.sdsTexBox8.SiEsForana = false;
+            this.sdsTexBox8.Size = new System.Drawing.Size(100, 20);
+            this.sdsTexBox8.TabIndex = 37;
+            // 
+            // sdsForanea1
+            // 
+            this.sdsForanea1.Control_Id = "sdsTxtidRoute";
+            this.sdsForanea1.DescCodi = "DescRoute";
+            this.sdsForanea1.ErrorText = null;
+            this.sdsForanea1.Location = new System.Drawing.Point(75, 226);
+            this.sdsForanea1.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForanea1.Name = "sdsForanea1";
+            this.sdsForanea1.NomCamp = "CodeRoute";
+            this.sdsForanea1.NomControl = "sdsTxtidRoute";
+            this.sdsForanea1.NomID = "idRoute";
+            this.sdsForanea1.NomTaula = "Routes";
+            this.sdsForanea1.Requerit = false;
+            this.sdsForanea1.Size = new System.Drawing.Size(391, 46);
+            this.sdsForanea1.TabIndex = 41;
+            this.sdsForanea1.TextLabel = null;
+            // 
+            // sdsTxtidRoute
+            // 
+            this.sdsTxtidRoute.CodeSector = null;
+            this.sdsTxtidRoute.ColumnName = "idRoute";
+            this.sdsTxtidRoute.DescCodi = null;
+            this.sdsTxtidRoute.Location = new System.Drawing.Point(119, 273);
+            this.sdsTxtidRoute.Name = "sdsTxtidRoute";
+            this.sdsTxtidRoute.Nom = null;
+            this.sdsTxtidRoute.NomBBDD = "SecureCore";
+            this.sdsTxtidRoute.NomCamp = "";
+            this.sdsTxtidRoute.NomControl = "sdsForanea1";
+            this.sdsTxtidRoute.NomTaula = "Routes";
+            this.sdsTxtidRoute.Requerit = false;
+            this.sdsTxtidRoute.SiEsForana = true;
+            this.sdsTxtidRoute.Size = new System.Drawing.Size(30, 20);
+            this.sdsTxtidRoute.TabIndex = 0;
             // 
             // DefinedRoutes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 564);
-            this.Controls.Add(this.sdsTexBox10);
+            this.Controls.Add(this.sdsTxtidRoute);
+            this.Controls.Add(this.sdsForanea1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.sdsTexBox7);
             this.Controls.Add(this.label8);
             this.Controls.Add(this.sdsTexBox8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.sdsTexBox9);
-            this.Controls.Add(this.label4);
-            this.Controls.Add(this.sdsTexBox4);
-            this.Controls.Add(this.label5);
-            this.Controls.Add(this.sdsTexBox5);
-            this.Controls.Add(this.label6);
-            this.Controls.Add(this.sdsTexBox6);
-            this.Controls.Add(this.label3);
-            this.Controls.Add(this.sdsTexBox3);
-            this.Controls.Add(this.label2);
-            this.Controls.Add(this.sdsTexBox2);
-            this.Controls.Add(this.label1);
-            this.Controls.Add(this.sdsTexBox1);
             this.Name = "DefinedRoutes";
             this.Text = "DefinedRoutes";
             this.Load += new System.EventHandler(this.DefinedRoutes_Load);
-            this.Controls.SetChildIndex(this.btnInsert, 0);
-            this.Controls.SetChildIndex(this.btnUpdate, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox1, 0);
-            this.Controls.SetChildIndex(this.label1, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox2, 0);
-            this.Controls.SetChildIndex(this.label2, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox3, 0);
-            this.Controls.SetChildIndex(this.label3, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox6, 0);
-            this.Controls.SetChildIndex(this.label6, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox5, 0);
-            this.Controls.SetChildIndex(this.label5, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox4, 0);
-            this.Controls.SetChildIndex(this.label4, 0);
             this.Controls.SetChildIndex(this.sdsTexBox9, 0);
             this.Controls.SetChildIndex(this.label9, 0);
             this.Controls.SetChildIndex(this.sdsTexBox8, 0);
             this.Controls.SetChildIndex(this.label8, 0);
             this.Controls.SetChildIndex(this.sdsTexBox7, 0);
             this.Controls.SetChildIndex(this.label7, 0);
-            this.Controls.SetChildIndex(this.sdsTexBox10, 0);
+            this.Controls.SetChildIndex(this.btnInsert, 0);
+            this.Controls.SetChildIndex(this.btnUpdate, 0);
+            this.Controls.SetChildIndex(this.sdsForanea1, 0);
+            this.Controls.SetChildIndex(this.sdsTxtidRoute, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
         }
 
         #endregion
-
-        private SdsTexBox.SdsTexBox sdsTexBox1;
-        private System.Windows.Forms.Label label1;
-        private System.Windows.Forms.Label label2;
-        private SdsTexBox.SdsTexBox sdsTexBox2;
-        private System.Windows.Forms.Label label3;
-        private SdsTexBox.SdsTexBox sdsTexBox3;
-        private System.Windows.Forms.Label label4;
-        private SdsTexBox.SdsTexBox sdsTexBox4;
-        private System.Windows.Forms.Label label5;
-        private SdsTexBox.SdsTexBox sdsTexBox5;
-        private System.Windows.Forms.Label label6;
-        private SdsTexBox.SdsTexBox sdsTexBox6;
         private System.Windows.Forms.Label label7;
         private SdsTexBox.SdsTexBox sdsTexBox7;
         private System.Windows.Forms.Label label8;
-        private SdsTexBox.SdsTexBox sdsTexBox8;
         private System.Windows.Forms.Label label9;
         private SdsTexBox.SdsTexBox sdsTexBox9;
-        private SdsTexBox.SdsTexBox sdsTexBox10;
+        private SdsTexBox.SdsTexBox sdsTexBox8;
+        private WookieCodeControls.sdsForanea sdsForanea1;
+        private SdsTexBox.SdsTexBox sdsTxtidRoute;
     }
 }
