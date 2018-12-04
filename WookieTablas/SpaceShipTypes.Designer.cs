@@ -35,6 +35,13 @@
             this.sdstxtDescSector = new SdsTexBox.SdsTexBox();
             this.sdstxtCodeSector = new SdsTexBox.SdsTexBox();
             this.sdsForanea1 = new WookieCodeControls.sdsForanea();
+            this.sdsForanea2 = new WookieCodeControls.sdsForanea();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.sdsTexBox1 = new SdsTexBox.SdsTexBox();
+            this.sdsForanea3 = new WookieCodeControls.sdsForanea();
+            this.sdsTexBox2 = new SdsTexBox.SdsTexBox();
+            this.sdsTexBox3 = new SdsTexBox.SdsTexBox();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -148,11 +155,121 @@
             this.sdsForanea1.TabIndex = 37;
             this.sdsForanea1.TextLabel = "Region";
             // 
+            // sdsForanea2
+            // 
+            this.sdsForanea2.Control_Id = "sdstxtRegion";
+            this.sdsForanea2.DescCodi = "DescRegion";
+            this.sdsForanea2.ErrorText = null;
+            this.sdsForanea2.Location = new System.Drawing.Point(172, 530);
+            this.sdsForanea2.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForanea2.Name = "sdsForanea2";
+            this.sdsForanea2.NomCamp = "CodeRegion";
+            this.sdsForanea2.NomControl = "txtIDRegion";
+            this.sdsForanea2.NomID = "idRegion";
+            this.sdsForanea2.NomTaula = "Regions";
+            this.sdsForanea2.Requerit = false;
+            this.sdsForanea2.Size = new System.Drawing.Size(391, 46);
+            this.sdsForanea2.TabIndex = 44;
+            this.sdsForanea2.TextLabel = "Region";
+            // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.Location = new System.Drawing.Point(230, 430);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(35, 13);
+            this.label1.TabIndex = 43;
+            this.label1.Text = "label1";
+            // 
+            // label2
+            // 
+            this.label2.AutoSize = true;
+            this.label2.Location = new System.Drawing.Point(230, 386);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(35, 13);
+            this.label2.TabIndex = 42;
+            this.label2.Text = "label2";
+            // 
+            // sdsTexBox1
+            // 
+            this.sdsTexBox1.CodeSector = null;
+            this.sdsTexBox1.ColumnName = "idRegion";
+            this.sdsTexBox1.DescCodi = null;
+            this.sdsTexBox1.Location = new System.Drawing.Point(491, 439);
+            this.sdsTexBox1.Name = "sdsTexBox1";
+            this.sdsTexBox1.Nom = null;
+            this.sdsTexBox1.NomBBDD = "SecureCore";
+            this.sdsTexBox1.NomCamp = "idRegion";
+            this.sdsTexBox1.NomControl = "sdsForaneaRegion";
+            this.sdsTexBox1.NomTaula = "Sectors";
+            this.sdsTexBox1.Requerit = false;
+            this.sdsTexBox1.SiEsForana = true;
+            this.sdsTexBox1.Size = new System.Drawing.Size(20, 20);
+            this.sdsTexBox1.TabIndex = 38;
+            // 
+            // sdsForanea3
+            // 
+            this.sdsForanea3.Control_Id = "sdstxtRegion";
+            this.sdsForanea3.DescCodi = "DescRegion";
+            this.sdsForanea3.ErrorText = null;
+            this.sdsForanea3.Location = new System.Drawing.Point(172, 480);
+            this.sdsForanea3.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForanea3.Name = "sdsForanea3";
+            this.sdsForanea3.NomCamp = "CodeRegion";
+            this.sdsForanea3.NomControl = "txtIDRegion";
+            this.sdsForanea3.NomID = "idRegion";
+            this.sdsForanea3.NomTaula = "Regions";
+            this.sdsForanea3.Requerit = false;
+            this.sdsForanea3.Size = new System.Drawing.Size(391, 46);
+            this.sdsForanea3.TabIndex = 41;
+            this.sdsForanea3.TextLabel = "Region";
+            // 
+            // sdsTexBox2
+            // 
+            this.sdsTexBox2.CodeSector = null;
+            this.sdsTexBox2.ColumnName = "DescSector";
+            this.sdsTexBox2.DescCodi = null;
+            this.sdsTexBox2.Location = new System.Drawing.Point(313, 430);
+            this.sdsTexBox2.Name = "sdsTexBox2";
+            this.sdsTexBox2.Nom = null;
+            this.sdsTexBox2.NomBBDD = "SecureCore";
+            this.sdsTexBox2.NomCamp = null;
+            this.sdsTexBox2.NomControl = null;
+            this.sdsTexBox2.NomTaula = "Sectors";
+            this.sdsTexBox2.Requerit = false;
+            this.sdsTexBox2.SiEsForana = false;
+            this.sdsTexBox2.Size = new System.Drawing.Size(100, 20);
+            this.sdsTexBox2.TabIndex = 39;
+            // 
+            // sdsTexBox3
+            // 
+            this.sdsTexBox3.CodeSector = null;
+            this.sdsTexBox3.ColumnName = "CodeSector";
+            this.sdsTexBox3.DescCodi = null;
+            this.sdsTexBox3.Location = new System.Drawing.Point(313, 386);
+            this.sdsTexBox3.Name = "sdsTexBox3";
+            this.sdsTexBox3.Nom = null;
+            this.sdsTexBox3.NomBBDD = "SecureCore";
+            this.sdsTexBox3.NomCamp = null;
+            this.sdsTexBox3.NomControl = null;
+            this.sdsTexBox3.NomTaula = "Sectors";
+            this.sdsTexBox3.Requerit = false;
+            this.sdsTexBox3.SiEsForana = false;
+            this.sdsTexBox3.Size = new System.Drawing.Size(100, 20);
+            this.sdsTexBox3.TabIndex = 40;
+            // 
             // SpaceShipTypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 556);
+            this.ClientSize = new System.Drawing.Size(905, 628);
+            this.Controls.Add(this.sdsForanea2);
+            this.Controls.Add(this.label1);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.sdsTexBox1);
+            this.Controls.Add(this.sdsForanea3);
+            this.Controls.Add(this.sdsTexBox2);
+            this.Controls.Add(this.sdsTexBox3);
             this.Controls.Add(this.sdsForanea1);
             this.Controls.Add(this.labDescSector);
             this.Controls.Add(this.labCodeSector);
@@ -172,6 +289,13 @@
             this.Controls.SetChildIndex(this.labCodeSector, 0);
             this.Controls.SetChildIndex(this.labDescSector, 0);
             this.Controls.SetChildIndex(this.sdsForanea1, 0);
+            this.Controls.SetChildIndex(this.sdsTexBox3, 0);
+            this.Controls.SetChildIndex(this.sdsTexBox2, 0);
+            this.Controls.SetChildIndex(this.sdsForanea3, 0);
+            this.Controls.SetChildIndex(this.sdsTexBox1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.sdsForanea2, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +310,12 @@
         private SdsTexBox.SdsTexBox sdstxtDescSector;
         private SdsTexBox.SdsTexBox sdstxtCodeSector;
         private WookieCodeControls.sdsForanea sdsForanea1;
+        private WookieCodeControls.sdsForanea sdsForanea2;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private SdsTexBox.SdsTexBox sdsTexBox1;
+        private WookieCodeControls.sdsForanea sdsForanea3;
+        private SdsTexBox.SdsTexBox sdsTexBox2;
+        private SdsTexBox.SdsTexBox sdsTexBox3;
     }
 }
