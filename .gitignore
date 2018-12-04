@@ -348,3 +348,5 @@ DLL/ConnectionClass.dll
 DLL/AxInterop.WMPLib.dll
 DLL/AboutVideo.dll
 DLL/aa/LogonScreen.resources.dll
+DLL/LogonScreen.dll
+DLL/SecureCode.exe
