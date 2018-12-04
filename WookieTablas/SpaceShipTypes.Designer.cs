@@ -35,6 +35,7 @@
             this.sdstxtDescSector = new SdsTexBox.SdsTexBox();
             this.sdstxtCodeSector = new SdsTexBox.SdsTexBox();
             this.sdsForanea1 = new WookieCodeControls.sdsForanea();
+            this.sdsForanea2 = new WookieCodeControls.sdsForanea();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -148,11 +149,29 @@
             this.sdsForanea1.TabIndex = 37;
             this.sdsForanea1.TextLabel = "Region";
             // 
+            // sdsForanea2
+            // 
+            this.sdsForanea2.Control_Id = "sdstxtRegion";
+            this.sdsForanea2.DescCodi = "DescRegion";
+            this.sdsForanea2.ErrorText = null;
+            this.sdsForanea2.Location = new System.Drawing.Point(172, 530);
+            this.sdsForanea2.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForanea2.Name = "sdsForanea2";
+            this.sdsForanea2.NomCamp = "CodeRegion";
+            this.sdsForanea2.NomControl = "txtIDRegion";
+            this.sdsForanea2.NomID = "idRegion";
+            this.sdsForanea2.NomTaula = "Regions";
+            this.sdsForanea2.Requerit = false;
+            this.sdsForanea2.Size = new System.Drawing.Size(391, 46);
+            this.sdsForanea2.TabIndex = 44;
+            this.sdsForanea2.TextLabel = "Region";
+            // 
             // SpaceShipTypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(841, 556);
+            this.ClientSize = new System.Drawing.Size(905, 628);
+            this.Controls.Add(this.sdsForanea2);
             this.Controls.Add(this.sdsForanea1);
             this.Controls.Add(this.labDescSector);
             this.Controls.Add(this.labCodeSector);
@@ -172,6 +191,7 @@
             this.Controls.SetChildIndex(this.labCodeSector, 0);
             this.Controls.SetChildIndex(this.labDescSector, 0);
             this.Controls.SetChildIndex(this.sdsForanea1, 0);
+            this.Controls.SetChildIndex(this.sdsForanea2, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -186,5 +206,6 @@
         private SdsTexBox.SdsTexBox sdstxtDescSector;
         private SdsTexBox.SdsTexBox sdstxtCodeSector;
         private WookieCodeControls.sdsForanea sdsForanea1;
+        private WookieCodeControls.sdsForanea sdsForanea2;
     }
 }
