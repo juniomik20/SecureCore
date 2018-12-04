@@ -34,11 +34,17 @@
             this.sdsForaneaRouteTypes = new WookieCodeControls.sdsForanea();
             this.lblCodeRoute = new System.Windows.Forms.Label();
             this.lblDescRoute = new System.Windows.Forms.Label();
+            this.sdsForaneaDefinedRoutes = new WookieCodeControls.sdsForanea();
+            this.sdsTextBoxDefinedRoute = new SdsTexBox.SdsTexBox();
             this.SuspendLayout();
             // 
             // btnUpdate
             // 
             this.btnUpdate.Location = new System.Drawing.Point(160, 464);
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(70, 464);
             // 
             // sdsTextBoxCodeRoute
             // 
@@ -132,28 +138,72 @@
             this.lblDescRoute.TabIndex = 26;
             this.lblDescRoute.Text = "Desc Route:";
             // 
+            // sdsForaneaDefinedRoutes
+            // 
+            this.sdsForaneaDefinedRoutes.Control_Id = "sdsTextBoxDefinedRoute";
+            this.sdsForaneaDefinedRoutes.DescCodi = "RouteMap";
+            this.sdsForaneaDefinedRoutes.ErrorText = null;
+            this.sdsForaneaDefinedRoutes.Location = new System.Drawing.Point(0, 326);
+            this.sdsForaneaDefinedRoutes.Margin = new System.Windows.Forms.Padding(2);
+            this.sdsForaneaDefinedRoutes.Name = "sdsForaneaDefinedRoutes";
+            this.sdsForaneaDefinedRoutes.NomCamp = "RouteMap";
+            this.sdsForaneaDefinedRoutes.NomControl = "txtIDRoute";
+            this.sdsForaneaDefinedRoutes.NomID = "idPlanetDest";
+            this.sdsForaneaDefinedRoutes.NomTaula = "DefinedRoutes";
+            this.sdsForaneaDefinedRoutes.Requerit = false;
+            this.sdsForaneaDefinedRoutes.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaDefinedRoutes.TabIndex = 27;
+            this.sdsForaneaDefinedRoutes.TextLabel = "Rutas definidas:";
+            // 
+            // sdsTextBoxDefinedRoute
+            // 
+            this.sdsTextBoxDefinedRoute.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsTextBoxDefinedRoute.BorderStyle = System.Windows.Forms.BorderStyle.None;
+            this.sdsTextBoxDefinedRoute.CodeSector = null;
+            this.sdsTextBoxDefinedRoute.ColumnName = "idPlanetDest";
+            this.sdsTextBoxDefinedRoute.DescCodi = null;
+            this.sdsTextBoxDefinedRoute.Font = new System.Drawing.Font("Microsoft Sans Serif", 1F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
+            this.sdsTextBoxDefinedRoute.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsTextBoxDefinedRoute.Location = new System.Drawing.Point(782, 129);
+            this.sdsTextBoxDefinedRoute.Name = "sdsTextBoxDefinedRoute";
+            this.sdsTextBoxDefinedRoute.Nom = null;
+            this.sdsTextBoxDefinedRoute.NomBBDD = "SecureCore";
+            this.sdsTextBoxDefinedRoute.NomCamp = "idPlanetDest";
+            this.sdsTextBoxDefinedRoute.NomControl = "sdsForaneaDefinedRoutes";
+            this.sdsTextBoxDefinedRoute.NomTaula = "Routes";
+            this.sdsTextBoxDefinedRoute.ReadOnly = true;
+            this.sdsTextBoxDefinedRoute.Requerit = false;
+            this.sdsTextBoxDefinedRoute.SiEsForana = true;
+            this.sdsTextBoxDefinedRoute.Size = new System.Drawing.Size(1, 2);
+            this.sdsTextBoxDefinedRoute.TabIndex = 29;
+            this.sdsTextBoxDefinedRoute.TabStop = false;
+            // 
             // Routes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(800, 450);
+            this.ClientSize = new System.Drawing.Size(815, 530);
+            this.Controls.Add(this.sdsForaneaDefinedRoutes);
             this.Controls.Add(this.lblDescRoute);
             this.Controls.Add(this.lblCodeRoute);
             this.Controls.Add(this.sdsForaneaRouteTypes);
             this.Controls.Add(this.sdsTextBoxDescRoute);
             this.Controls.Add(this.sdsTextBoxCodeRoute);
             this.Controls.Add(this.sdsTextBoxRouteTypes);
+            this.Controls.Add(this.sdsTextBoxDefinedRoute);
             this.Name = "Routes";
             this.Text = "Routes";
             this.Load += new System.EventHandler(this.Routes_Load);
+            this.Controls.SetChildIndex(this.sdsTextBoxDefinedRoute, 0);
             this.Controls.SetChildIndex(this.sdsTextBoxRouteTypes, 0);
-            this.Controls.SetChildIndex(this.btnInsert, 0);
-            this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.sdsTextBoxCodeRoute, 0);
             this.Controls.SetChildIndex(this.sdsTextBoxDescRoute, 0);
             this.Controls.SetChildIndex(this.sdsForaneaRouteTypes, 0);
             this.Controls.SetChildIndex(this.lblCodeRoute, 0);
             this.Controls.SetChildIndex(this.lblDescRoute, 0);
+            this.Controls.SetChildIndex(this.sdsForaneaDefinedRoutes, 0);
+            this.Controls.SetChildIndex(this.btnInsert, 0);
+            this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -167,5 +217,7 @@
         private SdsTexBox.SdsTexBox sdsTextBoxRouteTypes;
         private System.Windows.Forms.Label lblCodeRoute;
         private System.Windows.Forms.Label lblDescRoute;
+        private WookieCodeControls.sdsForanea sdsForaneaDefinedRoutes;
+        private SdsTexBox.SdsTexBox sdsTextBoxDefinedRoute;
     }
 }
