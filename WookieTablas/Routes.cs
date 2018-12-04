@@ -19,9 +19,12 @@ namespace WookieTablas
             query = "Select * from Routes";
             id = "idRoute";
         }
+        public Routes(string idcerca) {
+            sdsTextBoxRouteTypes.Text = idcerca;
+        }
 
         private void Routes_Load(object sender, EventArgs e)
-        {
+        {         
             this.Username = ConfigurationManager.AppSettings["UserName"].ToString();
             this.IconUser = ConfigurationManager.AppSettings["Icon"].ToString();
             ButtonAtras.Visible = true;

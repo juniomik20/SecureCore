@@ -141,6 +141,20 @@ namespace WookieCodeControls
                 txtShow.Text = dts.Tables[0].Rows[0][DescCodi].ToString();
                 txtCode.Text = dts.Tables[0].Rows[0][NomCamp].ToString();
                 string ID = dts.Tables[0].Rows[0][NomID].ToString();
+                PossarId(ID);
+            }
+        }
+
+        private void PossarId(string ID)
+        {
+            Form frm = this.FindForm();
+
+            foreach (Control c in frm.Controls)
+            {
+                if (c.Name == Control_Id)
+                {
+                    c.Text = ID;
+                }
             }
         }
         private void txtCode_Validating(object sender, CancelEventArgs e)
@@ -153,27 +167,28 @@ namespace WookieCodeControls
                 txtShow.Text = dts.Tables[0].Rows[0][DescCodi].ToString();
                 string ID = dts.Tables[0].Rows[0][NomID].ToString();
 
-                Form frm = this.FindForm();
+                PossarId(ID);
+                //Form frm = this.FindForm();
 
-                foreach (Control c in frm.Controls)
-                {
-                    if (c.Name == NomControl)
-                    {
-                        c.Text = ID;
-                    }
-                }
+                //foreach (Control c in frm.Controls)
+                //{
+                //    if (c.Name == NomControl)
+                //    {
+                //        c.Text = ID;
+                //    }
+                //}
             }
         }
 
         private void txtCode_KeyUp(object sender, KeyEventArgs e)
         {
             if (e.KeyCode == Keys.F2)
-            {
-                Assembly ensamblat = Assembly.LoadFrom("PantallaCerca.dll");
-                Object dllBD;
-                Type tipus;
-                tipus = ensamblat.GetType("PantallaCerca.Cerca");
-                dllBD = Activator.CreateInstance(tipus);
+            {                
+                Assembly ensamblat = Assembly.LoadFrom("PantallaCerca.dll");                
+                Type tipus = ensamblat.GetType("PantallaCerca.Cerca");
+                string NomForm = this.FindForm().Name;
+                Object[] args = { this.NomTaula, this.Name, NomForm };
+                Object dllBD = Activator.CreateInstance(tipus, args);
 
                 ((Form)dllBD).Show();
             }
