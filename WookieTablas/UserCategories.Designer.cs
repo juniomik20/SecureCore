@@ -44,30 +44,11 @@
             // 
             // sdsTexBox10
             // 
-            this.sdsTexBox10.CodeSector = null;
-            this.sdsTexBox10.ColumnName = null;
-            this.sdsTexBox10.DescCodi = null;
-            this.sdsTexBox10.Location = new System.Drawing.Point(111, 160);
-            this.sdsTexBox10.Name = "sdsTexBox10";
-            this.sdsTexBox10.Nom = null;
-            this.sdsTexBox10.NomBBDD = null;
-            this.sdsTexBox10.NomCamp = null;
-            this.sdsTexBox10.NomControl = null;
-            this.sdsTexBox10.NomTaula = null;
-            this.sdsTexBox10.Requerit = false;
-            this.sdsTexBox10.SiEsForana = false;
-            this.sdsTexBox10.Size = new System.Drawing.Size(100, 20);
-            this.sdsTexBox10.TabIndex = 41;
+
             // 
             // label7
             // 
-            this.label7.AutoSize = true;
-            this.label7.ForeColor = System.Drawing.SystemColors.ButtonFace;
-            this.label7.Location = new System.Drawing.Point(49, 241);
-            this.label7.Name = "label7";
-            this.label7.Size = new System.Drawing.Size(56, 13);
-            this.label7.TabIndex = 59;
-            this.label7.Text = "PortPlanet";
+
             // 
             // sdsTexBox7
             // 
