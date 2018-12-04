@@ -200,9 +200,12 @@
             // 
             // sdsIDSector
             // 
+            this.sdsIDSector.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsIDSector.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sdsIDSector.CodeSector = null;
             this.sdsIDSector.ColumnName = "idSector";
             this.sdsIDSector.DescCodi = null;
+            this.sdsIDSector.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.sdsIDSector.Location = new System.Drawing.Point(443, 349);
             this.sdsIDSector.Name = "sdsIDSector";
             this.sdsIDSector.Nom = null;
@@ -210,16 +213,21 @@
             this.sdsIDSector.NomCamp = null;
             this.sdsIDSector.NomControl = "sdsForaneaSector";
             this.sdsIDSector.NomTaula = "Sectors";
+            this.sdsIDSector.ReadOnly = true;
             this.sdsIDSector.Requerit = false;
             this.sdsIDSector.SiEsForana = true;
-            this.sdsIDSector.Size = new System.Drawing.Size(30, 20);
+            this.sdsIDSector.Size = new System.Drawing.Size(30, 13);
             this.sdsIDSector.TabIndex = 65;
+            this.sdsIDSector.TabStop = false;
             // 
             // IDFiliation
             // 
+            this.IDFiliation.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.IDFiliation.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.IDFiliation.CodeSector = null;
             this.IDFiliation.ColumnName = "idFiliation";
             this.IDFiliation.DescCodi = null;
+            this.IDFiliation.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.IDFiliation.Location = new System.Drawing.Point(443, 430);
             this.IDFiliation.Name = "IDFiliation";
             this.IDFiliation.Nom = null;
@@ -227,16 +235,21 @@
             this.IDFiliation.NomCamp = null;
             this.IDFiliation.NomControl = "sdsForaneaFiliation";
             this.IDFiliation.NomTaula = "Filiations";
+            this.IDFiliation.ReadOnly = true;
             this.IDFiliation.Requerit = false;
             this.IDFiliation.SiEsForana = true;
-            this.IDFiliation.Size = new System.Drawing.Size(30, 20);
+            this.IDFiliation.Size = new System.Drawing.Size(30, 13);
             this.IDFiliation.TabIndex = 64;
+            this.IDFiliation.TabStop = false;
             // 
             // sdsIDNatives
             // 
+            this.sdsIDNatives.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsIDNatives.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sdsIDNatives.CodeSector = null;
             this.sdsIDNatives.ColumnName = "idNatives";
             this.sdsIDNatives.DescCodi = null;
+            this.sdsIDNatives.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.sdsIDNatives.Location = new System.Drawing.Point(443, 390);
             this.sdsIDNatives.Name = "sdsIDNatives";
             this.sdsIDNatives.Nom = null;
@@ -244,10 +257,12 @@
             this.sdsIDNatives.NomCamp = null;
             this.sdsIDNatives.NomControl = "sdsForaneaNatives";
             this.sdsIDNatives.NomTaula = "Species";
+            this.sdsIDNatives.ReadOnly = true;
             this.sdsIDNatives.Requerit = false;
             this.sdsIDNatives.SiEsForana = true;
-            this.sdsIDNatives.Size = new System.Drawing.Size(30, 20);
+            this.sdsIDNatives.Size = new System.Drawing.Size(30, 13);
             this.sdsIDNatives.TabIndex = 63;
+            this.sdsIDNatives.TabStop = false;
             // 
             // sdsForaneaNatives
             // 
