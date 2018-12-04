@@ -142,31 +142,35 @@
             this.sdsForanea1.Requerit = false;
             this.sdsForanea1.Size = new System.Drawing.Size(391, 46);
             this.sdsForanea1.TabIndex = 41;
-            this.sdsForanea1.TextLabel = null;
+            this.sdsForanea1.TextLabel = "";
             // 
             // sdsTxtidRoute
             // 
+            this.sdsTxtidRoute.BackColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsTxtidRoute.BorderStyle = System.Windows.Forms.BorderStyle.None;
             this.sdsTxtidRoute.CodeSector = null;
             this.sdsTxtidRoute.ColumnName = "idRoute";
             this.sdsTxtidRoute.DescCodi = null;
-            this.sdsTxtidRoute.Location = new System.Drawing.Point(119, 273);
+            this.sdsTxtidRoute.ForeColor = System.Drawing.SystemColors.WindowFrame;
+            this.sdsTxtidRoute.Location = new System.Drawing.Point(119, 277);
             this.sdsTxtidRoute.Name = "sdsTxtidRoute";
             this.sdsTxtidRoute.Nom = null;
             this.sdsTxtidRoute.NomBBDD = "SecureCore";
             this.sdsTxtidRoute.NomCamp = "";
             this.sdsTxtidRoute.NomControl = "sdsForanea1";
             this.sdsTxtidRoute.NomTaula = "Routes";
+            this.sdsTxtidRoute.ReadOnly = true;
             this.sdsTxtidRoute.Requerit = false;
             this.sdsTxtidRoute.SiEsForana = true;
-            this.sdsTxtidRoute.Size = new System.Drawing.Size(30, 20);
+            this.sdsTxtidRoute.Size = new System.Drawing.Size(30, 13);
             this.sdsTxtidRoute.TabIndex = 0;
+            this.sdsTxtidRoute.TabStop = false;
             // 
             // DefinedRoutes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 564);
-            this.Controls.Add(this.sdsTxtidRoute);
             this.Controls.Add(this.sdsForanea1);
             this.Controls.Add(this.label7);
             this.Controls.Add(this.sdsTexBox7);
@@ -174,9 +178,11 @@
             this.Controls.Add(this.sdsTexBox8);
             this.Controls.Add(this.label9);
             this.Controls.Add(this.sdsTexBox9);
+            this.Controls.Add(this.sdsTxtidRoute);
             this.Name = "DefinedRoutes";
             this.Text = "DefinedRoutes";
             this.Load += new System.EventHandler(this.DefinedRoutes_Load);
+            this.Controls.SetChildIndex(this.sdsTxtidRoute, 0);
             this.Controls.SetChildIndex(this.sdsTexBox9, 0);
             this.Controls.SetChildIndex(this.label9, 0);
             this.Controls.SetChildIndex(this.sdsTexBox8, 0);
@@ -186,7 +192,6 @@
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.sdsForanea1, 0);
-            this.Controls.SetChildIndex(this.sdsTxtidRoute, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 

@@ -48,8 +48,10 @@
             this.txtShow.Location = new System.Drawing.Point(152, 14);
             this.txtShow.Margin = new System.Windows.Forms.Padding(2);
             this.txtShow.Name = "txtShow";
+            this.txtShow.ReadOnly = true;
             this.txtShow.Size = new System.Drawing.Size(224, 20);
             this.txtShow.TabIndex = 2;
+            this.txtShow.TabStop = false;
             // 
             // LabelCode
             // 
