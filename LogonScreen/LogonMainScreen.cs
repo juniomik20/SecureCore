@@ -69,7 +69,7 @@ namespace LogonScreen
                     if (UserBox.Text.ToUpper().Equals("DEATHSTART"))
                     {
                         System.Diagnostics.Process.Start("EstrelladelaMuerte.vbs");
-                        valErrorLabel = "Felicidades Ganaste un Porta Vasos!SEGUNDO EASTER EGG";
+                        valErrorLabel = "Felicidades Ganaste un Porta Vasos! SEGUNDO EASTER EGG";
                     }
                     else
                     {
