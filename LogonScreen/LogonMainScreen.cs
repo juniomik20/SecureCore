@@ -35,6 +35,7 @@ namespace LogonScreen
             _bgwLogin.WorkerSupportsCancellation = true;
             _bgwLogin.DoWork += bgwLogin_DoWork;
             _bgwLogin.RunWorkerCompleted += bgwLogin_RunWorkerCompleted;
+            ButtonEntrar.Enabled = false;
             _bgwLogin.RunWorkerAsync();
 
 
@@ -130,6 +131,7 @@ namespace LogonScreen
         {
             ErrorLabel.Text = valErrorLabel;
             ErrorLabel.Visible = true;
+            ButtonEntrar.Enabled = true;
         }
         void Timer_Tick(object sender, EventArgs e)
         {
