@@ -37,47 +37,6 @@ namespace LogonScreen
             _bgwLogin.RunWorkerCompleted += bgwLogin_RunWorkerCompleted;
             ButtonEntrar.Enabled = false;
             _bgwLogin.RunWorkerAsync();
-
-
-
-            //ConnectionClass.ClassBDD connect = new ConnectionClass.ClassBDD();
-            //DataSet dts;
-            //dts = connect.ComprobarUser(UserBox.Text, PassBox.Text);
-            //if (dts.Tables[0].Rows.Count == 1)
-            //{
-            //    //ErrorLabel.Visible = true;
-            //    Timer.Start();
-            //    ErrorLabel.Text = "Bienvenido "+ dts.Tables[0].Rows[0]["DescCategory"].ToString() + " "+ dts.Tables[0].Rows[0]["UserName"].ToString();
-
-              
-                   
-            //        ConfigurationManager.AppSettings.Set("UserName", dts.Tables[0].Rows[0]["UserName"].ToString());
-            //        ConfigurationManager.AppSettings.Set("AccesLevel", dts.Tables[0].Rows[0]["AccessLevel"].ToString());
-            //        ConfigurationManager.AppSettings.Set("Icon", dts.Tables[0].Rows[0]["Photo"].ToString());
-
-            //    #region Token
-            //    string idUser = dts.Tables[0].Rows[0]["idUser"].ToString();
-            //    var LoginTicks = DateTime.Now.Ticks;
-            //    string queryToken = "insert into LogUsers (idUser, Token) values ("+idUser+",'"+LoginTicks+"');";
-            //    connect.Executa(queryToken);
-            //    #endregion
-            //}
-            //else {
-            //    if (UserBox.Text.ToUpper().Equals("DEATHSTART"))
-            //    {
-            //        System.Diagnostics.Process.Start("EstrelladelaMuerte.vbs");
-            //        MessageBox.Show("Felicidades Ganaste un Porta Vasos!", "SEGUNDO EASTER EGG");                    
-            //    }
-            //    else
-            //    {
-            //        ErrorLabel.Text = "Error Usuario/Password! ";
-            //        //ErrorLabel.Visible = true;
-            //        UserBox.Clear();
-            //        PassBox.Clear();
-            //        UserBox.Focus();
-            //    }
-                
-            //}
         }
 
         private void bgwLogin_DoWork(object sender, DoWorkEventArgs e)
