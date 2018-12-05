@@ -92,6 +92,7 @@ namespace LogonScreen
             ErrorLabel.Visible = true;
             ButtonEntrar.Enabled = true;
         }
+
         void Timer_Tick(object sender, EventArgs e)
         {
             _countDown--;
@@ -121,6 +122,20 @@ namespace LogonScreen
         }
         private void IconStarWars_Click(object sender, EventArgs e)
         {
+            int count = 0;
+            count++;
+            if(count > 666)
+            {
+
+            }
+            ActivarMusic();
+        }
+        private void GifEasterEgg_Click(object sender, EventArgs e)
+        {
+            desactviarMusic();
+        }
+        public void ActivarMusic()
+        {
             if (!musicOn)
             {
                 player.Play();
@@ -134,10 +149,6 @@ namespace LogonScreen
                 EasterEgg7.Visible = true;
                 EasterEgg8.Visible = true;
             }
-        }
-        private void GifEasterEgg_Click(object sender, EventArgs e)
-        {
-            desactviarMusic();
         }
         public void desactviarMusic() {
             if (musicOn)
