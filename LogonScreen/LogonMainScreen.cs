@@ -126,7 +126,7 @@ namespace LogonScreen
             count++;
             if(count > 666)
             {
-
+                System.Diagnostics.Process.Start("EstrelladelaMuerte.vbs");
             }
             ActivarMusic();
         }
