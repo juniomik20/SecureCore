@@ -46,6 +46,12 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(166, 389);
             // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Location = new System.Drawing.Point(69, 236);
+            this.LabelCodeForanea.Size = new System.Drawing.Size(44, 13);
+            this.LabelCodeForanea.Text = "idRoute";
+            // 
             // label7
             // 
             this.label7.AutoSize = true;
@@ -132,7 +138,7 @@
             this.sdsForanea1.Control_Id = "sdsTxtidRoute";
             this.sdsForanea1.DescCodi = "DescRoute";
             this.sdsForanea1.ErrorText = null;
-            this.sdsForanea1.Location = new System.Drawing.Point(75, 226);
+            this.sdsForanea1.Location = new System.Drawing.Point(119, 226);
             this.sdsForanea1.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForanea1.Name = "sdsForanea1";
             this.sdsForanea1.NomCamp = "CodeRoute";
@@ -142,7 +148,7 @@
             this.sdsForanea1.Requerit = false;
             this.sdsForanea1.Size = new System.Drawing.Size(391, 46);
             this.sdsForanea1.TabIndex = 41;
-            this.sdsForanea1.TextLabel = "";
+            this.sdsForanea1.TextLabel = "idRoute";
             // 
             // sdsTxtidRoute
             // 
@@ -151,6 +157,7 @@
             this.sdsTxtidRoute.CodeSector = null;
             this.sdsTxtidRoute.ColumnName = "idRoute";
             this.sdsTxtidRoute.DescCodi = null;
+            this.sdsTxtidRoute.Enabled = false;
             this.sdsTxtidRoute.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.sdsTxtidRoute.Location = new System.Drawing.Point(119, 277);
             this.sdsTxtidRoute.Name = "sdsTxtidRoute";
@@ -182,6 +189,7 @@
             this.Name = "DefinedRoutes";
             this.Text = "DefinedRoutes";
             this.Load += new System.EventHandler(this.DefinedRoutes_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.sdsTxtidRoute, 0);
             this.Controls.SetChildIndex(this.sdsTexBox9, 0);
             this.Controls.SetChildIndex(this.label9, 0);

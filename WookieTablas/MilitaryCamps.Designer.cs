@@ -39,12 +39,17 @@
             // 
             // btnUpdate
             // 
-            this.btnUpdate.Location = new System.Drawing.Point(217, 461);
+            this.btnUpdate.Location = new System.Drawing.Point(190, 458);
             // 
             // btnInsert
             // 
             this.btnInsert.Location = new System.Drawing.Point(95, 461);
             this.btnInsert.Size = new System.Drawing.Size(75, 20);
+            // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Size = new System.Drawing.Size(0, 13);
+            this.LabelCodeForanea.Text = "";
             // 
             // sdsTexBox1
             // 
@@ -103,6 +108,7 @@
             // label1
             // 
             this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label1.Location = new System.Drawing.Point(45, 170);
             this.label1.Name = "label1";
             this.label1.Size = new System.Drawing.Size(59, 13);
@@ -112,6 +118,7 @@
             // label2
             // 
             this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label2.Location = new System.Drawing.Point(45, 217);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(59, 13);
@@ -121,7 +128,8 @@
             // label3
             // 
             this.label3.AutoSize = true;
-            this.label3.Location = new System.Drawing.Point(69, 272);
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(59, 267);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(45, 13);
             this.label3.TabIndex = 29;
@@ -132,7 +140,7 @@
             this.ForaneaPlanet.Control_Id = "idPlanetas";
             this.ForaneaPlanet.DescCodi = "DescPlanet";
             this.ForaneaPlanet.ErrorText = null;
-            this.ForaneaPlanet.Location = new System.Drawing.Point(35, 239);
+            this.ForaneaPlanet.Location = new System.Drawing.Point(119, 256);
             this.ForaneaPlanet.Margin = new System.Windows.Forms.Padding(2);
             this.ForaneaPlanet.Name = "ForaneaPlanet";
             this.ForaneaPlanet.NomCamp = "CodePlanet";
@@ -140,7 +148,7 @@
             this.ForaneaPlanet.NomID = "idPlanet";
             this.ForaneaPlanet.NomTaula = "Planets";
             this.ForaneaPlanet.Requerit = false;
-            this.ForaneaPlanet.Size = new System.Drawing.Size(391, 46);
+            this.ForaneaPlanet.Size = new System.Drawing.Size(339, 38);
             this.ForaneaPlanet.TabIndex = 30;
             this.ForaneaPlanet.TextLabel = null;
             // 
@@ -159,6 +167,7 @@
             this.Name = "MilitaryCamps";
             this.Text = "MilitaryCamps";
             this.Load += new System.EventHandler(this.MilitaryCamps_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.idPlanetas, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);

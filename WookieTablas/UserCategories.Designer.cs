@@ -36,6 +36,19 @@
             this.label3 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // btnUpdate
+            // 
+            this.btnUpdate.Location = new System.Drawing.Point(144, 433);
+            // 
+            // btnInsert
+            // 
+            this.btnInsert.Location = new System.Drawing.Point(51, 433);
+            // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Size = new System.Drawing.Size(0, 13);
+            this.LabelCodeForanea.Text = "";
+            // 
             // label1
             // 
             this.label1.AutoSize = true;
@@ -131,6 +144,7 @@
             this.Name = "UserCategories";
             this.Text = "UserCategories";
             this.Load += new System.EventHandler(this.UserCategories_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.label3, 0);

@@ -46,6 +46,12 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(180, 372);
             // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Location = new System.Drawing.Point(17, 309);
+            this.LabelCodeForanea.Size = new System.Drawing.Size(91, 13);
+            this.LabelCodeForanea.Text = "idSpaceShipType";
+            // 
             // lblPortPlanet
             // 
             this.lblPortPlanet.AutoSize = true;
@@ -155,7 +161,7 @@
             this.sdsForaneaSpaceShipTypes.Control_Id = null;
             this.sdsForaneaSpaceShipTypes.DescCodi = "DescSpaceShipType";
             this.sdsForaneaSpaceShipTypes.ErrorText = null;
-            this.sdsForaneaSpaceShipTypes.Location = new System.Drawing.Point(0, 298);
+            this.sdsForaneaSpaceShipTypes.Location = new System.Drawing.Point(133, 299);
             this.sdsForaneaSpaceShipTypes.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaSpaceShipTypes.Name = "sdsForaneaSpaceShipTypes";
             this.sdsForaneaSpaceShipTypes.NomCamp = "CodeSpaceShipType";
@@ -163,7 +169,7 @@
             this.sdsForaneaSpaceShipTypes.NomID = "idSpaceShipType";
             this.sdsForaneaSpaceShipTypes.NomTaula = "SpaceShipTypes";
             this.sdsForaneaSpaceShipTypes.Requerit = false;
-            this.sdsForaneaSpaceShipTypes.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaSpaceShipTypes.Size = new System.Drawing.Size(338, 35);
             this.sdsForaneaSpaceShipTypes.TabIndex = 36;
             this.sdsForaneaSpaceShipTypes.TextLabel = "Space Ship Types:";
             // 
@@ -183,6 +189,7 @@
             this.Name = "SpaceShips";
             this.Text = "SpaceShips";
             this.Load += new System.EventHandler(this.SpaceShips_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.sdsTexBoxSpaceShipTypes, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);

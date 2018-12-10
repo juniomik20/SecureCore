@@ -31,5 +31,7 @@ namespace WookieTablas
             pictureBoxPreview.ImageLocation = Application.StartupPath + @"\\Imagenes\" + sdsTexBox5.Text;
             pictureBoxPreview.SizeMode = PictureBoxSizeMode.StretchImage;
         }
+
+       
     }
 }

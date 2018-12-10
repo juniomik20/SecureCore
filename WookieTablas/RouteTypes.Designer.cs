@@ -34,6 +34,11 @@
             this.lblDescRouteType = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Size = new System.Drawing.Size(0, 13);
+            this.LabelCodeForanea.Text = "";
+            // 
             // sdsTexBoxCodeRouteType
             // 
             this.sdsTexBoxCodeRouteType.CodeSector = null;
@@ -73,6 +78,7 @@
             // lblCodeRouteType
             // 
             this.lblCodeRouteType.AutoSize = true;
+            this.lblCodeRouteType.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblCodeRouteType.Location = new System.Drawing.Point(12, 201);
             this.lblCodeRouteType.Name = "lblCodeRouteType";
             this.lblCodeRouteType.Size = new System.Drawing.Size(94, 13);
@@ -82,6 +88,7 @@
             // lblDescRouteType
             // 
             this.lblDescRouteType.AutoSize = true;
+            this.lblDescRouteType.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblDescRouteType.Location = new System.Drawing.Point(12, 258);
             this.lblDescRouteType.Name = "lblDescRouteType";
             this.lblDescRouteType.Size = new System.Drawing.Size(94, 13);
@@ -100,6 +107,7 @@
             this.Name = "RouteTypes";
             this.Text = "RouteTypes";
             this.Load += new System.EventHandler(this.RouteTypes_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.sdsTexBoxCodeRouteType, 0);

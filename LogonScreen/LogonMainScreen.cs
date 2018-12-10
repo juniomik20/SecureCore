@@ -28,6 +28,8 @@ namespace LogonScreen
         }
         private void Button1_Click(object sender, EventArgs e)
         {
+            try
+            {
             ConnectionClass.ClassBDD connect = new ConnectionClass.ClassBDD();
             DataSet dts;
             dts = connect.ComprobarUser(UserBox.Text, PassBox.Text);
@@ -66,6 +68,13 @@ namespace LogonScreen
                 }
                 
             }
+            }
+            catch (Exception)
+            {
+
+                throw;
+            }
+            
         }
         void Timer_Tick(object sender, EventArgs e)
         {

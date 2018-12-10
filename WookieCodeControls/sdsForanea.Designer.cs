@@ -30,12 +30,11 @@
         {
             this.txtCode = new System.Windows.Forms.TextBox();
             this.txtShow = new System.Windows.Forms.TextBox();
-            this.LabelCode = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // txtCode
             // 
-            this.txtCode.Location = new System.Drawing.Point(44, 14);
+            this.txtCode.Location = new System.Drawing.Point(0, 5);
             this.txtCode.Margin = new System.Windows.Forms.Padding(2);
             this.txtCode.Name = "txtCode";
             this.txtCode.Size = new System.Drawing.Size(104, 20);
@@ -45,7 +44,7 @@
             // 
             // txtShow
             // 
-            this.txtShow.Location = new System.Drawing.Point(152, 14);
+            this.txtShow.Location = new System.Drawing.Point(110, 5);
             this.txtShow.Margin = new System.Windows.Forms.Padding(2);
             this.txtShow.Name = "txtShow";
             this.txtShow.ReadOnly = true;
@@ -53,27 +52,15 @@
             this.txtShow.TabIndex = 2;
             this.txtShow.TabStop = false;
             // 
-            // LabelCode
-            // 
-            this.LabelCode.AutoSize = true;
-            this.LabelCode.Location = new System.Drawing.Point(5, 16);
-            this.LabelCode.Margin = new System.Windows.Forms.Padding(2, 0, 2, 0);
-            this.LabelCode.Name = "LabelCode";
-            this.LabelCode.Size = new System.Drawing.Size(35, 13);
-            this.LabelCode.TabIndex = 3;
-            this.LabelCode.Text = "label1";
-            // 
             // sdsForanea
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.Controls.Add(this.LabelCode);
             this.Controls.Add(this.txtShow);
             this.Controls.Add(this.txtCode);
             this.Margin = new System.Windows.Forms.Padding(2);
             this.Name = "sdsForanea";
-            this.Size = new System.Drawing.Size(391, 46);
-            this.Load += new System.EventHandler(this.sdsForanea_Load);
+            this.Size = new System.Drawing.Size(339, 28);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -83,6 +70,5 @@
 
         private System.Windows.Forms.TextBox txtCode;
         private System.Windows.Forms.TextBox txtShow;
-        private System.Windows.Forms.Label LabelCode;
     }
 }

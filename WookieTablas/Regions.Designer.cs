@@ -40,7 +40,13 @@
             // 
             // btnInsert
             // 
-            this.btnInsert.Location = new System.Drawing.Point(53, 395);
+            this.btnInsert.Location = new System.Drawing.Point(62, 429);
+            // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Location = new System.Drawing.Point(45, 321);
+            this.LabelCodeForanea.Size = new System.Drawing.Size(0, 13);
+            this.LabelCodeForanea.Text = "";
             // 
             // sdsTexBox2
             // 
@@ -108,6 +114,7 @@
             this.Name = "Regions";
             this.Text = "Regions";
             this.Load += new System.EventHandler(this.Regions_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.label3, 0);

@@ -44,6 +44,11 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(70, 453);
             // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Size = new System.Drawing.Size(0, 13);
+            this.LabelCodeForanea.Text = "";
+            // 
             // idRoutes
             // 
             this.idRoutes.BackColor = System.Drawing.SystemColors.WindowFrame;
@@ -89,7 +94,7 @@
             this.ForaneaIdPlanet.Control_Id = "IdPlanet";
             this.ForaneaIdPlanet.DescCodi = "DescPlanet";
             this.ForaneaIdPlanet.ErrorText = null;
-            this.ForaneaIdPlanet.Location = new System.Drawing.Point(27, 169);
+            this.ForaneaIdPlanet.Location = new System.Drawing.Point(85, 181);
             this.ForaneaIdPlanet.Margin = new System.Windows.Forms.Padding(2);
             this.ForaneaIdPlanet.Name = "ForaneaIdPlanet";
             this.ForaneaIdPlanet.NomCamp = "CodePlanet";
@@ -97,7 +102,7 @@
             this.ForaneaIdPlanet.NomID = "idPlanet";
             this.ForaneaIdPlanet.NomTaula = "Planet";
             this.ForaneaIdPlanet.Requerit = false;
-            this.ForaneaIdPlanet.Size = new System.Drawing.Size(391, 46);
+            this.ForaneaIdPlanet.Size = new System.Drawing.Size(340, 34);
             this.ForaneaIdPlanet.TabIndex = 58;
             this.ForaneaIdPlanet.TextLabel = null;
             // 
@@ -106,7 +111,7 @@
             this.ForaneaRoutes.Control_Id = "idRoutes";
             this.ForaneaRoutes.DescCodi = "DescRoute";
             this.ForaneaRoutes.ErrorText = null;
-            this.ForaneaRoutes.Location = new System.Drawing.Point(27, 219);
+            this.ForaneaRoutes.Location = new System.Drawing.Point(85, 219);
             this.ForaneaRoutes.Margin = new System.Windows.Forms.Padding(2);
             this.ForaneaRoutes.Name = "ForaneaRoutes";
             this.ForaneaRoutes.NomCamp = "CodeRoute";
@@ -114,14 +119,15 @@
             this.ForaneaRoutes.NomID = "idRoute";
             this.ForaneaRoutes.NomTaula = "Routes";
             this.ForaneaRoutes.Requerit = false;
-            this.ForaneaRoutes.Size = new System.Drawing.Size(391, 46);
+            this.ForaneaRoutes.Size = new System.Drawing.Size(340, 32);
             this.ForaneaRoutes.TabIndex = 59;
             this.ForaneaRoutes.TextLabel = null;
             // 
             // Planet
             // 
             this.Planet.AutoSize = true;
-            this.Planet.Location = new System.Drawing.Point(28, 184);
+            this.Planet.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.Planet.Location = new System.Drawing.Point(35, 188);
             this.Planet.Name = "Planet";
             this.Planet.Size = new System.Drawing.Size(37, 13);
             this.Planet.TabIndex = 60;
@@ -130,7 +136,8 @@
             // label2
             // 
             this.label2.AutoSize = true;
-            this.label2.Location = new System.Drawing.Point(24, 234);
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(32, 227);
             this.label2.Name = "label2";
             this.label2.Size = new System.Drawing.Size(41, 13);
             this.label2.TabIndex = 61;
@@ -150,6 +157,7 @@
             this.Name = "PlanetRoutes";
             this.Text = "PlanetRoutes";
             this.Load += new System.EventHandler(this.PlanetRoutes_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.IdPlanet, 0);
             this.Controls.SetChildIndex(this.idRoutes, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);

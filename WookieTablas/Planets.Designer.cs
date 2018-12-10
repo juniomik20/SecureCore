@@ -44,7 +44,15 @@
             this.sdsIDNatives = new SdsTexBox.SdsTexBox();
             this.sdsForaneaNatives = new WookieCodeControls.sdsForanea();
             this.sdsForaneaFiliation = new WookieCodeControls.sdsForanea();
+            this.label3 = new System.Windows.Forms.Label();
+            this.label4 = new System.Windows.Forms.Label();
             this.SuspendLayout();
+            // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Location = new System.Drawing.Point(49, 349);
+            this.LabelCodeForanea.Size = new System.Drawing.Size(46, 13);
+            this.LabelCodeForanea.Text = "idSector";
             // 
             // label7
             // 
@@ -116,6 +124,7 @@
             this.sdsTexBox9.ColumnName = "CodePLanet";
             this.sdsTexBox9.DescCodi = null;
             this.sdsTexBox9.Location = new System.Drawing.Point(102, 156);
+            this.sdsTexBox9.MaxLength = 4;
             this.sdsTexBox9.Name = "sdsTexBox9";
             this.sdsTexBox9.Nom = null;
             this.sdsTexBox9.NomBBDD = "SecureCore";
@@ -186,7 +195,7 @@
             this.sdsForaneaSector.Control_Id = "sdsIDSector";
             this.sdsForaneaSector.DescCodi = "DescSector";
             this.sdsForaneaSector.ErrorText = null;
-            this.sdsForaneaSector.Location = new System.Drawing.Point(58, 335);
+            this.sdsForaneaSector.Location = new System.Drawing.Point(102, 340);
             this.sdsForaneaSector.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaSector.Name = "sdsForaneaSector";
             this.sdsForaneaSector.NomCamp = "CodeSector";
@@ -194,9 +203,9 @@
             this.sdsForaneaSector.NomID = "idSector";
             this.sdsForaneaSector.NomTaula = "Sectors";
             this.sdsForaneaSector.Requerit = false;
-            this.sdsForaneaSector.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaSector.Size = new System.Drawing.Size(343, 32);
             this.sdsForaneaSector.TabIndex = 60;
-            this.sdsForaneaSector.TextLabel = null;
+            this.sdsForaneaSector.TextLabel = "Sector";
             // 
             // sdsIDSector
             // 
@@ -205,6 +214,7 @@
             this.sdsIDSector.CodeSector = null;
             this.sdsIDSector.ColumnName = "idSector";
             this.sdsIDSector.DescCodi = null;
+            this.sdsIDSector.Enabled = false;
             this.sdsIDSector.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.sdsIDSector.Location = new System.Drawing.Point(443, 349);
             this.sdsIDSector.Name = "sdsIDSector";
@@ -227,6 +237,7 @@
             this.IDFiliation.CodeSector = null;
             this.IDFiliation.ColumnName = "idFiliation";
             this.IDFiliation.DescCodi = null;
+            this.IDFiliation.Enabled = false;
             this.IDFiliation.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.IDFiliation.Location = new System.Drawing.Point(443, 430);
             this.IDFiliation.Name = "IDFiliation";
@@ -249,6 +260,7 @@
             this.sdsIDNatives.CodeSector = null;
             this.sdsIDNatives.ColumnName = "idNatives";
             this.sdsIDNatives.DescCodi = null;
+            this.sdsIDNatives.Enabled = false;
             this.sdsIDNatives.ForeColor = System.Drawing.SystemColors.WindowFrame;
             this.sdsIDNatives.Location = new System.Drawing.Point(443, 390);
             this.sdsIDNatives.Name = "sdsIDNatives";
@@ -269,7 +281,7 @@
             this.sdsForaneaNatives.Control_Id = "sdsIDNatives";
             this.sdsForaneaNatives.DescCodi = "DescSpecie";
             this.sdsForaneaNatives.ErrorText = null;
-            this.sdsForaneaNatives.Location = new System.Drawing.Point(58, 376);
+            this.sdsForaneaNatives.Location = new System.Drawing.Point(102, 376);
             this.sdsForaneaNatives.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaNatives.Name = "sdsForaneaNatives";
             this.sdsForaneaNatives.NomCamp = "CodeSpecie";
@@ -277,16 +289,16 @@
             this.sdsForaneaNatives.NomID = "idSpecie";
             this.sdsForaneaNatives.NomTaula = "Species";
             this.sdsForaneaNatives.Requerit = false;
-            this.sdsForaneaNatives.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaNatives.Size = new System.Drawing.Size(342, 36);
             this.sdsForaneaNatives.TabIndex = 61;
-            this.sdsForaneaNatives.TextLabel = null;
+            this.sdsForaneaNatives.TextLabel = "Natives";
             // 
             // sdsForaneaFiliation
             // 
             this.sdsForaneaFiliation.Control_Id = "IDFiliation";
             this.sdsForaneaFiliation.DescCodi = "DescFiliations";
             this.sdsForaneaFiliation.ErrorText = null;
-            this.sdsForaneaFiliation.Location = new System.Drawing.Point(58, 416);
+            this.sdsForaneaFiliation.Location = new System.Drawing.Point(102, 416);
             this.sdsForaneaFiliation.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaFiliation.Name = "sdsForaneaFiliation";
             this.sdsForaneaFiliation.NomCamp = "CodeFiliation";
@@ -294,15 +306,37 @@
             this.sdsForaneaFiliation.NomID = "idFiliation";
             this.sdsForaneaFiliation.NomTaula = "Filiations";
             this.sdsForaneaFiliation.Requerit = false;
-            this.sdsForaneaFiliation.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaFiliation.Size = new System.Drawing.Size(336, 38);
             this.sdsForaneaFiliation.TabIndex = 62;
-            this.sdsForaneaFiliation.TextLabel = null;
+            this.sdsForaneaFiliation.TextLabel = "Filiation";
+            // 
+            // label3
+            // 
+            this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label3.Location = new System.Drawing.Point(50, 384);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(48, 13);
+            this.label3.TabIndex = 66;
+            this.label3.Text = "idSpecie";
+            // 
+            // label4
+            // 
+            this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label4.Location = new System.Drawing.Point(50, 425);
+            this.label4.Name = "label4";
+            this.label4.Size = new System.Drawing.Size(50, 13);
+            this.label4.TabIndex = 67;
+            this.label4.Text = "idFiliation";
             // 
             // Planets
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 564);
+            this.Controls.Add(this.label4);
+            this.Controls.Add(this.label3);
             this.Controls.Add(this.sdsIDSector);
             this.Controls.Add(this.IDFiliation);
             this.Controls.Add(this.sdsIDNatives);
@@ -322,6 +356,7 @@
             this.Name = "Planets";
             this.Text = "Planets";
             this.Load += new System.EventHandler(this.Planets_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.sdsTexBox1, 0);
             this.Controls.SetChildIndex(this.label1, 0);
             this.Controls.SetChildIndex(this.sdsTexBox2, 0);
@@ -340,6 +375,8 @@
             this.Controls.SetChildIndex(this.sdsIDSector, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
+            this.Controls.SetChildIndex(this.label3, 0);
+            this.Controls.SetChildIndex(this.label4, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -362,5 +399,7 @@
         private SdsTexBox.SdsTexBox sdsIDNatives;
         private WookieCodeControls.sdsForanea sdsForaneaNatives;
         private WookieCodeControls.sdsForanea sdsForaneaFiliation;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label label4;
     }
 }

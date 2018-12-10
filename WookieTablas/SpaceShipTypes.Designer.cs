@@ -36,15 +36,24 @@
             this.sdstxtFiliation = new SdsTexBox.SdsTexBox();
             this.sdsForaneaFiliation = new WookieCodeControls.sdsForanea();
             this.sdstxtSpaceShipCategories = new SdsTexBox.SdsTexBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnUpdate
             // 
+            this.btnUpdate.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnUpdate.Location = new System.Drawing.Point(139, 417);
             // 
             // btnInsert
             // 
+            this.btnInsert.ForeColor = System.Drawing.SystemColors.ControlText;
             this.btnInsert.Location = new System.Drawing.Point(47, 417);
+            // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Location = new System.Drawing.Point(92, 282);
+            this.LabelCodeForanea.Size = new System.Drawing.Size(51, 13);
+            this.LabelCodeForanea.Text = "IdFiliation";
             // 
             // sdstxtCodeSector
             // 
@@ -83,6 +92,7 @@
             // labCodeSpaceShipType
             // 
             this.labCodeSpaceShipType.AutoSize = true;
+            this.labCodeSpaceShipType.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labCodeSpaceShipType.Location = new System.Drawing.Point(35, 184);
             this.labCodeSpaceShipType.Name = "labCodeSpaceShipType";
             this.labCodeSpaceShipType.Size = new System.Drawing.Size(108, 13);
@@ -92,6 +102,7 @@
             // labDescSpaceShipType
             // 
             this.labDescSpaceShipType.AutoSize = true;
+            this.labDescSpaceShipType.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labDescSpaceShipType.Location = new System.Drawing.Point(35, 225);
             this.labDescSpaceShipType.Name = "labDescSpaceShipType";
             this.labDescSpaceShipType.Size = new System.Drawing.Size(108, 13);
@@ -103,7 +114,7 @@
             this.sdsForaneaSpaceShipCategory.Control_Id = "sdsForaneaSpaceShipCategory";
             this.sdsForaneaSpaceShipCategory.DescCodi = "DescSpaceShipCategory";
             this.sdsForaneaSpaceShipCategory.ErrorText = null;
-            this.sdsForaneaSpaceShipCategory.Location = new System.Drawing.Point(8, 351);
+            this.sdsForaneaSpaceShipCategory.Location = new System.Drawing.Point(149, 314);
             this.sdsForaneaSpaceShipCategory.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaSpaceShipCategory.Name = "sdsForaneaSpaceShipCategory";
             this.sdsForaneaSpaceShipCategory.NomCamp = "CodeSpaceShipCategory";
@@ -111,7 +122,7 @@
             this.sdsForaneaSpaceShipCategory.NomID = "idSpaceShipCategory";
             this.sdsForaneaSpaceShipCategory.NomTaula = "SpaceShipCategories";
             this.sdsForaneaSpaceShipCategory.Requerit = false;
-            this.sdsForaneaSpaceShipCategory.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaSpaceShipCategory.Size = new System.Drawing.Size(339, 34);
             this.sdsForaneaSpaceShipCategory.TabIndex = 44;
             this.sdsForaneaSpaceShipCategory.TextLabel = "SpaceShipCategory";
             // 
@@ -139,7 +150,7 @@
             this.sdsForaneaFiliation.Control_Id = "sdsForaneaFiliation";
             this.sdsForaneaFiliation.DescCodi = "DescFiliation";
             this.sdsForaneaFiliation.ErrorText = null;
-            this.sdsForaneaFiliation.Location = new System.Drawing.Point(8, 275);
+            this.sdsForaneaFiliation.Location = new System.Drawing.Point(149, 272);
             this.sdsForaneaFiliation.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaFiliation.Name = "sdsForaneaFiliation";
             this.sdsForaneaFiliation.NomCamp = "CodeFiliation";
@@ -147,7 +158,7 @@
             this.sdsForaneaFiliation.NomID = "idFiliation";
             this.sdsForaneaFiliation.NomTaula = "Filiations";
             this.sdsForaneaFiliation.Requerit = false;
-            this.sdsForaneaFiliation.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaFiliation.Size = new System.Drawing.Size(336, 38);
             this.sdsForaneaFiliation.TabIndex = 34;
             this.sdsForaneaFiliation.TextLabel = "Filiations";
             // 
@@ -158,7 +169,7 @@
             this.sdstxtSpaceShipCategories.CodeSector = null;
             this.sdstxtSpaceShipCategories.ColumnName = "idSpaceShipCategory";
             this.sdstxtSpaceShipCategories.DescCodi = null;
-            this.sdstxtSpaceShipCategories.Location = new System.Drawing.Point(327, 326);
+            this.sdstxtSpaceShipCategories.Location = new System.Drawing.Point(609, 234);
             this.sdstxtSpaceShipCategories.Name = "sdstxtSpaceShipCategories";
             this.sdstxtSpaceShipCategories.Nom = null;
             this.sdstxtSpaceShipCategories.NomBBDD = "SecureCore";
@@ -170,12 +181,23 @@
             this.sdstxtSpaceShipCategories.Size = new System.Drawing.Size(20, 13);
             this.sdstxtSpaceShipCategories.TabIndex = 45;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(35, 324);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(110, 13);
+            this.label1.TabIndex = 46;
+            this.label1.Text = "IdSpaceShipCategory";
+            // 
             // SpaceShipTypes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.BackColor = System.Drawing.SystemColors.WindowFrame;
             this.ClientSize = new System.Drawing.Size(891, 482);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.sdstxtSpaceShipCategories);
             this.Controls.Add(this.sdsForaneaSpaceShipCategory);
             this.Controls.Add(this.labDescSpaceShipType);
@@ -184,6 +206,7 @@
             this.Controls.Add(this.sdsForaneaFiliation);
             this.Controls.Add(this.sdstxtDescSpaceShipType);
             this.Controls.Add(this.sdstxtCodeSector);
+            this.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.Name = "SpaceShipTypes";
             this.Text = "SpaceShipTypes";
             this.Load += new System.EventHandler(this.SpaceShipTypes_Load);
@@ -195,8 +218,10 @@
             this.Controls.SetChildIndex(this.labDescSpaceShipType, 0);
             this.Controls.SetChildIndex(this.sdsForaneaSpaceShipCategory, 0);
             this.Controls.SetChildIndex(this.sdstxtSpaceShipCategories, 0);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -212,5 +237,6 @@
         private SdsTexBox.SdsTexBox sdstxtFiliation;
         private WookieCodeControls.sdsForanea sdsForaneaFiliation;
         private SdsTexBox.SdsTexBox sdstxtSpaceShipCategories;
+        private System.Windows.Forms.Label label1;
     }
 }

@@ -36,6 +36,7 @@
             this.lblDescRoute = new System.Windows.Forms.Label();
             this.sdsForaneaDefinedRoutes = new WookieCodeControls.sdsForanea();
             this.sdsTextBoxDefinedRoute = new SdsTexBox.SdsTexBox();
+            this.label1 = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // btnUpdate
@@ -45,6 +46,12 @@
             // btnInsert
             // 
             this.btnInsert.Location = new System.Drawing.Point(70, 464);
+            // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Location = new System.Drawing.Point(54, 281);
+            this.LabelCodeForanea.Size = new System.Drawing.Size(72, 13);
+            this.LabelCodeForanea.Text = "IdRouteType:";
             // 
             // sdsTextBoxCodeRoute
             // 
@@ -108,7 +115,7 @@
             this.sdsForaneaRouteTypes.Control_Id = "sdsTextBoxRouteTypes";
             this.sdsForaneaRouteTypes.DescCodi = "DescRouteType";
             this.sdsForaneaRouteTypes.ErrorText = null;
-            this.sdsForaneaRouteTypes.Location = new System.Drawing.Point(0, 276);
+            this.sdsForaneaRouteTypes.Location = new System.Drawing.Point(141, 272);
             this.sdsForaneaRouteTypes.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaRouteTypes.Name = "sdsForaneaRouteTypes";
             this.sdsForaneaRouteTypes.NomCamp = "CodeRouteType";
@@ -116,13 +123,14 @@
             this.sdsForaneaRouteTypes.NomID = "idRouteType";
             this.sdsForaneaRouteTypes.NomTaula = "RouteTypes";
             this.sdsForaneaRouteTypes.Requerit = false;
-            this.sdsForaneaRouteTypes.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaRouteTypes.Size = new System.Drawing.Size(340, 29);
             this.sdsForaneaRouteTypes.TabIndex = 24;
-            this.sdsForaneaRouteTypes.TextLabel = "Tipus de Ruta";
+            this.sdsForaneaRouteTypes.TextLabel = "RouteType";
             // 
             // lblCodeRoute
             // 
             this.lblCodeRoute.AutoSize = true;
+            this.lblCodeRoute.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblCodeRoute.Location = new System.Drawing.Point(54, 186);
             this.lblCodeRoute.Name = "lblCodeRoute";
             this.lblCodeRoute.Size = new System.Drawing.Size(67, 13);
@@ -132,6 +140,7 @@
             // lblDescRoute
             // 
             this.lblDescRoute.AutoSize = true;
+            this.lblDescRoute.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.lblDescRoute.Location = new System.Drawing.Point(54, 226);
             this.lblDescRoute.Name = "lblDescRoute";
             this.lblDescRoute.Size = new System.Drawing.Size(67, 13);
@@ -143,7 +152,7 @@
             this.sdsForaneaDefinedRoutes.Control_Id = "sdsTextBoxDefinedRoute";
             this.sdsForaneaDefinedRoutes.DescCodi = "RouteMap";
             this.sdsForaneaDefinedRoutes.ErrorText = null;
-            this.sdsForaneaDefinedRoutes.Location = new System.Drawing.Point(0, 326);
+            this.sdsForaneaDefinedRoutes.Location = new System.Drawing.Point(141, 305);
             this.sdsForaneaDefinedRoutes.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaDefinedRoutes.Name = "sdsForaneaDefinedRoutes";
             this.sdsForaneaDefinedRoutes.NomCamp = "RouteMap";
@@ -151,9 +160,9 @@
             this.sdsForaneaDefinedRoutes.NomID = "idPlanetDest";
             this.sdsForaneaDefinedRoutes.NomTaula = "DefinedRoutes";
             this.sdsForaneaDefinedRoutes.Requerit = false;
-            this.sdsForaneaDefinedRoutes.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaDefinedRoutes.Size = new System.Drawing.Size(340, 30);
             this.sdsForaneaDefinedRoutes.TabIndex = 27;
-            this.sdsForaneaDefinedRoutes.TextLabel = "Rutas definidas:";
+            this.sdsForaneaDefinedRoutes.TextLabel = "DefRoute";
             // 
             // sdsTextBoxDefinedRoute
             // 
@@ -178,11 +187,22 @@
             this.sdsTextBoxDefinedRoute.TabIndex = 29;
             this.sdsTextBoxDefinedRoute.TabStop = false;
             // 
+            // label1
+            // 
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(58, 314);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(70, 13);
+            this.label1.TabIndex = 30;
+            this.label1.Text = "idPlanetDest:";
+            // 
             // Routes
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(815, 530);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.sdsForaneaDefinedRoutes);
             this.Controls.Add(this.lblDescRoute);
             this.Controls.Add(this.lblCodeRoute);
@@ -194,6 +214,7 @@
             this.Name = "Routes";
             this.Text = "Routes";
             this.Load += new System.EventHandler(this.Routes_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.sdsTextBoxDefinedRoute, 0);
             this.Controls.SetChildIndex(this.sdsTextBoxRouteTypes, 0);
             this.Controls.SetChildIndex(this.sdsTextBoxCodeRoute, 0);
@@ -204,6 +225,7 @@
             this.Controls.SetChildIndex(this.sdsForaneaDefinedRoutes, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
             this.ResumeLayout(false);
             this.PerformLayout();
 
@@ -219,5 +241,6 @@
         private System.Windows.Forms.Label lblDescRoute;
         private WookieCodeControls.sdsForanea sdsForaneaDefinedRoutes;
         private SdsTexBox.SdsTexBox sdsTextBoxDefinedRoute;
+        private System.Windows.Forms.Label label1;
     }
 }

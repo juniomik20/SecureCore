@@ -194,9 +194,6 @@ namespace WookieCodeControls
             }
         }
 
-        private void sdsForanea_Load(object sender, EventArgs e)
-        {
-            LabelCode.Text = TextLabel;
-        }
+        
     }
 }

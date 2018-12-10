@@ -44,9 +44,16 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(70, 357);
             // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Location = new System.Drawing.Point(79, 257);
+            this.LabelCodeForanea.Size = new System.Drawing.Size(50, 13);
+            this.LabelCodeForanea.Text = "IdRegion";
+            // 
             // labDesSector
             // 
             this.labDesSector.AutoSize = true;
+            this.labDesSector.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labDesSector.Location = new System.Drawing.Point(58, 205);
             this.labDesSector.Name = "labDesSector";
             this.labDesSector.Size = new System.Drawing.Size(71, 13);
@@ -56,6 +63,7 @@
             // labCodSector
             // 
             this.labCodSector.AutoSize = true;
+            this.labCodSector.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.labCodSector.Location = new System.Drawing.Point(58, 161);
             this.labCodSector.Name = "labCodSector";
             this.labCodSector.Size = new System.Drawing.Size(71, 13);
@@ -89,7 +97,7 @@
             this.sdsForaneaRegion.Control_Id = "sdstxtRegion";
             this.sdsForaneaRegion.DescCodi = "DescRegion";
             this.sdsForaneaRegion.ErrorText = null;
-            this.sdsForaneaRegion.Location = new System.Drawing.Point(0, 255);
+            this.sdsForaneaRegion.Location = new System.Drawing.Point(141, 248);
             this.sdsForaneaRegion.Margin = new System.Windows.Forms.Padding(2);
             this.sdsForaneaRegion.Name = "sdsForaneaRegion";
             this.sdsForaneaRegion.NomCamp = "CodeRegion";
@@ -97,7 +105,7 @@
             this.sdsForaneaRegion.NomID = "idRegion";
             this.sdsForaneaRegion.NomTaula = "Regions";
             this.sdsForaneaRegion.Requerit = false;
-            this.sdsForaneaRegion.Size = new System.Drawing.Size(391, 46);
+            this.sdsForaneaRegion.Size = new System.Drawing.Size(345, 37);
             this.sdsForaneaRegion.TabIndex = 34;
             this.sdsForaneaRegion.TextLabel = "Region";
             // 
@@ -149,6 +157,7 @@
             this.Name = "Sectors";
             this.Text = "Sectors";
             this.Load += new System.EventHandler(this.Sectors_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.sdstxtRegion, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);

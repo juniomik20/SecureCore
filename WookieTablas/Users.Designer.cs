@@ -47,6 +47,9 @@
             this.ForaneaCategories = new WookieCodeControls.sdsForanea();
             this.idUserRanks = new SdsTexBox.SdsTexBox();
             this.idUsercategories = new SdsTexBox.SdsTexBox();
+            this.label1 = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label6 = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).BeginInit();
             this.SuspendLayout();
             // 
@@ -59,11 +62,18 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(88, 698);
             // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Location = new System.Drawing.Point(20, 319);
+            this.LabelCodeForanea.Size = new System.Drawing.Size(64, 13);
+            this.LabelCodeForanea.Text = "IdUserRank";
+            // 
             // CodeUserlabel
             // 
             this.CodeUserlabel.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.CodeUserlabel.AutoSize = true;
+            this.CodeUserlabel.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.CodeUserlabel.Location = new System.Drawing.Point(27, 142);
             this.CodeUserlabel.Name = "CodeUserlabel";
             this.CodeUserlabel.Size = new System.Drawing.Size(54, 13);
@@ -75,6 +85,7 @@
             this.UserName.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.UserName.AutoSize = true;
+            this.UserName.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.UserName.Location = new System.Drawing.Point(27, 179);
             this.UserName.Name = "UserName";
             this.UserName.Size = new System.Drawing.Size(57, 13);
@@ -86,6 +97,7 @@
             this.label3.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label3.AutoSize = true;
+            this.label3.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label3.Location = new System.Drawing.Point(48, 218);
             this.label3.Name = "label3";
             this.label3.Size = new System.Drawing.Size(33, 13);
@@ -97,6 +109,7 @@
             this.label4.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label4.AutoSize = true;
+            this.label4.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label4.Location = new System.Drawing.Point(27, 253);
             this.label4.Name = "label4";
             this.label4.Size = new System.Drawing.Size(53, 13);
@@ -108,6 +121,7 @@
             this.label5.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
             | System.Windows.Forms.AnchorStyles.Left)));
             this.label5.AutoSize = true;
+            this.label5.ForeColor = System.Drawing.SystemColors.ButtonFace;
             this.label5.Location = new System.Drawing.Point(265, 144);
             this.label5.Name = "label5";
             this.label5.Size = new System.Drawing.Size(35, 13);
@@ -224,7 +238,7 @@
             this.Planetsforanea.Control_Id = "sdsTexBoxidplanetes";
             this.Planetsforanea.DescCodi = "DescPlanet";
             this.Planetsforanea.ErrorText = null;
-            this.Planetsforanea.Location = new System.Drawing.Point(37, 413);
+            this.Planetsforanea.Location = new System.Drawing.Point(104, 411);
             this.Planetsforanea.Margin = new System.Windows.Forms.Padding(2);
             this.Planetsforanea.Name = "Planetsforanea";
             this.Planetsforanea.NomCamp = "CodePlanet";
@@ -244,7 +258,7 @@
             this.sdsTexBoxidplanetes.ColumnName = "idPlanet";
             this.sdsTexBoxidplanetes.DescCodi = null;
             this.sdsTexBoxidplanetes.Enabled = false;
-            this.sdsTexBoxidplanetes.Location = new System.Drawing.Point(426, 427);
+            this.sdsTexBoxidplanetes.Location = new System.Drawing.Point(458, 422);
             this.sdsTexBoxidplanetes.Name = "sdsTexBoxidplanetes";
             this.sdsTexBoxidplanetes.Nom = null;
             this.sdsTexBoxidplanetes.NomBBDD = "SecureCore";
@@ -261,7 +275,7 @@
             this.ForaneaIdSpecie.Control_Id = "idSpecies";
             this.ForaneaIdSpecie.DescCodi = "DescSpecie";
             this.ForaneaIdSpecie.ErrorText = null;
-            this.ForaneaIdSpecie.Location = new System.Drawing.Point(38, 475);
+            this.ForaneaIdSpecie.Location = new System.Drawing.Point(104, 461);
             this.ForaneaIdSpecie.Margin = new System.Windows.Forms.Padding(2);
             this.ForaneaIdSpecie.Name = "ForaneaIdSpecie";
             this.ForaneaIdSpecie.NomCamp = "CodeSpecie";
@@ -281,7 +295,7 @@
             this.idSpecies.ColumnName = "idSpecie";
             this.idSpecies.DescCodi = null;
             this.idSpecies.Enabled = false;
-            this.idSpecies.Location = new System.Drawing.Point(426, 489);
+            this.idSpecies.Location = new System.Drawing.Point(458, 484);
             this.idSpecies.Name = "idSpecies";
             this.idSpecies.Nom = null;
             this.idSpecies.NomBBDD = "SecureCore";
@@ -298,7 +312,7 @@
             this.ForaneaidUserRanks.Control_Id = "idUserRanks";
             this.ForaneaidUserRanks.DescCodi = "DescRank";
             this.ForaneaidUserRanks.ErrorText = null;
-            this.ForaneaidUserRanks.Location = new System.Drawing.Point(37, 316);
+            this.ForaneaidUserRanks.Location = new System.Drawing.Point(104, 311);
             this.ForaneaidUserRanks.Margin = new System.Windows.Forms.Padding(2);
             this.ForaneaidUserRanks.Name = "ForaneaidUserRanks";
             this.ForaneaidUserRanks.NomCamp = "CodeRank";
@@ -315,7 +329,7 @@
             this.ForaneaCategories.Control_Id = "idUsercategories";
             this.ForaneaCategories.DescCodi = "DescCategory";
             this.ForaneaCategories.ErrorText = null;
-            this.ForaneaCategories.Location = new System.Drawing.Point(38, 366);
+            this.ForaneaCategories.Location = new System.Drawing.Point(104, 361);
             this.ForaneaCategories.Margin = new System.Windows.Forms.Padding(2);
             this.ForaneaCategories.Name = "ForaneaCategories";
             this.ForaneaCategories.NomCamp = "CodeCategory";
@@ -335,7 +349,7 @@
             this.idUserRanks.ColumnName = "idUserRank";
             this.idUserRanks.DescCodi = null;
             this.idUserRanks.Enabled = false;
-            this.idUserRanks.Location = new System.Drawing.Point(426, 330);
+            this.idUserRanks.Location = new System.Drawing.Point(458, 325);
             this.idUserRanks.Name = "idUserRanks";
             this.idUserRanks.Nom = null;
             this.idUserRanks.NomBBDD = "SecureCore";
@@ -355,7 +369,7 @@
             this.idUsercategories.ColumnName = "idUserCategory";
             this.idUsercategories.DescCodi = null;
             this.idUsercategories.Enabled = false;
-            this.idUsercategories.Location = new System.Drawing.Point(426, 381);
+            this.idUsercategories.Location = new System.Drawing.Point(458, 376);
             this.idUsercategories.Name = "idUsercategories";
             this.idUsercategories.Nom = null;
             this.idUsercategories.NomBBDD = "SecureCore";
@@ -367,11 +381,50 @@
             this.idUsercategories.Size = new System.Drawing.Size(40, 13);
             this.idUsercategories.TabIndex = 46;
             // 
+            // label1
+            // 
+            this.label1.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label1.AutoSize = true;
+            this.label1.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label1.Location = new System.Drawing.Point(5, 376);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(80, 13);
+            this.label1.TabIndex = 47;
+            this.label1.Text = "IdUserCategory";
+            // 
+            // label2
+            // 
+            this.label2.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label2.AutoSize = true;
+            this.label2.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label2.Location = new System.Drawing.Point(35, 417);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(46, 13);
+            this.label2.TabIndex = 48;
+            this.label2.Text = "IdPlanet";
+            // 
+            // label6
+            // 
+            this.label6.Anchor = ((System.Windows.Forms.AnchorStyles)(((System.Windows.Forms.AnchorStyles.Top | System.Windows.Forms.AnchorStyles.Bottom) 
+            | System.Windows.Forms.AnchorStyles.Left)));
+            this.label6.AutoSize = true;
+            this.label6.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.label6.Location = new System.Drawing.Point(37, 470);
+            this.label6.Name = "label6";
+            this.label6.Size = new System.Drawing.Size(48, 13);
+            this.label6.TabIndex = 49;
+            this.label6.Text = "idSpecie";
+            // 
             // Users
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(1005, 775);
+            this.Controls.Add(this.label6);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.ForaneaCategories);
             this.Controls.Add(this.ForaneaidUserRanks);
             this.Controls.Add(this.ForaneaIdSpecie);
@@ -394,6 +447,7 @@
             this.Name = "Users";
             this.Text = "Users";
             this.Load += new System.EventHandler(this.Users_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.sdsTexBoxidplanetes, 0);
             this.Controls.SetChildIndex(this.idSpecies, 0);
             this.Controls.SetChildIndex(this.idUserRanks, 0);
@@ -415,6 +469,9 @@
             this.Controls.SetChildIndex(this.ForaneaIdSpecie, 0);
             this.Controls.SetChildIndex(this.ForaneaidUserRanks, 0);
             this.Controls.SetChildIndex(this.ForaneaCategories, 0);
+            this.Controls.SetChildIndex(this.label1, 0);
+            this.Controls.SetChildIndex(this.label2, 0);
+            this.Controls.SetChildIndex(this.label6, 0);
             ((System.ComponentModel.ISupportInitialize)(this.pictureBoxPreview)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -441,5 +498,8 @@
         private WookieCodeControls.sdsForanea ForaneaCategories;
         private SdsTexBox.SdsTexBox idUserRanks;
         private SdsTexBox.SdsTexBox idUsercategories;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label6;
     }
 }

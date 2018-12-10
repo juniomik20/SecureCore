@@ -42,6 +42,11 @@
             // 
             this.btnInsert.Location = new System.Drawing.Point(65, 401);
             // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.Size = new System.Drawing.Size(0, 13);
+            this.LabelCodeForanea.Text = "";
+            // 
             // sdsTexBox1
             // 
             this.sdsTexBox1.BackColor = System.Drawing.Color.LightGreen;
@@ -108,6 +113,7 @@
             this.Name = "Species";
             this.Text = "Species";
             this.Load += new System.EventHandler(this.Species_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.label2, 0);

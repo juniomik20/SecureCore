@@ -31,6 +31,7 @@
             this.dgvMant_table = new System.Windows.Forms.DataGridView();
             this.btnInsert = new System.Windows.Forms.Button();
             this.btnUpdate = new System.Windows.Forms.Button();
+            this.LabelCodeForanea = new System.Windows.Forms.Label();
             ((System.ComponentModel.ISupportInitialize)(this.dgvMant_table)).BeginInit();
             this.SuspendLayout();
             // 
@@ -67,11 +68,22 @@
             this.btnUpdate.UseVisualStyleBackColor = true;
             this.btnUpdate.Click += new System.EventHandler(this.BtnUpdate_Click);
             // 
+            // LabelCodeForanea
+            // 
+            this.LabelCodeForanea.AutoSize = true;
+            this.LabelCodeForanea.ForeColor = System.Drawing.SystemColors.ButtonFace;
+            this.LabelCodeForanea.Location = new System.Drawing.Point(25, 272);
+            this.LabelCodeForanea.Name = "LabelCodeForanea";
+            this.LabelCodeForanea.Size = new System.Drawing.Size(18, 13);
+            this.LabelCodeForanea.TabIndex = 24;
+            this.LabelCodeForanea.Text = "txt";
+            // 
             // MantenimentBase
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(6F, 13F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
             this.ClientSize = new System.Drawing.Size(959, 564);
+            this.Controls.Add(this.LabelCodeForanea);
             this.Controls.Add(this.btnUpdate);
             this.Controls.Add(this.btnInsert);
             this.Controls.Add(this.dgvMant_table);
@@ -82,6 +94,7 @@
             this.Controls.SetChildIndex(this.dgvMant_table, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             ((System.ComponentModel.ISupportInitialize)(this.dgvMant_table)).EndInit();
             this.ResumeLayout(false);
             this.PerformLayout();
@@ -92,6 +105,7 @@
         public System.Windows.Forms.Button btnUpdate;
         public System.Windows.Forms.DataGridView dgvMant_table;
         public System.Windows.Forms.Button btnInsert;
+        public System.Windows.Forms.Label LabelCodeForanea;
     }
 }
 
