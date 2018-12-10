@@ -17,6 +17,7 @@ namespace LogonScreen
     {
         BackgroundWorker _bgwLogin;        
         private int _countDown = 0;
+        int count=0;
         bool musicOn = false;
         string valErrorLabel;
         SoundPlayer player = new SoundPlayer
@@ -122,7 +123,7 @@ namespace LogonScreen
         }
         private void IconStarWars_Click(object sender, EventArgs e)
         {
-            int count = 0;
+            
             count++;
             if(count > 666)
             {
