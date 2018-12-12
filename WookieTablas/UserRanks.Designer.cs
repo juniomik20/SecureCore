@@ -36,7 +36,7 @@
             // 
             // sdsTexBox1
             // 
-            this.sdsTexBox1.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox1.BackColor = System.Drawing.Color.White;
             this.sdsTexBox1.CodeSector = null;
             this.sdsTexBox1.ColumnName = "DescRank";
             this.sdsTexBox1.DescCodi = null;
@@ -54,7 +54,7 @@
             // 
             // sdsTexBox2
             // 
-            this.sdsTexBox2.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox2.BackColor = System.Drawing.Color.White;
             this.sdsTexBox2.CodeSector = null;
             this.sdsTexBox2.ColumnName = "CodeRank";
             this.sdsTexBox2.DescCodi = null;
@@ -100,6 +100,7 @@
             this.Name = "UserRanks";
             this.Text = "UserRanks";
             this.Load += new System.EventHandler(this.UserRanks_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.label2, 0);

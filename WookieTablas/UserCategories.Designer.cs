@@ -60,7 +60,7 @@
             // 
             // sdsTexBox1
             // 
-            this.sdsTexBox1.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox1.BackColor = System.Drawing.Color.White;
             this.sdsTexBox1.CodeSector = null;
             this.sdsTexBox1.ColumnName = "AccessLevel";
             this.sdsTexBox1.DescCodi = null;
@@ -78,7 +78,7 @@
             // 
             // sdsTexBox2
             // 
-            this.sdsTexBox2.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox2.BackColor = System.Drawing.Color.White;
             this.sdsTexBox2.CodeSector = null;
             this.sdsTexBox2.ColumnName = "DescCategory";
             this.sdsTexBox2.DescCodi = null;
@@ -96,7 +96,7 @@
             // 
             // sdsTexBox3
             // 
-            this.sdsTexBox3.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox3.BackColor = System.Drawing.Color.White;
             this.sdsTexBox3.CodeSector = null;
             this.sdsTexBox3.ColumnName = "CodeCategory";
             this.sdsTexBox3.DescCodi = null;
