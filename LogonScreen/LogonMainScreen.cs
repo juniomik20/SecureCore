@@ -31,54 +31,9 @@ namespace LogonScreen
         }
         private void Button1_Click(object sender, EventArgs e)
         {
-            try
-            {
-            ConnectionClass.ClassBDD connect = new ConnectionClass.ClassBDD();
-            DataSet dts;
-            dts = connect.ComprobarUser(UserBox.Text, PassBox.Text);
-            if (dts.Tables[0].Rows.Count == 1)
-            {
-                ErrorLabel.Visible = true;
-                Timer.Start();
-                ErrorLabel.Text = "Bienvenido "+ dts.Tables[0].Rows[0]["DescCategory"].ToString() + " "+ dts.Tables[0].Rows[0]["UserName"].ToString();
-
-
-
-                    ConfigurationManager.AppSettings.Set("UserName", dts.Tables[0].Rows[0]["UserName"].ToString());
-                    ConfigurationManager.AppSettings.Set("AccesLevel", dts.Tables[0].Rows[0]["AccessLevel"].ToString());
-                    ConfigurationManager.AppSettings.Set("Icon", dts.Tables[0].Rows[0]["Photo"].ToString());
-
-                #region Token
-                string idUser = dts.Tables[0].Rows[0]["idUser"].ToString();
-                var LoginTicks = DateTime.Now.Ticks;
-                string queryToken = "insert into LogUsers (idUser, Token) values ("+idUser+",'"+LoginTicks+"');";
-                connect.Executa(queryToken);
-                #endregion
-            }
-            else {
-                if (UserBox.Text.ToUpper().Equals("DEATHSTART"))
-                {
-                    System.Diagnostics.Process.Start("EstrelladelaMuerte.vbs");
-                    MessageBox.Show("Felicidades Ganaste un Porta Vasos!", "SEGUNDO EASTER EGG");                    
-                }
-                else
-                {
-                    ErrorLabel.Text = "Error Usuario/Password! ";
-                    ErrorLabel.Visible = true;
-                    UserBox.Clear();
-                    PassBox.Clear();
-                    UserBox.Focus();
-                }
-                
-            }
-            }
-            catch (Exception)
-            {
-
-                throw;
-            }
-            
+            MetodoLogin();
         }
+
         void Timer_Tick(object sender, EventArgs e)
         {
             _countDown--;
@@ -153,6 +108,70 @@ namespace LogonScreen
             }
         }
 
-     
+        private void MetodoLogin()
+        {
+            ButtonEntrar.Enabled = false;
+            try
+            {
+                ConnectionClass.ClassBDD connect = new ConnectionClass.ClassBDD();
+                DataSet dts;
+                dts = connect.ComprobarUser(UserBox.Text, PassBox.Text);
+                if (dts.Tables[0].Rows.Count == 1)
+                {
+                    Timer.Start();
+                    valErrorLabel = "Bienvenido " + dts.Tables[0].Rows[0]["DescCategory"].ToString() + " " + dts.Tables[0].Rows[0]["UserName"].ToString();
+
+                    ConfigurationManager.AppSettings.Set("UserName", dts.Tables[0].Rows[0]["UserName"].ToString());
+                    ConfigurationManager.AppSettings.Set("AccesLevel", dts.Tables[0].Rows[0]["AccessLevel"].ToString());
+                    ConfigurationManager.AppSettings.Set("Icon", dts.Tables[0].Rows[0]["Photo"].ToString());
+
+
+                    #region Token
+                    string idUser = dts.Tables[0].Rows[0]["idUser"].ToString();
+                    var LoginTicks = DateTime.Now.Ticks;
+                    string queryToken = "insert into LogUsers (idUser, Token) values (" + idUser + ",'" + LoginTicks + "');";
+                    connect.Executa(queryToken);
+                    #endregion
+                }
+                else
+                {
+                    if (UserBox.Text.ToUpper().Equals("DEATHSTART"))
+                    {
+                        System.Diagnostics.Process.Start("EstrelladelaMuerte.vbs");
+                        valErrorLabel = "Felicidades Ganaste un Porta Vasos! SEGUNDO EASTER EGG";
+                    }
+                    else
+                    {
+                        valErrorLabel = "Error Usuario/Password! ";
+                        UserBox.Clear();
+                        PassBox.Clear();
+                        UserBox.Focus();
+                    }
+                }
+                ErrorLabel.Text = valErrorLabel;
+                ErrorLabel.Visible = true;
+                ButtonEntrar.Enabled = true;
+            }
+            catch (System.Data.SqlClient.SqlException)
+            {
+                valErrorLabel = "Es posible que la BBDD este apagada.";
+            }
+            ButtonEntrar.Enabled = true;
+        }
+
+        private void PassBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if(e.KeyCode == Keys.Enter){
+                MetodoLogin();
+            }
+        }
+
+        private void UserBox_KeyUp(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                MetodoLogin();
+            }
+        }
     }
 }
