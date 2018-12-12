@@ -14,8 +14,7 @@ using System.Drawing.Text;
 namespace LogonScreen
 {
     public partial class LogonMainScreen : Form
-    {
-        BackgroundWorker _bgwLogin;        
+    {        
         private int _countDown = 0;
         int count=0;
         bool musicOn = false;
