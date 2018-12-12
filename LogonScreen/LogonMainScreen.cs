@@ -30,17 +30,6 @@ namespace LogonScreen
         }
         private void Button1_Click(object sender, EventArgs e)
         {
-            _bgwLogin = new BackgroundWorker();
-            _bgwLogin.WorkerReportsProgress = true;
-            _bgwLogin.WorkerSupportsCancellation = true;
-            _bgwLogin.DoWork += bgwLogin_DoWork;
-            _bgwLogin.RunWorkerCompleted += bgwLogin_RunWorkerCompleted;
-            ButtonEntrar.Enabled = false;
-            _bgwLogin.RunWorkerAsync();
-        }
-
-        private void bgwLogin_DoWork(object sender, DoWorkEventArgs e)
-        {
             try
             {
                 ConnectionClass.ClassBDD connect = new ConnectionClass.ClassBDD();
@@ -51,11 +40,10 @@ namespace LogonScreen
                     Timer.Start();
                     valErrorLabel = "Bienvenido " + dts.Tables[0].Rows[0]["DescCategory"].ToString() + " " + dts.Tables[0].Rows[0]["UserName"].ToString();
 
-
-
                     ConfigurationManager.AppSettings.Set("UserName", dts.Tables[0].Rows[0]["UserName"].ToString());
                     ConfigurationManager.AppSettings.Set("AccesLevel", dts.Tables[0].Rows[0]["AccessLevel"].ToString());
                     ConfigurationManager.AppSettings.Set("Icon", dts.Tables[0].Rows[0]["Photo"].ToString());
+                    
 
                     #region Token
                     string idUser = dts.Tables[0].Rows[0]["idUser"].ToString();
@@ -78,19 +66,15 @@ namespace LogonScreen
                         PassBox.Clear();
                         UserBox.Focus();
                     }
-
                 }
+                ErrorLabel.Text = valErrorLabel;
+                ErrorLabel.Visible = true;
+                ButtonEntrar.Enabled = true;
             }
-            catch(System.Data.SqlClient.SqlException)
+            catch (System.Data.SqlClient.SqlException)
             {
                 valErrorLabel = "Es posible que la BBDD este apagada.";
-            }            
-        }
-        private void bgwLogin_RunWorkerCompleted(object sender, RunWorkerCompletedEventArgs e)
-        {
-            ErrorLabel.Text = valErrorLabel;
-            ErrorLabel.Visible = true;
-            ButtonEntrar.Enabled = true;
+            }
         }
 
         void Timer_Tick(object sender, EventArgs e)
