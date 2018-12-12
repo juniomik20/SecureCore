@@ -15,8 +15,11 @@ namespace LogonScreen
 {
     public partial class LogonMainScreen : Form
     {
+        BackgroundWorker _bgwLogin;        
         private int _countDown = 0;
+        int count=0;
         bool musicOn = false;
+        string valErrorLabel;
         SoundPlayer player = new SoundPlayer
         {
             SoundLocation = Application.StartupPath + @"\\CANTINA.wav"
@@ -39,8 +42,8 @@ namespace LogonScreen
                 Timer.Start();
                 ErrorLabel.Text = "Bienvenido "+ dts.Tables[0].Rows[0]["DescCategory"].ToString() + " "+ dts.Tables[0].Rows[0]["UserName"].ToString();
 
-              
-                   
+
+
                     ConfigurationManager.AppSettings.Set("UserName", dts.Tables[0].Rows[0]["UserName"].ToString());
                     ConfigurationManager.AppSettings.Set("AccesLevel", dts.Tables[0].Rows[0]["AccessLevel"].ToString());
                     ConfigurationManager.AppSettings.Set("Icon", dts.Tables[0].Rows[0]["Photo"].ToString());
@@ -105,6 +108,20 @@ namespace LogonScreen
         }
         private void IconStarWars_Click(object sender, EventArgs e)
         {
+            
+            count++;
+            if(count > 666)
+            {
+                System.Diagnostics.Process.Start("Reset.vbs");
+            }
+            ActivarMusic();
+        }
+        private void GifEasterEgg_Click(object sender, EventArgs e)
+        {
+            desactviarMusic();
+        }
+        public void ActivarMusic()
+        {
             if (!musicOn)
             {
                 player.Play();
@@ -118,10 +135,6 @@ namespace LogonScreen
                 EasterEgg7.Visible = true;
                 EasterEgg8.Visible = true;
             }
-        }
-        private void GifEasterEgg_Click(object sender, EventArgs e)
-        {
-            desactviarMusic();
         }
         public void desactviarMusic() {
             if (musicOn)
