@@ -49,7 +49,7 @@
             // 
             // sdsTexBox1
             // 
-            this.sdsTexBox1.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox1.BackColor = System.Drawing.Color.White;
             this.sdsTexBox1.CodeSector = null;
             this.sdsTexBox1.ColumnName = "DescSpecie";
             this.sdsTexBox1.DescCodi = null;
@@ -67,7 +67,7 @@
             // 
             // sdsTexBox2
             // 
-            this.sdsTexBox2.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox2.BackColor = System.Drawing.Color.White;
             this.sdsTexBox2.CodeSector = null;
             this.sdsTexBox2.ColumnName = "CodeSpecie";
             this.sdsTexBox2.DescCodi = null;

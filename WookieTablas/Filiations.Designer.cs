@@ -44,7 +44,7 @@
             // 
             // sdsTexBox3
             // 
-            this.sdsTexBox3.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox3.BackColor = System.Drawing.Color.White;
             this.sdsTexBox3.CodeSector = null;
             this.sdsTexBox3.ColumnName = "DescFiliations";
             this.sdsTexBox3.DescCodi = null;
@@ -71,7 +71,7 @@
             // 
             // sdsTexBox4
             // 
-            this.sdsTexBox4.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox4.BackColor = System.Drawing.Color.White;
             this.sdsTexBox4.CodeSector = null;
             this.sdsTexBox4.ColumnName = "CodeFiliation";
             this.sdsTexBox4.DescCodi = null;
@@ -108,6 +108,7 @@
             this.Name = "Filiations";
             this.Text = "Filiations";
             this.Load += new System.EventHandler(this.Filiations_Load);
+            this.Controls.SetChildIndex(this.LabelCodeForanea, 0);
             this.Controls.SetChildIndex(this.btnInsert, 0);
             this.Controls.SetChildIndex(this.btnUpdate, 0);
             this.Controls.SetChildIndex(this.label3, 0);

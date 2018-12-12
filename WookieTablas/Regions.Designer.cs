@@ -50,7 +50,7 @@
             // 
             // sdsTexBox2
             // 
-            this.sdsTexBox2.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox2.BackColor = System.Drawing.Color.White;
             this.sdsTexBox2.CodeSector = null;
             this.sdsTexBox2.ColumnName = "DescRegion";
             this.sdsTexBox2.DescCodi = null;
@@ -68,7 +68,7 @@
             // 
             // sdsTexBox3
             // 
-            this.sdsTexBox3.BackColor = System.Drawing.Color.LightGreen;
+            this.sdsTexBox3.BackColor = System.Drawing.Color.White;
             this.sdsTexBox3.CodeSector = null;
             this.sdsTexBox3.ColumnName = "CodeRegion";
             this.sdsTexBox3.DescCodi = null;
