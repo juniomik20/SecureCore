@@ -10,6 +10,7 @@ using System.Windows.Forms;
 using ConnectionClass;
 using System.Configuration;
 using System.Reflection;
+using System.Data.SqlClient;
 
 namespace WookieCodeControls
 {
@@ -130,19 +131,26 @@ namespace WookieCodeControls
 
         private void InsertaID(string id)
         {
-            txtCode.Clear();
-            txtShow.Clear();
-       
-            string query = "select * from " + _NomTaula + " where " + NomID + " = " + id;
-            CDB = new ClassBDD();
-            dts = CDB.PortaPerConsulta(query);
-            if (dts.Tables[0].Rows.Count == 1)
-            {
-                txtShow.Text = dts.Tables[0].Rows[0][DescCodi].ToString();
-                txtCode.Text = dts.Tables[0].Rows[0][NomCamp].ToString();
-                string ID = dts.Tables[0].Rows[0][NomID].ToString();
-                PossarId(ID);
-            }
+                try
+                {
+                    txtCode.Clear();
+                    txtShow.Clear();
+
+                    string query = "select * from " + _NomTaula + " where " + NomID + " = " + id;
+                    CDB = new ClassBDD();
+                    dts = CDB.PortaPerConsulta(query);
+                    if (dts.Tables[0].Rows.Count == 1)
+                    {
+                        txtShow.Text = dts.Tables[0].Rows[0][DescCodi].ToString();
+                        txtCode.Text = dts.Tables[0].Rows[0][NomCamp].ToString();
+                        string ID = dts.Tables[0].Rows[0][NomID].ToString();
+                        PossarId(ID);
+                    }
+                }
+                catch (SqlException)
+                {
+                    if (!txtCode.Text.Equals("")) MessageBox.Show("Selecciona toda la linea");
+                }
         }
 
         private void PossarId(string ID)

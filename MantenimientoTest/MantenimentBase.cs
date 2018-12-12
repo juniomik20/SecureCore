@@ -24,9 +24,7 @@ namespace MantenimientoBase
         
 
         public MantenimentBase()
-        {
-          
-
+        {         
             InitializeComponent();
         }
 
@@ -91,6 +89,7 @@ namespace MantenimientoBase
 
         private void BtnUpdate_Click(object sender, EventArgs e)
         {
+            
             try
             {
                 if (!bEsNou)
