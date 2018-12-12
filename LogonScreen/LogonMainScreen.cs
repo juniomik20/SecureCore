@@ -146,15 +146,14 @@ namespace LogonScreen
                         PassBox.Clear();
                         UserBox.Focus();
                     }
-                }
-                ErrorLabel.Text = valErrorLabel;
-                ErrorLabel.Visible = true;
-                ButtonEntrar.Enabled = true;
+                }                
             }
             catch (System.Data.SqlClient.SqlException)
             {
                 valErrorLabel = "Es posible que la BBDD este apagada.";
             }
+            ErrorLabel.Text = valErrorLabel;
+            ErrorLabel.Visible = true;
             ButtonEntrar.Enabled = true;
         }
 
