@@ -55,7 +55,7 @@ namespace LogonScreen
             {
                 this.Hide();
                 ErrorLabel.Visible = false;
-               player.Stop();
+                player.Stop();
                 Form frm = new MenuSecureCore.MenuForm();
                 frm.Show();
             }
